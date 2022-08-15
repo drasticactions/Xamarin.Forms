@@ -124,6 +124,14 @@ namespace Xamarin.Forms.Platform.MacOS
 					}
 				}
 #if __MOBILE__
+#if NET6_0_OR_GREATER
+				catch (ObjCRuntime.ObjCException ex) when (ex.Name == "NSUnknownKeyException")
+				{
+					nativePropertyListener = null;
+					System.Diagnostics.Debug.WriteLine("KVO not supported, try specify a UpdateSourceEventName instead.");
+					return;
+				}
+#else
 				catch (Foundation.MonoTouchException ex)
 				{
 					nativePropertyListener = null;
@@ -134,6 +142,7 @@ namespace Xamarin.Forms.Platform.MacOS
 					}
 					throw ex;
 				}
+#endif
 #else
 				catch (Exception)
 				{

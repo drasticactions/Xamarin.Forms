@@ -87,7 +87,11 @@ namespace Xamarin.Forms.Platform.iOS
 					_displayLink = null;
 				}
 			});
+#if NET6_0_OR_GREATER
+			_displayLink.AddToRunLoop(NSRunLoop.Current, NSRunLoopMode.Common);
+#else
 			_displayLink.AddToRunLoop(NSRunLoop.Current, NSRunLoop.NSRunLoopCommonModes);
+#endif
 		}
 
 		class Delegate : GLKViewDelegate

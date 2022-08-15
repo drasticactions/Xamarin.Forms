@@ -82,149 +82,149 @@
     <Compile Include="..\Xamarin.Forms.Core\StreamWrapper.cs">
       <Link>StreamWrapper.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\LabelExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\LabelExtensions.cs">
       <Link>Extensions\LabelExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\AccessibilityExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\AccessibilityExtensions.cs">
       <Link>Extensions\AccessibilityExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Flags.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Flags.cs">
       <Link>Flags.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\IVisualNativeElementRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\IVisualNativeElementRenderer.cs">
       <Link>IVisualNativeElementRenderer.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\ExportCellAttribute.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\ExportCellAttribute.cs">
       <Link>ExportCellAttribute.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\ExportImageSourceHandlerAttribute.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\ExportImageSourceHandlerAttribute.cs">
       <Link>ExportImageSourceHandlerAttribute.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Deserializer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Deserializer.cs">
       <Link>Deserializer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\RendererPool.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\RendererPool.cs">
       <Link>RendererPool.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\EffectUtilities.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\EffectUtilities.cs">
       <Link>EffectUtilities.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\NativeViewPropertyListener.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\NativeViewPropertyListener.cs">
       <Link>NativeViewPropertyListener.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Forms.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Forms.cs">
       <Link>Forms.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\DateExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\DateExtensions.cs">
       <Link>Extensions\DateExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\LayoutExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\LayoutExtensions.cs">
       <Link>Extensions\LayoutExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\ColorExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\ColorExtensions.cs">
       <Link>Extensions\ColorExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\UIViewExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\UIViewExtensions.cs">
       <Link>Extensions\UIViewExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Renderers\FormattedStringExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Renderers\FormattedStringExtensions.cs">
       <Link>Extensions\FormattedStringExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\IVisualElementRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\IVisualElementRenderer.cs">
       <Link>IVisualElementRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\NativeValueConverterService.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\NativeValueConverterService.cs">
       <Link>NativeValueConverterService.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\NativeViewWrapper.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\NativeViewWrapper.cs">
       <Link>NativeViewWrapper.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\NativeViewWrapperRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\NativeViewWrapperRenderer.cs">
       <Link>NativeViewWrapperRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\ElementChangedEventArgs.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\ElementChangedEventArgs.cs">
       <Link>ElementChangedEventArgs.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\ExportRendererAttribute.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\ExportRendererAttribute.cs">
       <Link>ExportRendererAttribute.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\PlatformEffect.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\PlatformEffect.cs">
       <Link>PlatformEffect.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\PlatformConfigurationExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\PlatformConfigurationExtensions.cs">
       <Link>Extensions\PlatformConfigurationExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\ViewInitializedEventArgs.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\ViewInitializedEventArgs.cs">
       <Link>ViewInitializedEventArgs.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Renderers\LabelRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Renderers\LabelRenderer.cs">
       <Link>Renderers\LabelRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\ResourcesProvider.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\ResourcesProvider.cs">
       <Link>ResourcesProvider.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\VisualElementPackager.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\VisualElementPackager.cs">
       <Link>VisualElementPackager.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\ViewRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\ViewRenderer.cs">
       <Link>ViewRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\VisualElementTracker.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\VisualElementTracker.cs">
       <Link>VisualElementTracker.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\EventTracker.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\EventTracker.cs">
       <Link>EventTracker.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\VisualElementRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\VisualElementRenderer.cs">
       <Link>VisualElementRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\DisposeHelpers.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\DisposeHelpers.cs">
       <Link>DisposeHelpers.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Renderers\ImageElementManager.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Renderers\ImageElementManager.cs">
       <Link>Renderers\ImageElementManager.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Renderers\IImageVisualElementRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Renderers\IImageVisualElementRenderer.cs">
       <Link>Renderers\IImageVisualElementRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\FontExtensions.Shared.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\FontExtensions.Shared.cs">
       <Link>Extensions\FontExtensions.Shared.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\DoubleCollectionExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\DoubleCollectionExtensions.cs">
       <Link>Extensions\DoubleCollectionExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\GeometryExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\GeometryExtensions.cs">
       <Link>Extensions\GeometryExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\TransformExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\TransformExtensions.cs">
       <Link>Extensions\TransformExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Shapes\PathRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Shapes\PathRenderer.cs">
       <Link>Shapes\PathRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\PointCollectionExtensions.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\PointCollectionExtensions.cs">
       <Link>Extensions\PointCollectionExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Shapes\EllipseRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Shapes\EllipseRenderer.cs">
       <Link>Shapes\EllipseRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Shapes\LineRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Shapes\LineRenderer.cs">
       <Link>Shapes\LineRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Shapes\PolygonRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Shapes\PolygonRenderer.cs">
       <Link>Shapes\PolygonRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Shapes\PolylineRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Shapes\PolylineRenderer.cs">
       <Link>Shapes\PolylineRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Shapes\RectangleRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Shapes\RectangleRenderer.cs">
       <Link>Shapes\RectangleRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Shapes\ShapeRenderer.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Shapes\ShapeRenderer.cs">
       <Link>Shapes\ShapeRenderer.cs</Link>
     </Compile>
-    <Compile Include="..\Xamarin.Forms.Platform.iOS\Extensions\BrushExtensions.shared.cs">
+    <Compile Include="..\Xamarin.Forms.Platform.iOS.Shared\Extensions\BrushExtensions.shared.cs">
       <Link>Extensions\BrushExtensions.shared.cs</Link>
     </Compile>
   </ItemGroup>

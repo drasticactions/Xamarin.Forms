@@ -404,6 +404,21 @@ namespace Xamarin.Forms.Platform.iOS
 			if (!isDefaultColor)
 				_barTextColorWasSet = true;
 
+#if NET6_0_OR_GREATER
+			UIColor tabBarTextColor;
+			if (isDefaultColor)
+				tabBarTextColor = _defaultBarTextColor;
+			else
+				tabBarTextColor = barTextColor.ToUIColor();
+
+			var attributes = new UIStringAttributes();
+			attributes.ForegroundColor = tabBarTextColor;
+
+			foreach (UITabBarItem item in TabBar.Items)
+			{
+				item.SetTitleTextAttributes(attributes, UIControlState.Normal);
+			}
+#else
 			var attributes = new UITextAttributes();
 
 			if (isDefaultColor)
@@ -415,6 +430,7 @@ namespace Xamarin.Forms.Platform.iOS
 			{
 				item.SetTitleTextAttributes(attributes, UIControlState.Normal);
 			}
+#endif
 
 			// set TintColor for selected icon
 			// setting the unselected icon tint is not supported by iOS

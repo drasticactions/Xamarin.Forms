@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-ios</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Xamarin.Forms.Platform.iOS</RootNamespace>
+    <AssemblyName>Xamarin.Forms.Platform.iOS</AssemblyName>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <BundleResource Remove="Resources\StringResources.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Xamarin.Forms.Core\Crc64.cs">
+      <Link>Crc64.cs</Link>
+    </Compile>
+    <Compile Include="..\Xamarin.Forms.Core\StreamWrapper.cs">
+      <Link>StreamWrapper.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Platform.iOS.Shared\Xamarin.Forms.Platform.iOS.Shared.projitems" Label="Shared" />
+  <ItemGroup>
+    <Compile Update="Resources\StringResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StringResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\StringResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
