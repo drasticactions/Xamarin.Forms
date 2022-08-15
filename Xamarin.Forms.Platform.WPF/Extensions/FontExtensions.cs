@@ -150,6 +150,7 @@ namespace Xamarin.Forms.Platform.WPF
 
 		static FontFamily CreateFromFile(string file)
 		{
+#pragma warning disable CA1416
 			var collection = new PrivateFontCollection();
 			collection.AddFontFile(file);
 			var family = collection.Families[0];
@@ -157,6 +158,7 @@ namespace Xamarin.Forms.Platform.WPF
 			var urlPath = $"file:////{file}";
 			//var uri = new Uri(urlPath);
 			return new FontFamily($"{urlPath}#{family.Name}");
+#pragma warning restore CA1416
 		}
 
 		static (bool success, FontFamily fontFamily) TryGetFromAssets(this string fontName)

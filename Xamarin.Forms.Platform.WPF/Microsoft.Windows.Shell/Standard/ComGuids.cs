@@ -115,7 +115,10 @@
 		[SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
 		public static T CoCreateInstance<T>(string clsid)
 		{
+#pragma warning disable CA1416
 			return (T)System.Activator.CreateInstance(System.Type.GetTypeFromCLSID(new System.Guid(clsid)));
+#pragma warning restore CA1416
+
 		}
 
 		/// <summary>CLSID_ApplicationAssociationRegistration</summary>

@@ -219,6 +219,7 @@ namespace Xamarin.Forms.Platform.WPF
 				advanceWidths,
 				null, null, null, null, null, null);
 #else
+#pragma warning disable CS0618 // Type or member is obsolete
 			var gr = new GlyphRun(glyphTypeface,
 				0, false,
 				fontSize,
@@ -226,6 +227,7 @@ namespace Xamarin.Forms.Platform.WPF
 				new System.Windows.Point(0, 0),
 				advanceWidths,
 				null, null, null, null, null, null);
+#pragma warning restore CS0618 // Type or member is obsolete
 #endif
 			var glyphRunDrawing = new GlyphRunDrawing(foreBrush, gr);
 			return new DrawingImage(glyphRunDrawing);

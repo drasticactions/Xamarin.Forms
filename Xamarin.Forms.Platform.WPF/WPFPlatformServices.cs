@@ -92,7 +92,9 @@ namespace Xamarin.Forms.Platform.WPF
 
 			try
 			{
+#pragma warning disable SYSLIB0014 // Type or member is obsolete
 				HttpWebRequest request = WebRequest.CreateHttp(uri);
+#pragma warning restore SYSLIB0014 // Type or member is obsolete
 				request.BeginGetResponse(ar =>
 				{
 					if (cancellationToken.IsCancellationRequested)

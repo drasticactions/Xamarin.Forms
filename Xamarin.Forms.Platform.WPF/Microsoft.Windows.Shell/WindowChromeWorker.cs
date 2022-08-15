@@ -87,7 +87,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		public WindowChromeWorker()
 		{
 			_messageTable = new List<HANDLE_MESSAGE>
@@ -127,7 +129,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		public void SetWindowChrome(WindowChrome newChrome)
 		{
 			VerifyAccess();
@@ -158,7 +162,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		private void _OnChromePropertyChangedThatRequiresRepaint(object sender, EventArgs e)
 		{
 			_UpdateFrameState(true);
@@ -175,7 +181,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		private static void _OnChromeWorkerChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 		{
 			var w = (Window)d;
@@ -243,7 +251,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		private void _WindowSourceInitialized(object sender, EventArgs e)
 		{
 			_hwnd = new WindowInteropHelper(_window).Handle;
@@ -277,7 +287,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		private void _UnsetWindow(object sender, EventArgs e)
 		{
 			UnsubscribeWindowEvents();
@@ -309,7 +321,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		private void _OnWindowPropertyChangedThatRequiresTemplateFixup(object sender, EventArgs e)
 		{
 			if (_chromeInfo != null && _hwnd != IntPtr.Zero)
@@ -484,7 +498,9 @@ namespace Microsoft.Windows.Shell
 		///   Safe     : Demands full trust permissions
 		/// </SecurityNote>
 		[SecuritySafeCritical]
+#pragma warning disable SYSLIB0003 // Type or member is obsolete
 		[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+#pragma warning restore SYSLIB0003 // Type or member is obsolete
 		private void _FixupRestoreBounds(object sender, EventArgs e)
 		{
 			Assert.IsTrue(IsPresentationFrameworkVersionLessThan4);

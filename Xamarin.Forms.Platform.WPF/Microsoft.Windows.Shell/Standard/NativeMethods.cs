@@ -1448,8 +1448,9 @@
 		}
 
 		SafeDC() : base(true) { }
-
+#pragma warning disable SYSLIB0004 // Type or member is obsolete
 		[ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+#pragma warning restore SYSLIB0004 // Type or member is obsolete
 		protected override bool ReleaseHandle()
 		{
 			if (_created)
@@ -1576,8 +1577,9 @@
 	internal sealed class SafeHBITMAP : SafeHandleZeroOrMinusOneIsInvalid
 	{
 		SafeHBITMAP() : base(true) { }
-
+#pragma warning disable SYSLIB0004 // Type or member is obsolete
 		[ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+#pragma warning restore SYSLIB0004 // Type or member is obsolete
 		protected override bool ReleaseHandle()
 		{
 			return NativeMethods.DeleteObject(handle);
@@ -1591,8 +1593,9 @@
 		{
 			handle = ptr;
 		}
-
+#pragma warning disable SYSLIB0004 // Type or member is obsolete
 		[ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+#pragma warning restore SYSLIB0004 // Type or member is obsolete
 		protected override bool ReleaseHandle()
 		{
 			Status s = NativeMethods.GdiplusShutdown(this.handle);
@@ -1656,9 +1659,10 @@
 		{
 			ReleaseHandle();
 		}
-
+#pragma warning disable SYSLIB0004 // Type or member is obsolete
 		[SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")]
 		[ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+#pragma warning restore SYSLIB0004 // Type or member is obsolete
 		protected override bool ReleaseHandle()
 		{
 			try
@@ -2967,7 +2971,9 @@
 
 		[SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
 		[DllImport("kernel32.dll")]
+#pragma warning disable SYSLIB0004 // Type or member is obsolete
 		[ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+#pragma warning restore SYSLIB0004 // Type or member is obsolete
 		[return: MarshalAs(UnmanagedType.Bool)]
 		public static extern bool FindClose(IntPtr handle);
 
@@ -3195,10 +3201,12 @@
 		public static IntPtr GetStockObject(StockObject fnObject)
 		{
 			IntPtr retPtr = _GetStockObject(fnObject);
+#pragma warning disable CS8073 // The result of the expression is always the same since a value of this type is never equal to 'null'
 			if (retPtr == null)
 			{
 				HRESULT.ThrowLastError();
 			}
+#pragma warning restore CS8073 // The result of the expression is always the same since a value of this type is never equal to 'null'
 			return retPtr;
 		}
 

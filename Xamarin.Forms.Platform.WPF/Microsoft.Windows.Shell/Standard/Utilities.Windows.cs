@@ -87,8 +87,10 @@
 			comObject = default(T);
 			if (null != t)
 			{
+#pragma warning disable CA1416
 				Assert.IsTrue(Marshal.IsComObject(t));
 				Marshal.ReleaseComObject(t);
+#pragma warning restore CA1416
 			}
 		}
 
