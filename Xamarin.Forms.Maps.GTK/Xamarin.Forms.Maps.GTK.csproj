@@ -91,10 +91,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormsMaps.cs" />
-    <Compile Include="GeocoderBackend.cs" />
-    <Compile Include="Location.cs" />
-    <Compile Include="MapRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +110,7 @@
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Maps.GTK.Shared\Xamarin.Forms.Maps.GTK.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
