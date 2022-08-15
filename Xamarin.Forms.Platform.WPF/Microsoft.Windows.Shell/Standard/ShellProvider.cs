@@ -482,9 +482,9 @@
 	]
 	internal interface IEnumIDList
 	{
-		[Xamarin.Forms.Internals.PreserveSig()]
+		[PreserveSig()]
 		HRESULT Next(uint celt, out IntPtr rgelt, out int pceltFetched);
-		[Xamarin.Forms.Internals.PreserveSig()]
+		[PreserveSig()]
 		HRESULT Skip(uint celt);
 		void Reset();
 		void Clone([Out, MarshalAs(UnmanagedType.Interface)] out IEnumIDList ppenum);
@@ -600,7 +600,7 @@
 		// positive value if pidl2 should be placed before pidl1.
 		// use the macro ResultFromShort() to extract the result comparison
 		// it deals with the casting and type conversion issues for you
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT CompareIDs([In] IntPtr lParam, [In] IntPtr pidl1, [In] IntPtr pidl2);
 
 		// creates a view object of the folder itself. The view
@@ -926,10 +926,10 @@
 
 		// PreserveSig because this will return custom errors when attempting to add unregistered ShellItems.
 		// Can't readily detect that case without just trying to append it.
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT AppendCategory([MarshalAs(UnmanagedType.LPWStr)] string pszCategory, IObjectArray poa);
 		void AppendKnownCategory(KDC category);
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT AddUserTasks(IObjectArray poa);
 		void CommitList();
 
@@ -991,41 +991,41 @@
 
 		#endregion
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT SetProgressValue(IntPtr hwnd, ulong ullCompleted, ulong ullTotal);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT SetProgressState(IntPtr hwnd, TBPF tbpFlags);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT RegisterTab(IntPtr hwndTab, IntPtr hwndMDI);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT UnregisterTab(IntPtr hwndTab);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT SetTabOrder(IntPtr hwndTab, IntPtr hwndInsertBefore);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT SetTabActive(IntPtr hwndTab, IntPtr hwndMDI, uint dwReserved);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT ThumbBarAddButtons(IntPtr hwnd, uint cButtons, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] THUMBBUTTON[] pButtons);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT ThumbBarUpdateButtons(IntPtr hwnd, uint cButtons, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] THUMBBUTTON[] pButtons);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT ThumbBarSetImageList(IntPtr hwnd, [MarshalAs(UnmanagedType.IUnknown)] object himl);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT SetOverlayIcon(IntPtr hwnd, IntPtr hIcon, [MarshalAs(UnmanagedType.LPWStr)] string pszDescription);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT SetThumbnailTooltip(IntPtr hwnd, [MarshalAs(UnmanagedType.LPWStr)] string pszTip);
 
 		// Using RefRECT to making passing NULL possible.  Removes clipping from the HWND.
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT SetThumbnailClip(IntPtr hwnd, RefRECT prcClip);
 	}
 
@@ -1052,19 +1052,19 @@
 
 		#endregion
 
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT SetProgressValue(IntPtr hwnd, ulong ullCompleted, ulong ullTotal);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT SetProgressState(IntPtr hwnd, TBPF tbpFlags);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT RegisterTab(IntPtr hwndTab, IntPtr hwndMDI);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT UnregisterTab(IntPtr hwndTab);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT SetTabOrder(IntPtr hwndTab, IntPtr hwndInsertBefore);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT SetTabActive(IntPtr hwndTab, IntPtr hwndMDI, uint dwReserved);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT ThumbBarAddButtons(IntPtr hwnd, uint cButtons, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] THUMBBUTTON[] pButtons);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT ThumbBarUpdateButtons(IntPtr hwnd, uint cButtons, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] THUMBBUTTON[] pButtons);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT ThumbBarSetImageList(IntPtr hwnd, [MarshalAs(UnmanagedType.IUnknown)] object himl);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT SetOverlayIcon(IntPtr hwnd, IntPtr hIcon, [MarshalAs(UnmanagedType.LPWStr)] string pszDescription);
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT SetThumbnailTooltip(IntPtr hwnd, [MarshalAs(UnmanagedType.LPWStr)] string pszTip);
+		[PreserveSig] new HRESULT SetProgressValue(IntPtr hwnd, ulong ullCompleted, ulong ullTotal);
+		[PreserveSig] new HRESULT SetProgressState(IntPtr hwnd, TBPF tbpFlags);
+		[PreserveSig] new HRESULT RegisterTab(IntPtr hwndTab, IntPtr hwndMDI);
+		[PreserveSig] new HRESULT UnregisterTab(IntPtr hwndTab);
+		[PreserveSig] new HRESULT SetTabOrder(IntPtr hwndTab, IntPtr hwndInsertBefore);
+		[PreserveSig] new HRESULT SetTabActive(IntPtr hwndTab, IntPtr hwndMDI, uint dwReserved);
+		[PreserveSig] new HRESULT ThumbBarAddButtons(IntPtr hwnd, uint cButtons, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] THUMBBUTTON[] pButtons);
+		[PreserveSig] new HRESULT ThumbBarUpdateButtons(IntPtr hwnd, uint cButtons, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)] THUMBBUTTON[] pButtons);
+		[PreserveSig] new HRESULT ThumbBarSetImageList(IntPtr hwnd, [MarshalAs(UnmanagedType.IUnknown)] object himl);
+		[PreserveSig] new HRESULT SetOverlayIcon(IntPtr hwnd, IntPtr hIcon, [MarshalAs(UnmanagedType.LPWStr)] string pszDescription);
+		[PreserveSig] new HRESULT SetThumbnailTooltip(IntPtr hwnd, [MarshalAs(UnmanagedType.LPWStr)] string pszTip);
 		// Using RefRECT to making passing NULL possible.  Removes clipping from the HWND.
-		[Xamarin.Forms.Internals.PreserveSig] new HRESULT SetThumbnailClip(IntPtr hwnd, RefRECT prcClip);
+		[PreserveSig] new HRESULT SetThumbnailClip(IntPtr hwnd, RefRECT prcClip);
 
 		#endregion
 
@@ -1078,25 +1078,25 @@
 ]
 	internal interface IFileDialogEvents
 	{
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT OnFileOk(IFileDialog pfd);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT OnFolderChanging(IFileDialog pfd, IShellItem psiFolder);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT OnFolderChange(IFileDialog pfd);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT OnSelectionChange(IFileDialog pfd);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT OnShareViolation(IFileDialog pfd, IShellItem psi, out FDESVR pResponse);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT OnTypeChange(IFileDialog pfd);
 
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT OnOverwrite(IFileDialog pfd, IShellItem psi, out FDEOR pResponse);
 	}
 
@@ -1107,7 +1107,7 @@
 	]
 	internal interface IModalWindow
 	{
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		HRESULT Show(IntPtr parent);
 	}
 
@@ -1119,7 +1119,7 @@
 	internal interface IFileDialog : IModalWindow
 	{
 		#region IModalWindow redeclarations
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		new HRESULT Show(IntPtr parent);
 		#endregion
 
@@ -1181,7 +1181,7 @@
 		#region IFileDialog redeclarations
 
 		#region IModalDialog redeclarations
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		new HRESULT Show(IntPtr parent);
 		#endregion
 
@@ -1227,7 +1227,7 @@
 		#region IFileDialog redeclarations
 
 		#region IModalDialog redeclarations
-		[Xamarin.Forms.Internals.PreserveSig]
+		[PreserveSig]
 		new HRESULT Show(IntPtr parent);
 		#endregion
 
