@@ -153,7 +153,9 @@ namespace Xamarin.Forms.Platform.Android
 					_currentTabbedPage.PropertyChanged -= CurrentTabbedPageOnPropertyChanged;
 
 					if (value == null)
+#pragma warning disable CS0618
 						ActionBar.RemoveAllTabs();
+#pragma warning restore CS0618
 				}
 
 				_currentTabbedPage = value;
@@ -645,7 +647,7 @@ namespace Xamarin.Forms.Platform.Android
 			}
 
 			TabbedPage currentTabs = CurrentTabbedPage;
-
+#pragma warning disable CS0618
 			var atab = actionBar.NewTab();
 
 			atab.SetText(new Java.Lang.String(page.Title));
@@ -655,7 +657,7 @@ namespace Xamarin.Forms.Platform.Android
 					currentTabs.CurrentPage = page;
 			};
 			actionBar.AddTab(atab, index);
-
+#pragma warning restore CS0618
 			page.PropertyChanged += PagePropertyChanged;
 			return atab;
 		}
@@ -737,7 +739,9 @@ namespace Xamarin.Forms.Platform.Android
 				Page page = CurrentTabbedPage.CurrentPage;
 				int index = TabbedPage.GetIndex(page);
 				if (index >= 0 && index < CurrentTabbedPage.Children.Count)
+#pragma warning disable CS0618
 					ActionBar.GetTabAt(index).Select();
+#pragma warning restore CS0618
 			}
 
 			_ignoreAndroidSelection = false;
@@ -766,7 +770,9 @@ namespace Xamarin.Forms.Platform.Android
 			Page page = _currentTabbedPage.CurrentPage;
 			if (page == null)
 			{
+#pragma warning disable CS0618
 				ActionBar.SelectTab(null);
+#pragma warning restore CS0618
 				return;
 			}
 
@@ -776,7 +782,9 @@ namespace Xamarin.Forms.Platform.Android
 				return;
 			}
 
+#pragma warning disable CS0618
 			ActionBar.SelectTab(ActionBar.GetTabAt(index));
+#pragma warning restore CS0618
 		}
 
 		Drawable GetActionBarBackgroundDrawable()
@@ -874,8 +882,10 @@ namespace Xamarin.Forms.Platform.Android
 					return;
 
 				var page = sender as Page;
+#pragma warning disable CS0618
 				var atab = actionBar.GetTabAt(currentTabs.Children.IndexOf(page));
 				atab.SetText(new Java.Lang.String(page.Title));
+#pragma warning restore CS0618
 			}
 		}
 
@@ -939,12 +949,15 @@ namespace Xamarin.Forms.Platform.Android
 
 		void RemoveTab(Page page, int index)
 		{
+#pragma warning disable CS0618
 			page.PropertyChanged -= PagePropertyChanged;
 			ActionBar?.RemoveTabAt(index);
+#pragma warning restore CS0618
 		}
 
 		void Reset()
 		{
+#pragma warning disable CS0618
 			ActionBar.RemoveAllTabs();
 
 			if (CurrentTabbedPage == null)
@@ -957,6 +970,7 @@ namespace Xamarin.Forms.Platform.Android
 				if (tab == CurrentTabbedPage.CurrentPage)
 					realTab.Select();
 			}
+#pragma warning restore CS0618
 		}
 
 		void SetActionBarTextColor()
