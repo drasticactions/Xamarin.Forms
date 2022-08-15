@@ -59,4 +59,4 @@ using Rectangle = Xamarin.Forms.Shapes.Rectangle;
 [assembly: ExportCell(typeof(ViewCell), typeof(ViewCellRenderer))]
 [assembly: ExportCell(typeof(SwitchCell), typeof(SwitchCellRenderer))]
 [assembly: ExportCell(typeof(Path), typeof(PathRenderer))]
-[assembly: Preserve]
+[assembly: Xamarin.Forms.Internals.Preserve]
