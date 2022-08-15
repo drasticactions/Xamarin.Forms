@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
     [Category(UITestCategories.RefreshView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9326, "[Bug] RefreshView should delay effects of IsEnabled while a refresh is happening and iOS is handling IsEnabled false incorrectly",
 		PlatformAffected.iOS)]
 	public partial class Issue9326 : TestContentPage

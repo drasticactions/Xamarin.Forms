@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1658, "[macOS] GestureRecognizer on ListView Item not working",
 		PlatformAffected.macOS)]
 #if UITEST

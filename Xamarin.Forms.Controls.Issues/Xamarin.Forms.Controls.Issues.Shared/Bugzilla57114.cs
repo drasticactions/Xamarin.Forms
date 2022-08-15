@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 57114, "Forms gestures are not supported on UIViews that have native gestures", PlatformAffected.iOS)]
 	public class Bugzilla57114 : TestContentPage
 	{
@@ -95,7 +95,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _57114View : View
 		{
 		}

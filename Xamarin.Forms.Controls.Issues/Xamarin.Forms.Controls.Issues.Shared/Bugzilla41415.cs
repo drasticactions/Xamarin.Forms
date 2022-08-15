@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 41415, "ScrollX and ScrollY values are not consistent with iOS", PlatformAffected.Android)]
 	public class Bugzilla41415 : TestContentPage
 	{

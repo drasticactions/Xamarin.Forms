@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5765, "[Frame, CollectionView, Android]The Label.Text is invisible on Android if DataTemplate have frame as layout",
 		PlatformAffected.Android)]
 	class Issue5765 : TestNavigationPage

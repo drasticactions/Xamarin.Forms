@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.DragAndDropGalleries
 {
 
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class EnablingAndDisablingGestureTests : ContentPage
 	{
 		public EnablingAndDisablingGestureTests()

@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ManualReview)]
 	[Category(UITestCategories.Accessibility)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13193,
 		"Double prompt when voice over reads picker item on iOS",
 		PlatformAffected.iOS)]

@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5888, "[Bug] ListView HasUnevenRows is not working in iOS 10", PlatformAffected.iOS)]
 	public class Issue5888 : TestContentPage
 	{

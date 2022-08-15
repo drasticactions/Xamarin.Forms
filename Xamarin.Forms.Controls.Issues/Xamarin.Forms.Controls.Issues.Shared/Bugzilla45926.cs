@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 45926, "MessagingCenter prevents subscriber from being collected", PlatformAffected.All)]
 	public class Bugzilla45926 : TestNavigationPage
 	{
@@ -86,7 +86,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class _45926IntermediatePage : ContentPage
 	{
 		public _45926IntermediatePage()
@@ -95,7 +95,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class _45926SecondPage : ContentPage
 	{
 		public static int InstanceCounter = 0;

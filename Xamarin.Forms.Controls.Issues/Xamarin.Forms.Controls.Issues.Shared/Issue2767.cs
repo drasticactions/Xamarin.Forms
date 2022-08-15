@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[NUnit.Framework.Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2767, "ArgumentException: NaN not valid for height", PlatformAffected.All)]
 	public class Issue2767 : TestContentPage
 	{

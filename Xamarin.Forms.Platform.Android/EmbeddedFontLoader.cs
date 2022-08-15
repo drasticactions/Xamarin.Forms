@@ -7,7 +7,7 @@ using IOPath = System.IO.Path;
 namespace Xamarin.Forms.Platform.Android
 {
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class EmbeddedFontLoader : IEmbeddedFontLoader
 	{
 		public (bool success, string filePath) LoadFont(EmbeddedFont font)

@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3053, "Moving items around on an Observable Collection causes the last item to disappear", PlatformAffected.UWP)]
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
@@ -22,7 +22,7 @@ namespace Xamarin.Forms.Controls.Issues
 	{
 		const string _instructions = "Click me once. Item 2 should remain on bottom";
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Item
 		{
 			public string Name { get; set; }

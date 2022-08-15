@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14801, "[Bug] RadialGradientBrush behavior is wrong on UWP", PlatformAffected.UWP)]
 	public partial class Issue14801 : ContentPage
 	{

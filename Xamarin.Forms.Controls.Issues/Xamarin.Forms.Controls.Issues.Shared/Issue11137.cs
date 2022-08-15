@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Frame)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11137,
 		"[Bug] UWP - Path object resized to zero height or width crashes ShapeRenderer",
 		PlatformAffected.UWP)]

@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7061, "[Bug] NullReferenceException Closing Window During Animation", PlatformAffected.UWP)]
 	public class Issue7061 : TestContentPage
 	{

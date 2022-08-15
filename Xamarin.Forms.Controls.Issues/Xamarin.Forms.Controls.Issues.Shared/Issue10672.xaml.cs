@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls
 #if UITEST
 	[Category(UITestCategories.CarouselView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10672, "[Bug] Setting CarouselView.IsScrollAnimated To False Throws Exception On UWP When Resizing The Window", PlatformAffected.UWP)]
 	public partial class Issue10672 : TestContentPage
 	{
@@ -38,7 +38,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CarouselItemViewModel : BindableObject
 	{
 		static string RandomImage(int w = 1000, int h = 1000) => $"https://picsum.photos/{w}/{h}?{Guid.NewGuid()}";

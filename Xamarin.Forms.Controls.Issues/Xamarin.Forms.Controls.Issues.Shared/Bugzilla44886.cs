@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 44886, "UWP Listview ItemSelected event triggered twice for each selection", PlatformAffected.UWP)]
 	public class Bugzilla44886 : TestContentPage
 	{
@@ -26,7 +26,7 @@ namespace Xamarin.Forms.Controls.Issues
 		Label _CountLabel = new Label { AutomationId = CountId, TextColor = Color.Blue };
 		MyViewModel _vm = new MyViewModel();
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyViewModel : INotifyPropertyChanged
 		{
 			int _count;

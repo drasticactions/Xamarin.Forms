@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6614, "[Android] Tabindex Calculation crashing when calculating on Layout", PlatformAffected.Android)]
 	public class Issue6614 : TestContentPage
 	{

@@ -7,7 +7,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class UnevenListGallery : ContentPage
 	{
 		public UnevenListGallery()
@@ -75,7 +75,7 @@ For in that sleep of death, what dreams may come",
 		}
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class UnevenRowsCell : ViewCell
 		{
 			public UnevenRowsCell()

@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8087, "[WPF] View doesn't render when set IsClippedToBounds to true", PlatformAffected.WPF)]
 	public class Issue8087 : TestContentPage
 	{

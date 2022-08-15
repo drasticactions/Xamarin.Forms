@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9456, "[Bug] navPage.SetHideNavigationBarSeparator(true) no longer works. ", PlatformAffected.iOS)]
 	public class Issue9456 : TestNavigationPage
 	{
@@ -27,7 +27,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue9456Page : ContentPage
 	{
 		public Issue9456Page()

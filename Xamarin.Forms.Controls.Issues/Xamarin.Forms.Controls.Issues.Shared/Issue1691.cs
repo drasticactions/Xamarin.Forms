@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Ignore("Temporarily ignoring until we can investigate intermittent failures")]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1691, "CarouselPage iOS CurrentPage bug")]
 	public class Issue1691 : TestCarouselPage
 	{

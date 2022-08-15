@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	// Learn more about making custom code visible in the Xamarin.Forms previewer
 	// by visiting https://aka.ms/xamarinforms-previewer
 	[DesignTimeVisible(false)]
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8384,
 		"[Bug] [5.0] [Android] [Bug] ListView RefreshCommand ActivityIndicator does disappear on Android if CanExecute is changed to false",
 		PlatformAffected.Android)]

@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13592,
 		"[Bug] CollectionView initial selection is broken",
 		PlatformAffected.iOS)]

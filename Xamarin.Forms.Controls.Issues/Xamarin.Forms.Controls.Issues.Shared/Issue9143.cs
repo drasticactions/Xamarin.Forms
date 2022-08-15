@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.FlyoutPage)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9143, "[Android] Fix BottomNavigationItemView issue with FlyoutPage", PlatformAffected.Android)]
 	public class Issue9143 : TestFlyoutPage
 	{

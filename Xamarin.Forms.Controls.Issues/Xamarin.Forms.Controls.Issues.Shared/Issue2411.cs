@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2411, "ListView.ScrollTo not working in TabbedPage", PlatformAffected.Android)]
 	public class Issue2411 : TestTabbedPage
 	{
@@ -96,13 +96,13 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ListObj
 	{
 		public string Name { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CellTemplateScrollTo : ViewCell
 	{
 		public CellTemplateScrollTo()
@@ -125,7 +125,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CellTemplateScrollToUneven : CellTemplateScrollTo
 	{
 		public CellTemplateScrollToUneven()
@@ -135,7 +135,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class XamarinListViewScrollToBugPage1 : ContentPage
 	{
 		ListView _listView;
@@ -174,7 +174,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class XamarinListViewScrollToBugPage2 : ContentPage
 	{
 		ListView _listView;

@@ -4,7 +4,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Xamarin.Forms.Controls.XamStore
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class StoreShell : TestShell
 	{

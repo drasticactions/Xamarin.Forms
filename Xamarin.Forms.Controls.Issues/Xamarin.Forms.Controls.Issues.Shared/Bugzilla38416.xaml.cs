@@ -10,11 +10,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 38416, "ListView Sized Incorrectly After Containing Layout's Visibility is Toggled")]
 	public partial class Bugzilla38416 : TestContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListItem
 		{
 			public string Name { get; set; }

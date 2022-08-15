@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 41078, "[Win 8.1] ListView not visually setting the initial SelectedItem upon creation", PlatformAffected.WinRT)]
 	public class Bugzilla41078 : TestContentPage
 	{

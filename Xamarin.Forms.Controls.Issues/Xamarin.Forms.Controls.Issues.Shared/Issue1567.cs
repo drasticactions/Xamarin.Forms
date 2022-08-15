@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1567, "NRE in NavigationProxy.set_Inner", PlatformAffected.iOS)]
 	public class Issue1567
 		: ContentPage

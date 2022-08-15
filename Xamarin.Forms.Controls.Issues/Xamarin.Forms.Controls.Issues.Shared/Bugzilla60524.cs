@@ -15,11 +15,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 60524, "NRE when rendering ListView with grouping enabled and HasUnevenRows set to true", PlatformAffected.iOS)]
 	public class Bugzilla60524 : TestNavigationPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupedItemsPage : ContentPage
 		{
 			private ObservableCollection<Grouping<string, GroupedItem>> model;
@@ -75,7 +75,7 @@ namespace Xamarin.Forms.Controls.Issues
 				Content = content;
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupedItemsDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
 		{
 			private readonly DataTemplate firstGroupTemplate;
@@ -105,7 +105,7 @@ namespace Xamarin.Forms.Controls.Issues
 				return model.Group == "Group 1" ? this.firstGroupTemplate : this.secondGroupTemplate;
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupedItem
 		{
 			public string Group { get; set; }
@@ -118,7 +118,7 @@ namespace Xamarin.Forms.Controls.Issues
 				this.Item = item;
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Grouping<K, T> : ObservableCollection<T>
 		{
 			public K Key { get; private set; }
@@ -154,7 +154,7 @@ namespace Xamarin.Forms.Controls.Issues
 				}
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupingKey
 		{
 			public string Title { get; private set; }

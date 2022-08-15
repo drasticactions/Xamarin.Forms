@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 4539134, "CollectionView: Single Selection Binding", PlatformAffected.All)]
 	public class CollectionViewBoundSingleSelection : TestNavigationPage
 	{

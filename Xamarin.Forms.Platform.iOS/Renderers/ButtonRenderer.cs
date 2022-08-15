@@ -33,7 +33,7 @@ namespace Xamarin.Forms.Platform.iOS
 		IImageVisualElementRenderer IButtonLayoutRenderer.ImageVisualElementRenderer => this;
 		nfloat IButtonLayoutRenderer.MinimumHeight => _minimumButtonHeight;
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public ButtonRenderer()
 		{
 			BorderElementManager.Init(this);

@@ -12,11 +12,11 @@ using Xamarin.Forms.Core.UITests;
 namespace Xamarin.Forms.Controls.Issues
 {
 	//TODO: Write a new test for this issue
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5695, "Memory leak when Navigation.RemovePage", PlatformAffected.iOS)]
 	public class Issue5695 : TestFlyoutPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class LeakPage : ContentPage
 		{
 			public LeakPage()

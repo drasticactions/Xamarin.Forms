@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Platform.iOS
 {
 	public class EntryRenderer : EntryRendererBase<UITextField>
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public EntryRenderer()
 		{
 			Frame = new RectangleF(0, 20, 320, 40);

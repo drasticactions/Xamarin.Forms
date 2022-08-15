@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 31964, "[Xamarin.Forms SwitchCell]OnChange() did not work for Windows platform",
 		PlatformAffected.WinRT)]
 	public class Bugzilla31964 : TestContentPage
@@ -53,7 +53,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BindingContext = selection;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SelectionItem : INotifyPropertyChanged
 		{
 			bool _isSelected;
@@ -78,7 +78,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Selection : INotifyPropertyChanged
 		{
 			int _selectedCount;

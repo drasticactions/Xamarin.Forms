@@ -11,7 +11,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13376,
 		"[Bug] [iOS] Brush color lost on swiping",
 		PlatformAffected.iOS)]
@@ -30,7 +30,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue13376Model
 	{
 		public Issue13376Model(string text)
@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string Text { get; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue13376ViewModel
 	{
 		public Issue13376ViewModel()

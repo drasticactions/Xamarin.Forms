@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14805, "[Bug] Xamarin.Forms.Shell v5.0.0.2196 Backwards Navigation not working in iOS 15.0",
 		PlatformAffected.iOS)]
 #if UITEST

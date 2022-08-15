@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14380, "[Bug] Setting the Background property of a NavigationPage does nothing on iOS",
 		PlatformAffected.iOS)]
 	public class Issue14380 : TestNavigationPage

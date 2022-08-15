@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 namespace Xamarin.Forms.Controls.Issues
 {
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11911, "[Bug] Brushes can't use DynamicResource", PlatformAffected.All)]
 	public partial class Issue11911 : ContentPage
 	{

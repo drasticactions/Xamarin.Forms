@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6127, "[Bug] ToolbarItem Order property ignored",
 		PlatformAffected.Android)]
 	public class Issue6127 : TestShell

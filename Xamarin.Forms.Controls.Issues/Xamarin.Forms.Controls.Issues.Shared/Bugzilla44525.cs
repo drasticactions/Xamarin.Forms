@@ -10,13 +10,13 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 44525, "Listview Row Height Does Not Adapt In iOS")]
 	public class Bugzilla44525 : TestContentPage
 	{
 		List<Person> _DataSource;
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class CustomCell : ViewCell
 		{
 			public CustomCell()

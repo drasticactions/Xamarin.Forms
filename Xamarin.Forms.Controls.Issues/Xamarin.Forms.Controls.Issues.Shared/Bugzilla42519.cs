@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 42519, "Text Truncation in UWP")]
 	public class Bugzilla42519 : TestNavigationPage
 	{
@@ -129,7 +129,7 @@ namespace Xamarin.Forms.Controls.Issues
 			return page;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class _42519Item
 		{
 			public string SubLeft { get; set; }
@@ -141,7 +141,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public string TitleRight { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class _42519CustomViewCellGrid : ViewCell
 		{
 			public _42519CustomViewCellGrid()
@@ -200,7 +200,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class _42519CustomViewCellLabel : ViewCell
 		{
 			public _42519CustomViewCellLabel()

@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin.Forms.Controls.GalleryPages.CollectionViewGalleries.GroupingGalleries
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class BasicGrouping : ContentPage
 	{
 		public BasicGrouping()

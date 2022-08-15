@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 68000, "Binding errors when CollectionView ItemsSource is set with a binding",
 		PlatformAffected.Android)]
 	public partial class CollectionViewBindingErrors : TestContentPage
@@ -50,7 +50,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CollectionViewGalleryTestItem
 	{
 		public DateTime Date { get; set; }
@@ -72,7 +72,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CountBindingErrors : LogListener
 	{
 		private readonly Label _errorCount;
@@ -94,7 +94,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class BindingErrorsViewModel
 	{
 		readonly string[] _imageOptions = {

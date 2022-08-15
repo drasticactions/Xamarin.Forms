@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 39802, "Gap between ListView cells even if SeparatorVisablity is set to none ",
 		PlatformAffected.iOS)]
 	public class Bugzilla39802 : TestContentPage
@@ -50,7 +50,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = lst;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ItemTemplate : ViewCell
 		{
 			public ItemTemplate()
@@ -71,7 +71,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupHeaderTemplate : ViewCell
 		{
 			public GroupHeaderTemplate()
@@ -92,7 +92,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		public ObservableCollection<GroupedData> ListItems { get; set; }
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyItem
 		{
 			public string Title { get; set; }
@@ -100,7 +100,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public Color Color { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupedData : List<MyItem>
 		{
 			public string GroupName { get; set; }

@@ -7,7 +7,7 @@ using Xamarin.Forms.Xaml.Internals;
 
 namespace Xamarin.Forms.Platform.iOS
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class NativeBindingService : INativeBindingService
 	{
 		public bool TrySetBinding(object target, string propertyName, BindingBase binding)

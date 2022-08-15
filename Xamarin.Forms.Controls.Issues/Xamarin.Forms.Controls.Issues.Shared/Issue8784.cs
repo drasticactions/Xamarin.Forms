@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 #endif
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8784, "[UWP][Bug] SearchBar placeholder, and potentially text, overlaps SearchIcon",
 		PlatformAffected.UWP)]
 #if UITEST

@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6929, "Accessibility problem with hidden views", PlatformAffected.iOS)]
 	public class Issue6929 : TestContentPage
 	{

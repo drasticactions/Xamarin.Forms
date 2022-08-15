@@ -8,7 +8,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2143, "Picker on windows phone", PlatformAffected.WinPhone)]
 	public class Issue2143 : ContentPage
 	{

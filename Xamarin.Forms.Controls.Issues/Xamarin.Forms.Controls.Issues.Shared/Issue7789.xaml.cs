@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7789, "CarouselView crash when displaying strings", PlatformAffected.iOS)]
 	public partial class Issue7789 : TestContentPage
 	{

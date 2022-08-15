@@ -615,11 +615,11 @@ namespace Xamarin.Forms.ControlGallery.Android
 		}
 	}
 
-	[Preserve]
+	[Xamarin.Forms.Internals.Preserve]
 	public class CustomContentRenderer : ViewRenderer
 	{
 #pragma warning disable 618
-		[Preserve]
+		[Xamarin.Forms.Internals.Preserve]
 		public CustomContentRenderer()
 #pragma warning restore 618
 		{
@@ -632,7 +632,7 @@ namespace Xamarin.Forms.ControlGallery.Android
 		}
 	}
 
-	[Preserve]
+	[Xamarin.Forms.Internals.Preserve]
 	public class CustomNativeButton : AButton
 	{
 		public CustomNativeButton(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
@@ -801,7 +801,7 @@ namespace Xamarin.Forms.ControlGallery.Android
 		}
 	}
 
-	[Preserve]
+	[Xamarin.Forms.Internals.Preserve]
 	public class Issue4561CustomView : LinearLayout
 	{
 		public Issue4561CustomView(Context context)
@@ -850,7 +850,7 @@ namespace Xamarin.Forms.ControlGallery.Android
 		}
 	}
 
-	[Preserve]
+	[Xamarin.Forms.Internals.Preserve]
 	public class Issue4561CustomViewRenderer : ViewRenderer<Issue4561.CustomView, Issue4561CustomView>
 	{
 		public Issue4561CustomViewRenderer(Context context) : base(context)

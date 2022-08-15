@@ -17,7 +17,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue2470ViewModelBase : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -30,7 +30,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class EntryViewModel : ViewModelBase
 	{
 		string _name;
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue2470MainViewModel : Issue2470ViewModelBase
 	{
 		public ObservableCollection<EntryViewModel> Entries { get; private set; }
@@ -96,7 +96,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2470, "ObservableCollection changes do not update ListView", PlatformAffected.Android)]
 	public partial class Issue2470 : TestTabbedPage
 	{
@@ -107,7 +107,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 
 #if APP
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public Issue2470()
 		{
 			InitializeComponent();

@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4629, "Picker/DatePicker/TimePicker on iOS iPad should NOT have word suggestions", PlatformAffected.iOS)]
 	public class Issue4629 : ContentPage
 	{

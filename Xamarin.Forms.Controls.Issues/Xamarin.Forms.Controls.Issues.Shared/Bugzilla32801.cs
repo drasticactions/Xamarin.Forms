@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 32801, "Memory Leak in TabbedPage + NavigationPage")]
 	public class Bugzilla32801 : TestTabbedPage // or TestFlyoutPage, etc ...
 	{

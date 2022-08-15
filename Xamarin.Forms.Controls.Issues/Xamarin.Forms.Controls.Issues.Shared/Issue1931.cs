@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ListView)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1931,
 		"Xamarin Forms on Android: ScrollView on ListView header crashes app when closing page",
 		PlatformAffected.Android)]
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 			return page;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Item2 : System.ComponentModel.INotifyPropertyChanged
 		{
 			public string Name

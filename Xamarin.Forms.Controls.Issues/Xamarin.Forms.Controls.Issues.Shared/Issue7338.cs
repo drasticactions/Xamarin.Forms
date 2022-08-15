@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7338, "[Bug] CollectionView crash if source is empty in XF 4.2.0.709249",
 		PlatformAffected.iOS)]
 	class Issue7338 : TestNavigationPage

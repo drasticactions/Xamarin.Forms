@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 46363, "TapGestureRecognizer blocks List View Context Actions", PlatformAffected.Android)]
 	public class Bugzilla46363 : TestContentPage
 	{
@@ -72,7 +72,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = layout;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class _46363Template : ViewCell
 		{
 			public _46363Template()

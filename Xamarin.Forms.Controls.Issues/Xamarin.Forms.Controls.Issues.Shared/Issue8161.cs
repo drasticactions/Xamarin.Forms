@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8161, "On WPF ToolbarItem.IsEnabled = false does nothing", PlatformAffected.WPF, navigationBehavior: NavigationBehavior.SetApplicationRoot)]
 	public class Issue8161 : TestFlyoutPage
 	{

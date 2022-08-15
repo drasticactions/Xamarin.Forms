@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(Core.UITests.UITestCategories.FlyoutPage)]
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 30324, "Detail view of FlyoutPage does not get appearance events on Android when whole FlyoutPage disappears/reappears")]
 	public class Bugzilla30324 : TestNavigationPage
 	{

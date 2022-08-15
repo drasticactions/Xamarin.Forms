@@ -14,11 +14,11 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 25662, "Setting IsEnabled does not disable SwitchCell")]
 	public class Bugzilla25662 : TestContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MySwitch : SwitchCell
 		{
 			public MySwitch()

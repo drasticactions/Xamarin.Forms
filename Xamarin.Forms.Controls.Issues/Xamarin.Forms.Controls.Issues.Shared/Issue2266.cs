@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[Category(UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2266, "Setting a different Detail page from a FlyoutPage after 2nd time on MainPage", PlatformAffected.iOS)]
 	public class Issue2266 : TestContentPage
 	{
@@ -113,7 +113,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MasterDetailNavigation : FlyoutPage
 	{
 		List<NavigationPage> _pages;

@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Effects
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class AttachedStateEffectLabel : Label
 	{
 		// Android renderers don't detach effects when the renderers get disposed

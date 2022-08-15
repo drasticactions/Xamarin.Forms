@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
     [Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12372, "[Bug] XF 4.8 breaks custom renderer (Button) background color on iOS", PlatformAffected.iOS)]
 	public class Issue12372 : TestContentPage
 	{

@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Shell)]
 	[Category(UITestCategories.TitleView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14657, "Shell pages are not released from memory", PlatformAffected.Android)]
 	public class Issue14657 : TestShell
 	{

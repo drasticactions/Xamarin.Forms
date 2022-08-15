@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11831, "[Bug] SwipeView removes Frame borders on Android", PlatformAffected.Android)]
 	public partial class Issue11831 : TestContentPage
 	{

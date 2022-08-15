@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14764, "[Bug] [Regression] UWP Button breaks the Layout", PlatformAffected.UWP)]
 	public class Issue14764 : TestContentPage
 	{

@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9092, "[Bug] GTK: reenabling button doesn't work if page is a not-initial NavigationPage", PlatformAffected.Gtk)]
 	public class Issue9092 : TestNavigationPage
 	{
@@ -35,7 +35,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ContentPage9092 : ContentPage
 	{
 		public ContentPage9092()

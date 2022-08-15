@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Xamarin.Forms.Controls.GalleryPages.PlatformTestsGallery
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PlatformTestsConsole : ContentPage
 	{
@@ -346,7 +346,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.PlatformTestsGallery
 			await ResultsScrollView.ScrollToAsync(e.Element, ScrollToPosition.MakeVisible, false);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class DisplaySettings : INotifyPropertyChanged
 		{
 			bool _showPassed;

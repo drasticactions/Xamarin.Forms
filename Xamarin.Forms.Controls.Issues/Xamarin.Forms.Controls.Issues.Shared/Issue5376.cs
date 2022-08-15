@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.LifeCycle)]
 	[Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5376, "Call unfocus entry crashes app", PlatformAffected.Android)]
 	public class Issue5376 : TestFlyoutPage
 	{
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Detail = new ContentPage { Content = new Label { Text = "Success" } };
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class EntryPage : ContentPage
 		{
 			Entry entry;

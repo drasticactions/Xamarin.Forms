@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12848, "[Bug] CarouselView position resets when visibility toggled",
 		PlatformAffected.Android)]
 #if UITEST

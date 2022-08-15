@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3150, "IsClippedToBounds on (Fast Renderer) Frame not working", PlatformAffected.Android)]
 
 	class Issue3150 : TestContentPage

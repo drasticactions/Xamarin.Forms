@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Label with FormattedText, HTML, and Padding shouldn't cause crash", PlatformAffected.iOS)]
 	public class LabelFormattedTextHtmlPadding : TestContentPage
 	{

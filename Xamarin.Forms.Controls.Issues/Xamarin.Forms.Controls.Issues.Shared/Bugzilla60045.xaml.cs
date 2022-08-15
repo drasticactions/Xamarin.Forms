@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 60045,
 		"ListView with RecycleElement strategy doesn't handle CanExecute of TextCell Command properly",
 		PlatformAffected.iOS)]

@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.GalleryPages.DragAndDropGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class VariousDragAndDropPermutations : ContentPage
 	{
 		public Color DraggingColor { get; set; }
@@ -45,7 +45,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.DragAndDropGalleries
 			Content = stackLayout;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class StackDrag : StackLayout
 		{
 			public StackDrag()

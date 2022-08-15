@@ -170,7 +170,7 @@ namespace Xamarin.Forms.Internals
 					updateSourceEvent.AddEventHandler(target, handlerDelegate);
 			}
 
-			[Preserve]
+			[Xamarin.Forms.Internals.Preserve]
 			void OnPropertyChanged(object sender, EventArgs e)
 			{
 				PropertyChanged?.Invoke(sender, new PropertyChangedEventArgs(TargetProperty));

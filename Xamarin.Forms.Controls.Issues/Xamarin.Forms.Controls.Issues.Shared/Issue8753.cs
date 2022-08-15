@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(UITestCategories.SwipeView)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8753, "Assign custom SwipeItems in the SwipeView", PlatformAffected.All)]
 	public class Issue8753 : TestContentPage
 	{

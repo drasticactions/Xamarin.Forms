@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3798, "[Android] SeparatorColor of ListView is NOT updated dynamically")]
 	public partial class Issue3798 : TestContentPage
 	{

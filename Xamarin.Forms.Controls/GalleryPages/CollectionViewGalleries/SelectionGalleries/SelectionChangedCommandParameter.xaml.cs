@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.CollectionViewGalleries.SelectionG
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class Item
 	{
 		public string Id { get; set; }
@@ -31,7 +31,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.CollectionViewGalleries.SelectionG
 		public string Description { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class ItemsViewModel : INotifyPropertyChanged
 	{
 		public ObservableCollection<Item> Items { get; set; }

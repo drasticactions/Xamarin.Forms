@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 55674, "[UWP] Using a navigation page changes the tabbed bar's color", PlatformAffected.UWP)]
 	public class Bugzilla55674 : TestTabbedPage
 	{

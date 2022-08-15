@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2818, "Right-to-Left MasterDetail in Xamarin.Forms Hamburger icon issue", PlatformAffected.Android)]
 	public class Issue2818 : TestFlyoutPage
 	{

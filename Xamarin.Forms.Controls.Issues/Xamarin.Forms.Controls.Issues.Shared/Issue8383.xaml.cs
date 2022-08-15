@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8383,
 		"[Bug] CollectionView infinite scroll does not work with a grouped list on iOS",
 		PlatformAffected.iOS)]

@@ -12,7 +12,7 @@ using Xamarin.Forms.Internals;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2282, "ListView ItemTapped issue on Windows phone", PlatformAffected.WinPhone)]
 	public partial class Issue2282 : ContentPage
 	{

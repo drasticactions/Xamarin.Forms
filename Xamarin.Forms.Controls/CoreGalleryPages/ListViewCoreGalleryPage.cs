@@ -13,7 +13,7 @@ using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ListViewCoreGalleryPage : CoreGalleryPage<ListView>
 	{
 		internal class Employee : INotifyPropertyChanged
@@ -77,7 +77,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class Grouping<K, T> : ObservableCollection<T>
 		{
 			public K Key { get; private set; }
@@ -92,7 +92,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class HeaderCell : ViewCell
 		{
 			public HeaderCell()
@@ -115,7 +115,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class UnevenCell : ViewCell
 		{
 			public UnevenCell()
@@ -138,7 +138,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class ListViewViewModel
 		{
 			public ObservableCollection<Grouping<string, Employee>> CategorizedEmployees { get; private set; }

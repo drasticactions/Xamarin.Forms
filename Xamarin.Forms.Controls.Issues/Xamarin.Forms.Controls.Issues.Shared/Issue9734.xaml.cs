@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9734, " SwipeView in 4.5 works only first way swipped", PlatformAffected.Android)]
 	public partial class Issue9734 : ContentPage
 	{

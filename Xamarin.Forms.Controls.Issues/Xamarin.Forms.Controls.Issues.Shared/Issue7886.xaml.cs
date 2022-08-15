@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7886, "PushModalAsync modal page with Entry crashes on close for MacOS (NRE)", PlatformAffected.macOS)]
 	public partial class Issue7886 : TestContentPage
 	{

@@ -2,7 +2,7 @@
 
 namespace Xamarin.Forms.Controls.GalleryPages.ShapesGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class PolylineGallery : ContentPage
 	{
 		public PolylineGallery()

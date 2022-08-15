@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10422, "[iOS] Frame render issue using TranslationY", PlatformAffected.iOS)]
 	public partial class Issue10422 : ContentPage
 	{

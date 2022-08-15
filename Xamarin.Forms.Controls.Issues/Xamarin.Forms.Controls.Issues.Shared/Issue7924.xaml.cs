@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7924, "[Android/iOS/UWP] Setting CarouselView.CurrentItem to an item doesn't display that item")]
 	public partial class Issue7924 : TestContentPage
 	{
@@ -39,7 +39,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7924Model
 	{
 		public string Name { get; set; }
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string ImageUrl { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7924ViewModel : BindableObject
 	{
 		const int UpdatePositionDelay = 2000;

@@ -18,7 +18,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9711, "[Bug] iOS Failed to marshal the Objective-C object HeaderWrapperView", PlatformAffected.iOS)]
 	public partial class Issue9711 : TestContentPage
 	{
@@ -88,7 +88,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public sealed class ListGroup<T> : List<T>, INotifyPropertyChanged, INotifyCollectionChanged
 	{
 		public string Title { get; set; }

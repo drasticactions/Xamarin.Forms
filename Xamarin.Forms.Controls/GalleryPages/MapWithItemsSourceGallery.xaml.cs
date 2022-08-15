@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.GalleryPages
 			_map.MoveToRegion(MapSpan.FromCenterAndRadius(startPosition, Distance.FromMiles(1200)));
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ViewModel
 		{
 			int _pinCreatedCount = 0;
@@ -133,7 +133,7 @@ namespace Xamarin.Forms.Controls.GalleryPages
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Place : INotifyPropertyChanged
 		{
 			Position _position;

@@ -608,7 +608,7 @@ namespace Xamarin.Forms.Platform.iOS
 
 	public class TabletMasterDetailRenderer : TabletFlyoutPageRenderer
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public TabletMasterDetailRenderer()
 		{
 		}

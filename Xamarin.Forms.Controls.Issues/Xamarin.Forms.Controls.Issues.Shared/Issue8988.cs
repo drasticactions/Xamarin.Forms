@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8988, "App freezes on iPadOS 13.3 when in split view mode (multi-tasking) and change between pages", PlatformAffected.iOS)]
 	public class Issue8988 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -46,7 +46,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = layout;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class SecondPage : ContentPage
 		{
 			public SecondPage()

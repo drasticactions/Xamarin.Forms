@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 58875, "Back navigation disables Context Action in whole app, if Context Action left open", PlatformAffected.iOS)]
 	public class Bugzilla58875 : TestNavigationPage
 	{
@@ -30,7 +30,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Navigation.PushAsync(page1);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListViewPage : ContentPage
 		{
 			public ListViewPage()
@@ -69,7 +69,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public ObservableCollection<string> Items { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Page1 : ContentPage
 		{
 			public Page1()

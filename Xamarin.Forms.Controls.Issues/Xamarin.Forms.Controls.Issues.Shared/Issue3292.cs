@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3292, "TableSection.Title property binding fails in XAML")]
 	public class Issue3292 : TestContentPage
 	{
@@ -37,7 +37,7 @@ namespace Xamarin.Forms.Controls.Issues
 			vm.Init();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SomePageViewModel : INotifyPropertyChanged
 		{
 			string _sectionTitle;

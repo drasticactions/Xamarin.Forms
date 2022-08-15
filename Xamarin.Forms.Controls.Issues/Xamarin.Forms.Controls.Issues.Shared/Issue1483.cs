@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1483, "Xamarin.Forms.ActivityIndicator in Forms v 2.5 doesn\'t work (UWP)", PlatformAffected.UWP)]
 	public class Issue1483 : TestNavigationPage
 	{

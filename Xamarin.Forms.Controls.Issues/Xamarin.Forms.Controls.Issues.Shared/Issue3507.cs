@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3507, "[UWP] Scrollview with null content crashes on UWP",
 		PlatformAffected.UWP)]
 #if UITEST

@@ -16,12 +16,12 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 31333,
 		"Focus() on Entry in ViewCell brings up keyboard, but doesn't have cursor in EditText", PlatformAffected.Android)]
 	public class Bugzilla31333 : TestContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Model31333 : INotifyPropertyChanged
 		{
 			public string Data
@@ -55,13 +55,13 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public interface IHaveControlFocusedProperty
 		{
 			void SetBinding();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ExtendedEntry : Entry, IHaveControlFocusedProperty
 		{
 			public static readonly BindableProperty IsControlFocusedProperty =
@@ -95,7 +95,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ExtendedEditor : Editor, IHaveControlFocusedProperty
 		{
 			public static readonly BindableProperty IsControlFocusedProperty =
@@ -129,7 +129,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ExtendedCell<T> : ViewCell where T : View, IHaveControlFocusedProperty
 		{
 			public ExtendedCell()

@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11962, "[iOS] Cannot access a disposed object. Object name: 'WkWebViewRenderer",
 		PlatformAffected.iOS)]
 #if UITEST

@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BindingContext = new Issue8529ViewModel();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue8529ViewModel
 		{
 			public ICommand BackCommand { get; set; }

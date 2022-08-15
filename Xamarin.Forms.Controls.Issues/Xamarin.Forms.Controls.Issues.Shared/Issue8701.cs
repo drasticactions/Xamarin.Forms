@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8701, "TalkBack reads labeled back button as 'Unlabeled button'", PlatformAffected.Android)]
 	public class Issue8701 : TestNavigationPage
 	{

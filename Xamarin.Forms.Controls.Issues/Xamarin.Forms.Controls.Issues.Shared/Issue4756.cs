@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Shell)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4756, "Cannot prevent flyout menu list from scrolling", PlatformAffected.Default)]
 	public class Issue4756 : TestShell
 	{

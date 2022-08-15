@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 {
 	// This test covers the issue reported in https://github.com/xamarin/Xamarin.Forms/issues/2763
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2763,
 		"[Core] StakLayout Padding update issue", NavigationBehavior.PushAsync)]
 	public class Issue2763 : TestContentPage

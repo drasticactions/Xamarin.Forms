@@ -16,7 +16,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10744, "[Android] WebView.Eval crashes on Android with long string",
 		PlatformAffected.Android)]
 #if UITEST

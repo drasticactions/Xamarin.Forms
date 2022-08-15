@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1331, "[Android] ViewCell shows ContextActions on tap instead of long press",
 		PlatformAffected.Android)]
 	public partial class GitHub1331 : TestContentPage
@@ -69,13 +69,13 @@ namespace Xamarin.Forms.Controls.Issues
 		{
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class GH1331ViewModel
 		{
 			public ObservableCollection<GH1331ItemViewModel> Items { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class GH1331ItemViewModel
 		{
 			public string Text { get; set; }

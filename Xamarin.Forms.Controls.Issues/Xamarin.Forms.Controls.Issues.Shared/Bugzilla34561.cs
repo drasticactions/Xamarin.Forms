@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 34561, "[A] Navigation.PushAsync crashes when used in Context Actions (legacy)", PlatformAffected.Android)]
 	public class Bugzilla34561 : TestContentPage
 	{
@@ -32,7 +32,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = listView;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class NextPage : TestContentPage
 		{
 			protected override void Init()
@@ -45,7 +45,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ContextActionTemplate : ViewCell
 		{
 			public ContextActionTemplate()

@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.CollectionViewGalleries.NestedGall
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class NestedItemSource
 	{
 		public List<CollectionViewGalleryTestItem> Items { get; set; }
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.CollectionViewGalleries.NestedGall
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class NestedCollectionViewModel
 	{
 		public List<NestedItemSource> Items { get; set; }

@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14513,
 		"[Bug] [iOS] SelectedItems custom image not displaying in iOS for CollectionView until tapped",
 		PlatformAffected.iOS)]

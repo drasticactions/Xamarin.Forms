@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 40998, "[UWP] Pressing escape with an awaited DisplayActionSheet doesn't return a result", PlatformAffected.WinRT)]
 	public class Bugzilla40998 : TestContentPage
 	{

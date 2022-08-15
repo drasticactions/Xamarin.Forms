@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 42329, "ListView in Frame and FormsAppCompatActivity Memory Leak")]
 	public class Bugzilla42329 : TestFlyoutPage
 	{
@@ -51,7 +51,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Reference = this;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MasterPage : ContentPage
 		{
 			public MasterPage()
@@ -94,7 +94,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public ListView ListView { get; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MasterPageItem
 		{
 			public string IconSource { get; set; }
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public string Title { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ContentPageEx : ContentPage
 		{
 			~ContentPageEx()
@@ -114,7 +114,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _42329_FrameWithListView : ContentPageEx
 		{
 			public _42329_FrameWithListView()
@@ -144,7 +144,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Reference.IsPresented = true;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _42329_Page2 : ContentPage
 		{
 			public _42329_Page2()
@@ -169,7 +169,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _42329_Page3 : ContentPage
 		{
 			Label lblFlag;

@@ -9,7 +9,7 @@ using Xamarin.UITest.iOS;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9279, "[Bug] [UWP] CollectionView selected state not working on UWP", PlatformAffected.UWP)]
 	public partial class Issue9279 : TestContentPage
 	{

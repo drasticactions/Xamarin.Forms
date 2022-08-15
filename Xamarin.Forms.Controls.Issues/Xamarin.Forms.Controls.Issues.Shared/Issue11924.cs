@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Shape)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11924, "[Bug] Shapes not loading in Xamarin ShellContent Tab once it is navigated back from other Tab",
 		PlatformAffected.All)]
 	public class Issue11924 : TestShell

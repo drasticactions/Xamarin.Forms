@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1567, "NRE using TapGestureRecognizer on cell with HasUnevenRows", PlatformAffected.iOS, issueTestNumber: 1)]
 	public class GitHub1567 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 			await FillData();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class CustomCell : ViewCell
 		{
 			public CustomCell()
@@ -91,7 +91,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}, CancellationToken.None, TaskCreationOptions.LongRunning, TaskScheduler.Default);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class LocalIem
 		{
 			public string Value1 { get; set; }

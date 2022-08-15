@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[Ignore("This test is looking for an invalid behavior; the second tap *should* keep the drawer open.")] 
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2961, "MasterDetail NavigationDrawer Does Not Hide On DoubleTap of Item", PlatformAffected.Android)]
 	public class Issue2961 : TestFlyoutPage
 	{
@@ -81,7 +81,7 @@ namespace Xamarin.Forms.Controls.Issues
 			);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SliderMenuItem : INotifyPropertyChanged
 		{
 			public event PropertyChangedEventHandler PropertyChanged;
@@ -124,7 +124,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public Color Background { get; private set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SliderMenuPage : ContentPage
 		{
 			public ListView MenuListView { get; set; }
@@ -181,7 +181,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class HomePage : ContentPage
 		{
 
@@ -221,7 +221,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class AboutPage : ContentPage
 		{
 			public AboutPage()
@@ -258,7 +258,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SignOutPage
 		{
 			public SignOutPage()
@@ -266,7 +266,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuCell : ViewCell
 		{
 			public MenuCell()

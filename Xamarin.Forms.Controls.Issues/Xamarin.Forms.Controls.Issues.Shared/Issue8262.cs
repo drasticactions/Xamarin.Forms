@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8262, "[Android] ImageRenderer still being accessed after control destroyed",
 		PlatformAffected.Android)]
 #if UITEST

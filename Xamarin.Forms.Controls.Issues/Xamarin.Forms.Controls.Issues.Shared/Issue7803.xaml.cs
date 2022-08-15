@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7803, "[Bug] CarouselView/RefreshView pull to refresh command firing twice on a single pull", PlatformAffected.All)]
 	public partial class Issue7803 : TestContentPage
 	{
@@ -70,7 +70,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModel7803 : INotifyPropertyChanged
 	{
 		public ObservableCollection<Model7803> Items { get; set; } = new ObservableCollection<Model7803>();
@@ -142,7 +142,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Model7803 : INotifyPropertyChanged
 	{
 		private int _position;

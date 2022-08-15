@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CellNavigation
 	{
 		public string CellType { get; set; }

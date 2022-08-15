@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: Dependency(typeof(RegistrarValidationService))]
 namespace Xamarin.Forms.ControlGallery.iOS
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RegistrarValidationService : IRegistrarValidationService
 	{
 		public bool Validate(VisualElement element, out string message)

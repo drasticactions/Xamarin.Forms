@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7111, "[Bug] [WPF] Label with a predefined FontSize value throws an exception", PlatformAffected.WPF)]
 	public class Issue7111 : TestContentPage
 	{

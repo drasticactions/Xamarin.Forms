@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Brush)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11800,
 		"[Bug] LinearGradientBrush doesn't fill the pages upon orientation change on iOS",
 		PlatformAffected.iOS)]

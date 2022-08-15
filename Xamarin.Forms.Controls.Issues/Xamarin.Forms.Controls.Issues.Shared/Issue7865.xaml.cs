@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7865, "[iOS] CarouselView setting Position has dif behavior than ScrollTo", PlatformAffected.iOS)]
 	public partial class Issue7865 : TestContentPage
 	{
@@ -51,7 +51,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7865Model
 	{
 		public int Index { get; set; }
@@ -61,7 +61,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string ImageUrl { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7865ViewModel : BindableObject
 	{
 		public Issue7865ViewModel()

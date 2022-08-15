@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1741, "Switch.IsEnabled = false does not disable a switch when switch is defined in XAML", PlatformAffected.WinPhone)]
 	public partial class Issue1741 : ContentPage
 	{

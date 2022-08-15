@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 59925, "Font size does not change vertical height of Entry on iOS", PlatformAffected.Default)]
 	public class Bugzilla59925 : TestContentPage // or TestFlyoutPage, etc ...
 	{

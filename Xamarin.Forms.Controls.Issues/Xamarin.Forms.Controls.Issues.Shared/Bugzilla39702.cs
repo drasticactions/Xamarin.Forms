@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 39702, "Cannot enter text when Entry is focus()'d from an editor completed event")]
 	public class Bugzilla39702 : TestContentPage
 	{

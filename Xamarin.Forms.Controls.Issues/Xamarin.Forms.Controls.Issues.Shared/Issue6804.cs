@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6804, "[Bug] Shell SearchHandler - Search text getting lost on execute search", PlatformAffected.iOS | PlatformAffected.Android)]
 	public class Issue6804 : TestShell
 	{

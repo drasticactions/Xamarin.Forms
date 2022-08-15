@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.CarouselView)]
 	[Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8964, "Adding an item to the beginning of the bound ItemSource causes the carousel to skip sometimes", PlatformAffected.Android)]
 	public class Issue8964 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -156,7 +156,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModelIssue8964
 	{
 		public ViewModelIssue8964()
@@ -165,7 +165,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ModelIssue8964
 	{
 		public Color Color { get; set; }

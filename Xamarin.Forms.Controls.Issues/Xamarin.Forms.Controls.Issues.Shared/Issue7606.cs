@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7606, "[Bug] When a view appears it is not accessible via VoiceOver",
 		PlatformAffected.iOS)]
 #if UITEST

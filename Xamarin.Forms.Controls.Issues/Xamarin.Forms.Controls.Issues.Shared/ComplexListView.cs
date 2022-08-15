@@ -9,7 +9,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Complex ListView", PlatformAffected.All)]
 	public class ComplexListView
 		: ContentPage
@@ -51,7 +51,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ComplexViewCell
 		: ViewCell
 	{

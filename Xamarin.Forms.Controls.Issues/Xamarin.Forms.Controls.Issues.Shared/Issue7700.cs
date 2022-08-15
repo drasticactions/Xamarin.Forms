@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7700, "[Bug][iOS] If CollectionView in other Tab gets changed before it's displayed, it stays invisible",
 		PlatformAffected.iOS)]
 	public class Issue7700 : TestTabbedPage
@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 		readonly ObservableCollection<string> _source = new ObservableCollection<string>() { "one", "two", "three" };
 		readonly ObservableCollection<Group> _groupedSource = new ObservableCollection<Group>();
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Group : List<string>
 		{
 			public string Text { get; set; }

@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 33268, "Picker is broken on Windows Phone 8.1", PlatformAffected.WinRT)]
 	public class Bugzilla33268 : TestTabbedPage
 	{
@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Simple : TestContentPage
 	{
 		protected override void Init()
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla33268NoListView : TestContentPage
 	{
 		protected override void Init()
@@ -86,7 +86,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla33268ListView : TestContentPage
 	{
 		protected override void Init()
@@ -110,7 +110,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class PickerCell : ViewCell
 		{
 			public PickerCell()

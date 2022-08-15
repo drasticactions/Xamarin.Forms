@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 28240, "Problems with a NavigationPage as Flyout+Detail of a FlyoutPage", PlatformAffected.Android)]
 	public class Bugzilla28240 : TestFlyoutPage
 	{

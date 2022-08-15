@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1556, "Animation tasks do not complete when Battery Saver enabled",
 		PlatformAffected.Android)]
 	public class Issue1556 : TestContentPage

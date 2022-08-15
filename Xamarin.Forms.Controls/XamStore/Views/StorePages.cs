@@ -533,7 +533,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class UpdatesPage : BasePage
 	{
 		public UpdatesPage() : base("Available Updates", Color.Default)
@@ -542,7 +542,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class InstalledPage : BasePage
 	{
 		public InstalledPage() : base("Installed Items", Color.Default)
@@ -551,7 +551,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class LibraryPage : BasePage
 	{
 		public LibraryPage() : base("My Library", Color.Default)
@@ -560,19 +560,19 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class NotificationsPage : BasePage
 	{
 		public NotificationsPage() : base("Notifications", Color.Default) { }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SubscriptionsPage : BasePage
 	{
 		public SubscriptionsPage() : base("My Subscriptions", Color.Default) { }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class HomePage : BasePage
 	{
 		public HomePage() : base("Store Home", Color.Black)
@@ -581,7 +581,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class GamesPage : BasePage
 	{
 		public GamesPage() : base("Games", Color.Black)
@@ -590,7 +590,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MoviesPage : BasePage
 	{
 		public MoviesPage() : base("Hot Movies", Color.Default)
@@ -599,7 +599,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class BooksPage : BasePage
 	{
 		public BooksPage() : base("Bookstore", Color.Default)
@@ -608,7 +608,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MusicPage : BasePage
 	{
 		public MusicPage() : base("Music", Color.Default)
@@ -617,7 +617,7 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class NewsPage : BasePage
 	{
 		public NewsPage() : base("Newspapers", Color.Default)
@@ -626,19 +626,19 @@ namespace Xamarin.Forms.Controls.XamStore
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class AccountsPage : BasePage
 	{
 		public AccountsPage() : base("Account Items", Color.Default) { }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class WishlistPage : BasePage
 	{
 		public WishlistPage() : base("My Wishlist", Color.Default) { }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SettingsPage : BasePage
 	{
 		public SettingsPage() : base("Settings", Color.Default) { }

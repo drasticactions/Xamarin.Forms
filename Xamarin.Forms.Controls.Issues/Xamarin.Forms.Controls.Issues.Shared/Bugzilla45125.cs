@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 45125, "ListView lacks a way to get information about visible elements (such as FirstVisibleItem) to restore visual positions of elements", PlatformAffected.iOS)]
 	public class Bugzilla45125 : TestContentPage
 	{
@@ -55,19 +55,19 @@ namespace Xamarin.Forms.Controls.Issues
 			MinimumWidthRequest = 200
 		};
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class GroupItem
 		{
 			public string DisplayText { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class GroupedData : List<GroupItem>
 		{
 			public string GroupName { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyCell : ViewCell
 		{
 			public MyCell()
@@ -78,7 +78,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class HeaderCell : ViewCell
 		{
 			public HeaderCell()

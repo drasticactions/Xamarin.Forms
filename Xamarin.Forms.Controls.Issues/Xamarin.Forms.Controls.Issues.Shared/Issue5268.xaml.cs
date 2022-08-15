@@ -7,11 +7,11 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5268, "ListView with PullToRefresh enabled gestures conflict", PlatformAffected.Android)]
 	public partial class Issue5268 : ContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SrcItem
 		{
 			public string Val { get; set; }

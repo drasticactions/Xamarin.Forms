@@ -65,7 +65,7 @@ namespace Xamarin.Forms.Controls
 			#endregion
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class ViewCellTest : ViewCell
 		{
 			static int s_inc = 0;

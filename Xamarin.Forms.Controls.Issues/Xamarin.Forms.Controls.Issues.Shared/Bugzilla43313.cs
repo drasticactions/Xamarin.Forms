@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public abstract class Bugzilla43313_Template : ContentPage
 	{
 		public static int ItemCount = 20;
@@ -85,13 +85,13 @@ namespace Xamarin.Forms.Controls.Issues
 			_listView.ScrollTo(item, ScrollToPosition.End, true);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _43313Model
 		{
 			public string Name { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _43313ViewModel : INotifyPropertyChanged
 		{
 			ObservableCollection<_43313Model> _listViewContent;
@@ -126,7 +126,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla43313_KnownHeight : Bugzilla43313_Template
 	{
 		protected override DataTemplate CellTemplate()
@@ -154,7 +154,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla43313_EstimatedHeight : Bugzilla43313_Template
 	{
 		protected override DataTemplate CellTemplate()
@@ -182,7 +182,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 43313, "Adding an item to ListView ItemSource has unexpected animation with different height rows and HasUnevenRows is true", PlatformAffected.iOS)]
 	public class Bugzilla43313 : TestNavigationPage
 	{

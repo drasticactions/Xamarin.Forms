@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.GalleryPages.GradientGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ColorSource : BindableObject
 	{
 		Color _color;

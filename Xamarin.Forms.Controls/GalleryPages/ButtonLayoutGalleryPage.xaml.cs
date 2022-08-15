@@ -10,7 +10,7 @@ using iOSSpecific = Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ButtonLayoutGalleryPage : ContentPage
 	{

@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12521, "[Bug][iOS] Shapes disappear in a Frame in a ListView when scrolled",
 		PlatformAffected.iOS)]
 	public partial class Issue12521 : TestContentPage

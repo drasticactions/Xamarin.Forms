@@ -10,7 +10,7 @@ using Xamarin.UITest.Queries;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7823, "[Bug] Frame corner radius.", PlatformAffected.Android)]
 #if UITEST
 	[Category(UITestCategories.Frame)]

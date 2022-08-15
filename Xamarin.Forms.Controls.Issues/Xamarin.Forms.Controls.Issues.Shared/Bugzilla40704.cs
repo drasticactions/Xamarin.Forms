@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 40704, "Strange duplication of listview headers when collapsing/expanding sections")]
 	public class Bugzilla40704 : TestContentPage
 	{
@@ -101,7 +101,7 @@ namespace Xamarin.Forms.Controls.Issues
 			listview.ItemsSource = patientGroups;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupHeaderViewCell : ViewCell
 		{
 			TapGestureRecognizer tapGesture;
@@ -132,7 +132,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ItemTestViewCell : ViewCell
 		{
 			public ItemTestViewCell()
@@ -146,7 +146,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class RangeObservableCollection<T> : ObservableCollection<T>
 		{
 			private bool _suppressNotification = false;
@@ -173,7 +173,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class PatientsGroupViewModel : RangeObservableCollection<PatientViewModel>
 		{
 			public bool IsCollapsed { get; private set; }
@@ -209,7 +209,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class PatientViewModel
 		{
 			public PatientViewModel(string code)

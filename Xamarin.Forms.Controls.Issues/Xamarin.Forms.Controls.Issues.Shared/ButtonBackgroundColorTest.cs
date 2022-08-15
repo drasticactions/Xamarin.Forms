@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Button)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 57717, "Setting background color on Button in Android FormsApplicationActivity causes NRE", PlatformAffected.Android)]
 	public class ButtonBackgroundColorTest : TestContentPage
 	{

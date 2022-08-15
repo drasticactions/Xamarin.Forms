@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3087, "[Android] Non appcompat SwitchRenderer regression between 3.0 and 3.1",
 		PlatformAffected.iOS)]
 #if UITEST

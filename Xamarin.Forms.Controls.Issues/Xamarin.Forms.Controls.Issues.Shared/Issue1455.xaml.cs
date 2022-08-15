@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1455, "Context action are not changed when selected item changed on Android", PlatformAffected.Android)]
 	public partial class Issue1455 : TestContentPage
 	{
@@ -45,7 +45,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyViewModel : PropertyChangedBase
 		{
 			bool _isContextActionsLegacyModeEnabled;
@@ -137,7 +137,7 @@ namespace Xamarin.Forms.Controls.Issues
 		Temp2
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ContextMenuItem
 	{
 		public ContextMenuItemType Type { get; set; } = ContextMenuItemType.Temp1;
@@ -148,7 +148,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string Text { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue1455DataTemplateSelector : DataTemplateSelector
 	{
 		public DataTemplate Temp1Template { get; set; }

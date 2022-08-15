@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2948, "FlyoutPage Detail is interactive even when Flyout is open when in Landscape")]
 	public class Issue2948 : TestFlyoutPage
 	{
@@ -33,7 +33,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Detail = new NavigationPage(new ContractsPage());
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuListData : List<MenuItem>
 		{
 			public MenuListData()
@@ -68,7 +68,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ContractsPage : ContentPage
 		{
 			public ContractsPage()
@@ -142,7 +142,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuListView : ListView
 		{
 			public MenuListView()
@@ -203,7 +203,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuItem
 		{
 			public string Title { get; set; }

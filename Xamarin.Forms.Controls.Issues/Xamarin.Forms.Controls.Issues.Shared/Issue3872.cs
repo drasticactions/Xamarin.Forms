@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3872, "TabStop additions cause a non interactive TabStop on Time Picker...", PlatformAffected.UWP)]
 	public class GitHub3872 : TestContentPage
 	{

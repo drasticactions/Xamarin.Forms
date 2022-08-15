@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.WebView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3262, "Adding Cookies ability to a WebView...")]
 	public class Issue3262 : TestContentPage // or TestFlyoutPage, etc ...
 	{

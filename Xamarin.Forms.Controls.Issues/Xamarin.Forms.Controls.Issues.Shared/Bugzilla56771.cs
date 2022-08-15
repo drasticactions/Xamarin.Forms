@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 56771, "Multi-item add in INotifyCollectionChanged causes a NSInternalInconsistencyException in bindings on iOS", PlatformAffected.iOS)]
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.ListView)]
@@ -102,7 +102,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 #endif
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class OptimizedCollection<T> : ObservableCollection<T>
 		{
 			public OptimizedCollection()

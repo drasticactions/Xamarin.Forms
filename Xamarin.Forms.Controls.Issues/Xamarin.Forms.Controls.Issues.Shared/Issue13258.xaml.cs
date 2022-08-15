@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13258, "[Bug] After PopModalAsync will not call OnAppearing (iOS)", PlatformAffected.iOS)]
 	public partial class Issue13258 : TestContentPage
 	{

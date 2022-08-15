@@ -17,7 +17,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2004, "[Android] Xamarin caused by: android.runtime.JavaProxyThrowable: System.ObjectDisposedException: Cannot access a disposed object",
 		PlatformAffected.Android)]
 #if UITEST
@@ -90,7 +90,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class AddressListItemView : Grid
 		{
 			public AddressListItemView()
@@ -119,7 +119,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class AddressListView : ContentPage
 		{
 			public AddressListView()
@@ -258,7 +258,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SettingsView : ContentPage
 		{
 			public Command AutoTest => new Command(async () =>

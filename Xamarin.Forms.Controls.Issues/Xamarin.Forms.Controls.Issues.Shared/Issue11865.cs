@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SearchBar)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11865,
 		"iOS SearchBarRenderer throws a NullReferenceException when the SearchButton redirects to a new page",
 		PlatformAffected.iOS)]
@@ -53,7 +53,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue11865SecondPage : ContentPage
 	{
 		public Issue11865SecondPage()

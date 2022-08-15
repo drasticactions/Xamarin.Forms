@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Platform.UAP
 	{
 
 		// Do not overload this method. ICLRRuntimeHost2::CreateDelegate can not resolve overloaded methods.
-		[PreserveSig]
+		[Xamarin.Forms.Internals.PreserveSig]
 		private static int Bootstrap(
 			[MarshalAs(UnmanagedType.LPWStr)] string assemblyPath,
 			[MarshalAs(UnmanagedType.LPWStr)] string typeName,

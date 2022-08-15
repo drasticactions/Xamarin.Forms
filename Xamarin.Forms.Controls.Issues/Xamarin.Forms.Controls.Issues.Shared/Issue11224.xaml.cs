@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11224, "[Bug] CarouselView Position property fails to update visual while control isn't visible", PlatformAffected.Android)]
 	public partial class Issue11224 : TestContentPage
 	{

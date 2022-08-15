@@ -2,7 +2,7 @@
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class PerformanceTracker : ContentView
 	{
 		public const string RenderCompleteMessage = "RenderComplete";

@@ -3,6 +3,8 @@
   <PropertyGroup>
     <AndroidCodeGenTarget>XAJavaInterop1</AndroidCodeGenTarget>
     <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidApplication>True</AndroidApplication>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -51,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

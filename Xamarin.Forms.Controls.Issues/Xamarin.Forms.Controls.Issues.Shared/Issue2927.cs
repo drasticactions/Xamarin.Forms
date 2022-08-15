@@ -14,11 +14,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2927, "ListView item tapped not firing multiple times")]
 	public class Issue2927 : TestContentPage // or TestFlyoutPage, etc .
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2927Cell : TextCell, INotifyPropertyChanged
 		{
 			int _numberOfTimesTapped;

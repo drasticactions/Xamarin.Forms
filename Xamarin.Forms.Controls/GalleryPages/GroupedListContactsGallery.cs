@@ -7,7 +7,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class GroupedListContactsGallery
 		: ContentPage
 	{
@@ -75,7 +75,7 @@ namespace Xamarin.Forms.Controls
 
 		readonly Random _rand = new Random(42);
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class Group
 			: ObservableCollection<Contact>
 		{

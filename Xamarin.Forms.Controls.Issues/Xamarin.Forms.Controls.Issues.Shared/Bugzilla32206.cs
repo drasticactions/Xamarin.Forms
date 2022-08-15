@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 32206, "ContextActions cause memory leak: Page is never destroyed", PlatformAffected.iOS)]
 	public class Bugzilla32206 : TestNavigationPage
 	{
@@ -46,7 +46,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class LandingPage32206 : ContentPage
 	{
 		public static int Counter;
@@ -107,7 +107,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ContentPage32206 : ContentPage
 	{
 		public ContentPage32206()
@@ -130,7 +130,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewCell32206 : ViewCell
 	{
 		public ViewCell32206()

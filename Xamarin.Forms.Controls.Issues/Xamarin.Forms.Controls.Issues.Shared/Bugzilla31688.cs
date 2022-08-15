@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif

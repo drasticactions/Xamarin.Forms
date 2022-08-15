@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.GradientGalleries
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CssGradientsPlaygroundViewModel : BindableObject
 	{
 		string _css;

@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7167,
 		"[Bug] improved observablecollection. a lot of collectionchanges. a reset is sent and listview scrolls to the top", PlatformAffected.UWP)]
 	public partial class Issue7167 : TestContentPage
@@ -77,7 +77,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class Issue7167ViewModel
 	{
 		IEnumerable<string> CreateItems()
@@ -99,7 +99,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ImprovedObservableCollection<T> : ObservableCollection<T>
 	{
 		bool _isActivated = true;

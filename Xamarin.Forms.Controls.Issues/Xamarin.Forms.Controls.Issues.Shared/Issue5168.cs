@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5168, "Incorrect increments in stepper with small increments... - Droid", PlatformAffected.Android)]
 	public class Issue5168 : TestContentPage // or TestFlyoutPage, etc ...
 	{

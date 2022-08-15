@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7709, " On android, not showing keyboard when changing placeholder in entry focused event", PlatformAffected.Android)]
 	public class Issue7709 : TestContentPage
 	{

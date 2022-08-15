@@ -11,7 +11,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8291, "[Android] Editor - Text selection menu does not appear when selecting text on an editor placed within a ScrollView",
 		PlatformAffected.Android)]
 #if UITEST

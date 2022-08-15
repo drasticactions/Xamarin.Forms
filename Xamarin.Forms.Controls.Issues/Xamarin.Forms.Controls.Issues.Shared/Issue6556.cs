@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6556, "Button.CornerRadius doesn't work on WPF", PlatformAffected.WPF)]
 	public class Issue6556 : TestContentPage
 	{

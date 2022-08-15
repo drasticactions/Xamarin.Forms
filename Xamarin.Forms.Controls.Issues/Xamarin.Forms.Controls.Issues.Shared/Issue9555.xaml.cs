@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9555, "[iOS] Applying an Effect to Frame adds a shadow", PlatformAffected.iOS)]
 	public partial class Issue9555 : ContentPage
 	{

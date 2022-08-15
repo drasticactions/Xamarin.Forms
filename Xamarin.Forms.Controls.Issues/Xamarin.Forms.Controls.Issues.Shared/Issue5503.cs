@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ListView)]
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5503, "[iOS] UITableView.Appearance.BackgroundColor ignored or overridden for ListView",
 		PlatformAffected.iOS)]
 	public class Issue5503 : TestContentPage

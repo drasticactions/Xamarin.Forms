@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8806, "Occasionally SwipeView rendering issues", PlatformAffected.iOS)]
 	public class Issue8806 : TestContentPage
 	{

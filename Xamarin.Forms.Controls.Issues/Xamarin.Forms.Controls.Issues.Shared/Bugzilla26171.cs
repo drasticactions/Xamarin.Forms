@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.UwpIgnore)]
 	[Category(UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 26171, "Xamarin.Forms.Maps is not updating VisibleRegion property when layout is changed")]
 	public class Bugzilla26171 : TestContentPage // or TestFlyoutPage, etc ...
 	{

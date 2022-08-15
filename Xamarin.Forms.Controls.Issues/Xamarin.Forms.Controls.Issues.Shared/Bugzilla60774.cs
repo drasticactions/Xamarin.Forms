@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 	// Manual test to verify that ScrollOrientation.Both scrolls at the correct speed vertically
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 60774, "[Android] ScrollOrientation.Both doubles the distance of scrolling",
 		PlatformAffected.Android)]
 	public class Bugzilla60774 : TestContentPage

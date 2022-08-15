@@ -13,7 +13,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12429, "[Bug] Shell flyout items have a minimum height", PlatformAffected.iOS)]
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.Shell)]
@@ -93,7 +93,7 @@ namespace Xamarin.Forms.Controls.Issues
 	}
 
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue12429Page : ContentPage
 	{
 		public Issue12429Page()

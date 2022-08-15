@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12984, "[Bug][UWP] VisualState Disabled not working on Button",
 		PlatformAffected.UWP)]
 	public partial class Issue12984 : TestContentPage

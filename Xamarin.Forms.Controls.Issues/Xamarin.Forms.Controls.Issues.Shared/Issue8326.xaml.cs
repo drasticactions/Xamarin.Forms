@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8326, "[Bug] CollectionView: empty view doesn't show if collection view contains a header", PlatformAffected.Android)]
 	public partial class Issue8326 : TestContentPage
 	{
@@ -49,13 +49,13 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8326Model
 	{
 		public string Text { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8326ViewModel : BindableObject
 	{
 		ObservableCollection<Issue8326Model> _items;

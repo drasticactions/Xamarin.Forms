@@ -10,7 +10,7 @@ using Xamarin.Forms.Internals;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1568, "StackLayout, Grid issue", PlatformAffected.Android | PlatformAffected.iOS | PlatformAffected.WinPhone)]
 	public partial class Issue1568 : ContentPage
 	{

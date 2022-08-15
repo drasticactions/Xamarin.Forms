@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 36780, "[iOS] Multiple TapGestureRecognizers on an Object Are Not Fired", PlatformAffected.iOS)]
 	public class Bugzilla36780 : TestContentPage
 	{

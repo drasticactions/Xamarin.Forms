@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 31255, "Flyout's page Icon cause memory leak after FlyoutPage is popped out by holding on page")]
 	public class Bugzilla31255 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -65,7 +65,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Page2 : FlyoutPage
 		{
 			public Page2()

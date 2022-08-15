@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12344, "[Bug] FontImageSource does not work on UWP", PlatformAffected.UWP)]
 	public partial class Issue12344 : TestContentPage
 	{

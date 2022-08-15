@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 32847,
 		"Picker text is cleared after selecting an item, whether Picker, DatePicker, or TimePicker (when in a TableView (or ListView))", PlatformAffected.WinRT)]
 	public class Bugzilla32847 : TestContentPage
@@ -91,7 +91,7 @@ In the DatePicker below, change the date to May 25, 1977. If the selection immed
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CustomCell : ViewCell
 	{
 		public CustomCell()

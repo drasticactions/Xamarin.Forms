@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5172, "ImageCell does not load image from URI - Android", PlatformAffected.Android)]
 	public class Issue5172 : TestContentPage // or TestFlyoutPage, etc ...
 	{

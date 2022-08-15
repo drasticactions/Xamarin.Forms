@@ -8,7 +8,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3913, "[WPF] Height of items not consistent", PlatformAffected.WPF)]
 	public class Issue3913 : TestContentPage
 	{

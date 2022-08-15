@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 24574, "Tap Double Tap")]
 	public class Issue24574 : TestContentPage
 	{

@@ -22,7 +22,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7817, "[Android/iOS] Changing ItemsUpdatingScrollMode has no effect on CarouselView")]
 	public partial class Issue7817 : TestContentPage
 	{
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class EnumPicker : Picker
 	{
 		public static readonly BindableProperty EnumTypeProperty = BindableProperty.Create(nameof(EnumType), typeof(Type), typeof(EnumPicker),
@@ -76,7 +76,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7817Model
 	{
 		public int Index { get; set; }
@@ -86,7 +86,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string ImageUrl { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7817ViewModel : BindableObject
 	{
 		const int AddItemDelay = 2000;

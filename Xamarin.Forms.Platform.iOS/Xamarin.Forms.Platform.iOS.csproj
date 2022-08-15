@@ -330,4 +330,7 @@
       <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
 </Project>

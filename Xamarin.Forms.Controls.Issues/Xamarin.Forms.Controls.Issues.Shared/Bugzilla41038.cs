@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 41038, "FlyoutPage loses menu icon on iOS after reusing NavigationPage as Detail")]
 	public class Bugzilla41038 : TestFlyoutPage // or TestFlyoutPage, etc ...
 	{

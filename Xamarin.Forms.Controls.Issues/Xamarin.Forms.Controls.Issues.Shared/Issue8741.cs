@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.Shell)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8741, "[Bug] [Shell] [Android] ToolbarItem Enabled/Disabled behavior does not work for Shell apps", PlatformAffected.Android)]
 	public class Issue8741 : TestShell
 	{
@@ -102,7 +102,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 #endif
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ViewModelIssue8741 : INotifyPropertyChanged
 		{
 			bool _canAddNewItem;

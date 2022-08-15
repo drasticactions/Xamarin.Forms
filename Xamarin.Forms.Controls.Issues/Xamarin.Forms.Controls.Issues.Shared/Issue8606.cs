@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8606, "[Bug] [UWP] FontIcons are not aligned correctly", PlatformAffected.UWP)]
 #if UITEST
 	[Category(UITestCategories.Github5000)]

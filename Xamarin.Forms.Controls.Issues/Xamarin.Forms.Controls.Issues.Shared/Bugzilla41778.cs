@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 41778, "Slider Inside ScrollView Will Open FlyoutPage.Flyout", PlatformAffected.iOS)]
 	public class Bugzilla41778 : TestFlyoutPage // or TestFlyoutPage, etc ...
 	{
@@ -28,7 +28,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Detail = new DetailPage41778();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class DetailPage41778 : ContentPage
 		{
 			public DetailPage41778()

@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1777, "Adding picker items when picker is in a ViewCell breaks", PlatformAffected.WinPhone)]
 	public class Issue1777 : TestContentPage
 	{

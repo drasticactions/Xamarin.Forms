@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6474, "Border and CornerRadius are not respected in UWP when button is disabled", PlatformAffected.UWP)]
 	public class Issue6474 : TestContentPage
 	{

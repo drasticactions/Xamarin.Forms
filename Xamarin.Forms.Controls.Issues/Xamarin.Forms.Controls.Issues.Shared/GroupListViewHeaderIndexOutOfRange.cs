@@ -13,7 +13,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 5955, "Group ListView Crashes when ItemSource is Cleared", PlatformAffected.iOS)]
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
@@ -96,7 +96,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = new StackLayout { Children = { button, TestingList } };
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Grouping<K, T> : ObservableCollection<T>
 		{
 			public Grouping(K key, IEnumerable<T> items)
@@ -112,7 +112,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public K Key { get; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SamplePack
 		{
 			public string Info { get; set; }

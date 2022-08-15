@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 27642, "[Windows Phone] Adding a ScrollView control to a ContentView, remove it and re-add it will cause an exception on Windows Phone")]
 	public class Bugzilla27642 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -78,7 +78,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ExtendedContentView : ContentView
 		{
 			public virtual void Activating()
@@ -86,7 +86,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class View1A : ExtendedContentView
 		{
 			public View1A()
@@ -110,7 +110,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class View1B : ExtendedContentView
 		{
 			public View1B()
@@ -147,7 +147,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ErrorView : ExtendedContentView
 		{
 			public ErrorView(Exception ex)

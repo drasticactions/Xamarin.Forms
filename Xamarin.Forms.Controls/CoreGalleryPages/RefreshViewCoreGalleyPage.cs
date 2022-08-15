@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class RefreshViewCoreGalleryPage : CoreGalleryPage<RefreshView>
 	{
 		protected override bool SupportsFocus
@@ -70,7 +70,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RefreshCoreGalleryViewModel : BindableObject
 	{
 		const int RefreshDuration = 1;

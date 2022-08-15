@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Platform.iOS
 	{
 		static readonly Color DefaultTextColor = ColorExtensions.LabelColor.ToColor();
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public EntryCellRenderer()
 		{
 		}

@@ -11,7 +11,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Object Disposed Exception in ScrollViewContainer", PlatformAffected.Android)]
 	public class ScrollViewObjectDisposed : TestContentPage
 	{

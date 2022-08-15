@@ -8,7 +8,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2838, "UWP does not render Frame CornerRadius", PlatformAffected.UWP)]
 	public class Issue2838 : TestContentPage
 	{

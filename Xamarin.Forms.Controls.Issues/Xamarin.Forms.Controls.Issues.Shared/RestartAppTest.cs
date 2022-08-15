@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.LifeCycle)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 11, "Config changes which restart the app should not crash",
 		PlatformAffected.Android)]
 	public class RestartAppTest : TestContentPage

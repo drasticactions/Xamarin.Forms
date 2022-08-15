@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 55555, "Header problem")]
 	public class Issue55555 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -55,7 +55,7 @@ namespace Xamarin.Forms.Controls.Issues
 			return grouped;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class VeggieModel
 		{
 			public string Name { get; set; }
@@ -64,14 +64,14 @@ namespace Xamarin.Forms.Controls.Issues
 			public string Image { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupedVeggieModel : ObservableCollection<VeggieModel>
 		{
 			public string LongName { get; set; }
 			public string ShortName { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class DemoTextCell : TextCell
 		{
 			public DemoTextCell()

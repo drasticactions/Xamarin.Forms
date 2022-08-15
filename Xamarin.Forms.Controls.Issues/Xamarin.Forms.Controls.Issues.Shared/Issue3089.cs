@@ -17,7 +17,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3089, "TextCell text doesn't change when using Recycling on ListViews")]
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
@@ -47,7 +47,7 @@ namespace Xamarin.Forms.Controls.Issues
 			});
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public partial class MainPageCode : TabbedPage
 		{
 			public MainPageCode()
@@ -65,7 +65,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MainViewModel
 		{
 
@@ -91,7 +91,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public ICommand Add2Command { get; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListViewModel : INotifyPropertyChanged
 		{
 			public ObservableCollection<string> Items { get; set; }
@@ -106,7 +106,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public partial class ListPageCode : ContentPage
 		{
 			public ListPageCode()

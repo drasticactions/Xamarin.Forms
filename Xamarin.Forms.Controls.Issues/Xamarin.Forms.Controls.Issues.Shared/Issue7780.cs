@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CarouselView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7780, "[Bug] CarouselView doesn't support RTL layout", PlatformAffected.iOS)]
 	public class Issue7780 : TestContentPage
 	{
@@ -114,14 +114,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7780Model
 	{
 		public Color Color { get; set; }
 		public string Name { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7780ViewModel : BindableObject
 	{
 		ObservableCollection<Issue7780Model> _items;

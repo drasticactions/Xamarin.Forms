@@ -9,7 +9,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 		[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 60787, "Frames with border radius preset have this radius reset when their background color is changed.",
 		PlatformAffected.Android, issueTestNumber: 1)]
 	public partial class Bugzilla60787 : ContentPage

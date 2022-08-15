@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 15100, "[Bug] ScrollView's size does not consider all Margins and Paddings on Android", PlatformAffected.Android)]
 	public partial class Issue15100 : TestContentPage
 	{

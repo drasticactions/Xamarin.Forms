@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.RefreshView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8198, "ScrollView at CollectionView at RefreshView always leads to Pull-To-Refresh", PlatformAffected.Android)]
 	public class Issue8198 : TestContentPage
 	{

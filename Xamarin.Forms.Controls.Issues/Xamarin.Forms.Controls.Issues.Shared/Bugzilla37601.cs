@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 37601, "ToolbarItem throws error when navigating to TabbedPage ",
 		PlatformAffected.WinPhone)]
 	public class Bugzilla37601 : TestNavigationPage

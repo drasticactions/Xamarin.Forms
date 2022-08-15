@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 35477, "Tapped event does not fire when added to Frame in Android AppCompat",
 		PlatformAffected.Android)]
 	public class Bugzilla35477 : TestContentPage

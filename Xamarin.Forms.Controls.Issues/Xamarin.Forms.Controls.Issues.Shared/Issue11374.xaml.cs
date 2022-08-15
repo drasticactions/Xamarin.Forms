@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11374,
 		"[Bug] [Android] SwipeView in ListView is not working with RippleEffect and Release configuration",
 		PlatformAffected.Android)]
@@ -31,7 +31,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue11374ViewModel : BindableObject
 	{
 		public ObservableCollection<string> Items { get; set; }
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RippleEffect : RoutingEffect
 	{
 		public RippleEffect() : base($"{Effects.ResolutionGroupName}.{nameof(RippleEffect)}")

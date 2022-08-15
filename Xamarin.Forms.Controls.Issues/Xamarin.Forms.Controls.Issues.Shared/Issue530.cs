@@ -13,7 +13,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 530, "ListView does not render if source is async", PlatformAffected.iOS)]
 	public class Issue530 : TestContentPage
 	{

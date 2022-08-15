@@ -11,11 +11,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 23942, "Cannot bind properties in BindableObjects added to static resources in XAML", PlatformAffected.All)]
 	public partial class Bugzilla23942 : TestContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TestViewModel : ViewModelBase
 		{
 			string _doesItWork;
@@ -68,7 +68,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla23942Options : BindableObject
 	{
 		public static readonly BindableProperty TextProperty =
@@ -90,7 +90,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla23942Label : Label
 	{
 		public static readonly BindableProperty OptionsProperty =

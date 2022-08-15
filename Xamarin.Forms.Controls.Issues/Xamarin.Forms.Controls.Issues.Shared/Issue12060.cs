@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12060, "Bug] DragGestureRecognizer shows 'Copy' tag when dragging in UWP",
 		PlatformAffected.UWP)]
 #if UITEST

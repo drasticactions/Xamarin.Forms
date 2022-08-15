@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 39407, "Picker doesn't reset to source selected index when closed while spinning, via touch outside or Done button.", PlatformAffected.iOS)]
 	public class Bugzilla39407 : TestContentPage
 	{

@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 57758, "ObjectDisposedException for Xamarin.Forms.Platform.Android.FastRenderers.ImageRenderer", PlatformAffected.Android)]
 	public class Bugzilla57758 : TestContentPage
 	{

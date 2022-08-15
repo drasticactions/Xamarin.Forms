@@ -10,7 +10,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2223, "Possibility to change IsPassword", PlatformAffected.macOS)]
 	public class Issue2223 : TestContentPage
 	{

@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2595, "ScrollView.Content is not re-layouted on Android", PlatformAffected.Android)]
 	public class Issue2595 : TestFlyoutPage
 	{
@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 			IsPresented = true;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _2595Master : ContentPage
 		{
 			public _2595Master()
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _2595ScrollPage : ContentPage
 		{
 			protected Label Label;

@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 56298, "Changing ListViews HasUnevenRows at runtime on iOS has no effect", PlatformAffected.iOS)]
 	public class Bugzilla56298 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -82,7 +82,7 @@ namespace Xamarin.Forms.Controls.Issues
 			list.HasUnevenRows = !list.HasUnevenRows;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class UnevenViewCell : ViewCell
 		{
 			public UnevenViewCell()
@@ -97,7 +97,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Person1
 		{
 			public string FullName { get; set; }

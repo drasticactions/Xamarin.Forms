@@ -9,7 +9,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal static class PerformanceDataManager
 	{
 		const string GetScenarioResultsRoute = "/api/ScenarioResults/device/";
@@ -28,7 +28,7 @@ namespace Xamarin.Forms.Controls.Issues
 			_client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public enum Result
 		{
 			Inconclusive,
@@ -88,7 +88,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ScenarioResult
 		{
 			public string DeviceIdentifier { get; set; }
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public string BuildInfo { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ScenarioResultDetail
 		{
 			public int CallCount { get; set; }

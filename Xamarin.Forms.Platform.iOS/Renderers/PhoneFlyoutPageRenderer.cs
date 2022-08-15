@@ -29,7 +29,7 @@ namespace Xamarin.Forms.Platform.iOS
 		Page Page => Element as Page;
 
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public PhoneFlyoutPageRenderer()
 		{
 		}
@@ -544,7 +544,7 @@ namespace Xamarin.Forms.Platform.iOS
 
 	public class PhoneMasterDetailRenderer : PhoneFlyoutPageRenderer
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public PhoneMasterDetailRenderer()
 		{
 		}

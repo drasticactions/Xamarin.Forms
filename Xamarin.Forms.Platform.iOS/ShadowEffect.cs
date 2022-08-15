@@ -7,7 +7,7 @@ using PlatformElement = Xamarin.Forms.PlatformConfiguration.iOSSpecific.VisualEl
 
 namespace Xamarin.Forms.Platform.iOS
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ShadowEffect : PlatformEffect
 	{
 		UIView ShadowView => Control ?? Container;

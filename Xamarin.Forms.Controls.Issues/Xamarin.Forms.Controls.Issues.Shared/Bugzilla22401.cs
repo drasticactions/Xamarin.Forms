@@ -9,7 +9,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 22401, "FlyoutPage detail width broken when landscape", PlatformAffected.iOS, NavigationBehavior.PushAsync)]
 	public class Bugzilla22401 : FlyoutPage
 	{

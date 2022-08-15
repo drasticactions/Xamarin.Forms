@@ -19,7 +19,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Shell Modal Behavior Test",
 		PlatformAffected.All)]
 #if UITEST
@@ -77,7 +77,7 @@ namespace Xamarin.Forms.Controls.Issues
 			AddTopTab("OtherTab");
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		[QueryProperty("IsModal", "IsModal")]
 		public class ModalNavigationTestPage : NavigationPage
 		{
@@ -107,7 +107,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ModalTestPage : ContentPage
 		{
 			public ModalTestPage()

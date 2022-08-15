@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2953, "GroupHeaderCells disappear when item is removed from a group in ListView (iOS only) ")]
 	public class Issue2953 : TestContentPage
 	{
@@ -53,14 +53,14 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class GroupedItems : ObservableCollection<string>
 		{
 			public GroupedItems(string groupName) { GroupName = groupName; }
 			public string GroupName { get; private set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class HeaderCell : ViewCell
 		{
 			public HeaderCell()
@@ -72,7 +72,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class ItemCell : ViewCell
 		{
 			public ItemCell()

@@ -80,7 +80,7 @@ namespace Xamarin.Forms.Controls.Issues
 			});
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ObservableTeam : ObservableCollection<Member>
 		{
 			public ObservableTeam(string name, List<Member> members) : base(members)
@@ -96,7 +96,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Member
 		{
 			public Member(string name)

@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 58406,
 		"Effect is never attached to Label, but is attached to Label subclass (Android)", PlatformAffected.Android)]
 	public class Bugzilla58406 : TestContentPage
@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 		const string InitialText = "_58406";
 		const string ReversedText = "60485_";
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _58406Effect : RoutingEffect
 		{
 			public _58406Effect() : base($"{Issues.Effects.ResolutionGroupName}.{EffectName}")

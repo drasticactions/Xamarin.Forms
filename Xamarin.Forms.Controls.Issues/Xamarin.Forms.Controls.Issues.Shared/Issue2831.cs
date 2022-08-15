@@ -15,7 +15,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2831, "[IOS] label not rendering in BOLD when using a STYLE",
 		PlatformAffected.iOS)]
 	public class Issue2831 : TestContentPage

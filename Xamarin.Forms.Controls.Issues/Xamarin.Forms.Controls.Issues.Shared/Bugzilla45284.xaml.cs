@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 45284, "[iOS10] Extra tab icons display in iOS when binding Title on TabbedPage", PlatformAffected.iOS)]
 	public partial class Bugzilla45284 : TabbedPage
 	{
@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 			model.Change();
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla45284Model : INotifyPropertyChanged
 	{
 		public List<Bugzilla45284TabModel> Tabs => new List<Bugzilla45284TabModel> {
@@ -42,7 +42,7 @@ namespace Xamarin.Forms.Controls.Issues
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Tabs)));
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bugzilla45284TabModel
 	{
 		public string Title { get; set; } = "Title";

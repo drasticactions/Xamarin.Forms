@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Platform.iOS
 
 		UIColor _defaultOnColor;
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public SwitchCellRenderer()
 		{
 		}

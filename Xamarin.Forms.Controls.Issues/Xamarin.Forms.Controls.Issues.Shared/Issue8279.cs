@@ -14,7 +14,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve (AllMembers=true)]
+	[Xamarin.Forms.Internals.Preserve (AllMembers=true)]
 	[Issue (IssueTracker.Github, 8279, "[Feature requested] ListView do not ScrollTo a group when there is no child of this group", PlatformAffected.Android)]
     public class Issue8279 : TestContentPage
 	{
@@ -174,7 +174,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 #endif
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyData : INotifyPropertyChanged
 		{
 			public event PropertyChangedEventHandler PropertyChanged;
@@ -201,7 +201,7 @@ namespace Xamarin.Forms.Controls.Issues
 					PropertyChanged(this, e);
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyGroup : ObservableCollection<MyData>, INotifyPropertyChanged
 		{
 			string _headertitle;
@@ -220,7 +220,7 @@ namespace Xamarin.Forms.Controls.Issues
 				}
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class VCTest : ViewCell
 		{
 			public VCTest()
@@ -230,7 +230,7 @@ namespace Xamarin.Forms.Controls.Issues
 				View = label;
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class VCHeader : ViewCell
 		{
 			public VCHeader()

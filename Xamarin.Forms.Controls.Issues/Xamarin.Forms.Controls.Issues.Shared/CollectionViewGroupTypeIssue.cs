@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 5882300, "Crash if group type is not IList",
 		PlatformAffected.iOS)]
 	public class CollectionViewGroupTypeIssue : TestNavigationPage

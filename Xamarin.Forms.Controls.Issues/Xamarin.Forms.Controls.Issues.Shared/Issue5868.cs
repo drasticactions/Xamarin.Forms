@@ -8,7 +8,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5868, "[Bug] VisualElement.Unfocus does not work on WPF", PlatformAffected.WPF)]
 	public class Issue5868 : TestContentPage
 	{

@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4879, "4879 - ImageButtonPadding", PlatformAffected.UWP)]
 	public class Issue4879 : TestContentPage
 	{

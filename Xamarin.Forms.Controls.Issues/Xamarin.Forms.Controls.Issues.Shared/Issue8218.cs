@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8218, "[Bug] -UWP - Device.Idiom is not updated when flipping tablet mode state", PlatformAffected.UWP)]
 	class Issue8218 : TestContentPage
 	{

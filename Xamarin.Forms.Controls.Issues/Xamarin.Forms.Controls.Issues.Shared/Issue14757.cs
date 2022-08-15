@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14757, "[Bug] Android ObjectDisposedException thrown Button inside CollectionView with Binding", PlatformAffected.Android)]
 	public class Issue14757 : TestContentPage
 	{

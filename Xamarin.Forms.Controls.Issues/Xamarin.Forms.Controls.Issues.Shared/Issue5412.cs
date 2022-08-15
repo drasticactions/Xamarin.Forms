@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(Core.UITests.UITestCategories.FlyoutPage)]
 	[Category(Core.UITests.UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5412, "5412 - (NavigationBar disappears on FlyoutPage)", PlatformAffected.UWP)]
 	public class Issue5412 : TestContentPage
 	{

@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2204, "Font aliasing and color aren't displayed correctly in MacOS without a retina display", PlatformAffected.macOS)]
 	public class Issue2204 : TestContentPage
 	{

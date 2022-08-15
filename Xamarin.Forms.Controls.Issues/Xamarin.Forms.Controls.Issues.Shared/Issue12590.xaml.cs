@@ -11,7 +11,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12590,
 		"[Bug] LineBreakMode=TailTruncation doesn't work with Label.FormattedText",
 		PlatformAffected.iOS)]

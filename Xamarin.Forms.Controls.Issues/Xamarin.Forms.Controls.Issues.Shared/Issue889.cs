@@ -10,7 +10,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 889, "Assigning to FlyoutPage.Detail after construction doesn't work", PlatformAffected.Android | PlatformAffected.iOS)]
 	public class Issue889 : TestFlyoutPage
 	{

@@ -13,7 +13,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10234, "CarouselView disposed on iOS when navigating back in Shell ", PlatformAffected.iOS)]
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.Shell)]

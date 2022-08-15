@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11107, "[Bug][iOS] Shell Navigation implicitly adds Tabbar",
 		PlatformAffected.iOS)]
 #if UITEST
@@ -110,7 +110,7 @@ namespace Xamarin.Forms.Controls.Issues
 			});
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue11107HeaderPage : ContentPage
 		{
 			public Issue11107HeaderPage()

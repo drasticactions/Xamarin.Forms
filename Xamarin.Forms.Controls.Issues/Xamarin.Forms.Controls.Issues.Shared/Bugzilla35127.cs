@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ScrollView)]
 	[Category(UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 35127, "It is possible to craft a page such that it will never display on Windows")]
 	public class Bugzilla35127 : TestContentPage
 	{

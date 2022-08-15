@@ -11,11 +11,11 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5555, "Memory leak when SwitchCell or EntryCell", PlatformAffected.iOS)]
 	public class Issue5555 : TestContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class LeakPage : ContentPage
 		{
 			public LeakPage()

@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class Issue5949_2 : ContentPage
 	{
 		public const string BackButton = "5949GoBack";
@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class _5949ViewModel
 		{
 			public _5949ViewModel()

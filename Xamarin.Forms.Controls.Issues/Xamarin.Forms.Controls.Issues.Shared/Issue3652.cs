@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3652, "Loses the correct reference to the cell after adding and removing items to a ListView", PlatformAffected.UWP)]
 	public class Issue3652 : TestContentPage
 	{
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ICell : ViewCell
 		{
 			public ICell()
@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MainPageViewModel
 		{
 			int newItemNumber = 1;
@@ -102,7 +102,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListItemViewModel
 		{
 			public int Number { get; set; }

@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1332, "Frame inside frame does not resize after visibility changed", PlatformAffected.Android)]
 	public class Issue1332 : TestContentPage
 	{

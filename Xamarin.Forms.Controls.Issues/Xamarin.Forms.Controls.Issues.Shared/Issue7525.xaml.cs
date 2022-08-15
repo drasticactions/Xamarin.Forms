@@ -13,7 +13,7 @@ using Xamarin.Forms.Core.UITests;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Test1View : ContentView
 	{
 		public Test1View()
@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BackgroundColor = Color.Red;
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Test2View : ContentView
 	{
 		public Test2View()
@@ -29,7 +29,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BackgroundColor = Color.Blue;
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Test3View : ContentView
 	{
 		public Test3View()
@@ -38,7 +38,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CustomViewSelector : DataTemplateSelector
 	{
 		private DataTemplate view1 = new DataTemplate(typeof(Test1View));
@@ -59,7 +59,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7525, "Carousel Position property doesn't change the position on page constructor", PlatformAffected.Android)]
 	public partial class Issue7525 : TestContentPage
 	{

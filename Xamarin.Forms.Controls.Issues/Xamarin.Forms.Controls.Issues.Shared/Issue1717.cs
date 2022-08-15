@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1717, "Allow DetectReadingOrderFromContent on UWP", PlatformAffected.UWP)]
 	public class Issue1717 : TestContentPage // or TestFlyoutPage, etc ...
 	{

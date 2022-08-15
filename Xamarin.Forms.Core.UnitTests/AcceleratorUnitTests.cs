@@ -72,7 +72,7 @@ namespace Xamarin.Forms.Core.UnitTests
 		}
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public struct TestShortcut
 		{
 			internal TestShortcut(string modifier)

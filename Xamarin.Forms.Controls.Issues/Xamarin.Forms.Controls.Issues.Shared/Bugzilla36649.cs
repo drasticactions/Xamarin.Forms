@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 36649, "LineBreakMode.NoWrap is handled incorrectly on Windows Phone 8.1 RT",
 		PlatformAffected.WinRT)]
 	public class Bugzilla36649 : TestContentPage

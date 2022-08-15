@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "CollectionView ItemsSource Types", PlatformAffected.All)]
 	public class CollectionViewItemsSourceTypes : TestContentPage
 	{

@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10530, "[Bug] Swipe View Null Reference Exception while trying to change visibility of swipe item", PlatformAffected.Android)]
 	public class Issue10530 : TestContentPage
 	{
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10530Item : BindableObject
 	{
 		bool _retryAvailable;
@@ -122,7 +122,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10530ViewModel : BindableObject
 	{
 		public Issue10530ViewModel()

@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4136, "[Android] Missing call to UpdateLineHeight in LabelRenderer",
 		PlatformAffected.Android)]
 	public class Issue4136 : TestContentPage

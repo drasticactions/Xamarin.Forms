@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6693, "[Bug] [WPF] ViewRenderer does not work properly with FrameworkElement derived native controls", PlatformAffected.WPF)]
 	public partial class Issue6693 : ContentPage
 	{

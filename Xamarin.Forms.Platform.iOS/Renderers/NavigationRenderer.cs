@@ -33,7 +33,7 @@ namespace Xamarin.Forms.Platform.iOS
 		UIImage _defaultNavBarBackImage;
 		bool _disposed;
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public NavigationRenderer() : base(typeof(FormsNavigationBar), null)
 		{
 			MessagingCenter.Subscribe<IVisualElementRenderer>(this, UpdateToolbarButtons, sender =>

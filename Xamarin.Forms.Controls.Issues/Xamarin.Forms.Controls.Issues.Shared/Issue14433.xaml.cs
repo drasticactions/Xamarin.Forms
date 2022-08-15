@@ -11,7 +11,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14433,
 		"[Bug] LinearGradientBrush Background with alpha channel color don't works",
 		PlatformAffected.iOS)]

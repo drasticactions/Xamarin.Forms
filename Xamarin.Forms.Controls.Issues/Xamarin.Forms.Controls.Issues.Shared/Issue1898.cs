@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1898, "TabbedPage Page not watching icon changes", PlatformAffected.Android, issueTestNumber: 1)]
 	public class Issue1898 : TestTabbedPage
 	{
@@ -32,7 +32,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1898, "TabbedPage Page not watching icon changes", issueTestNumber: 2)]
 	public partial class Issue1898_2 : TestTabbedPage
 	{
@@ -46,7 +46,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class Issue1898Setup
 	{
 #if UITEST

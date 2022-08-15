@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10897, "[Bug] UWP: CollectionView in CarouselView crashes when resizing the window",
 		PlatformAffected.UWP)]
 	public partial class Issue10897 : TestContentPage
@@ -33,19 +33,19 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10897Item
 	{
 		public string Text { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10897Items
 	{
 		public List<Issue10897Item> Items { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10897ViewModel
 	{
 		public List<Issue10897Items> CarouselItems { get; set; }

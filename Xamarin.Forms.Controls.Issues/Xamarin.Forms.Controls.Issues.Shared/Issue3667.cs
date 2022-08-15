@@ -8,7 +8,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3667, "[Enhancement] Add text-transforms to Label", PlatformAffected.All)]
 	public class Issue3667 : TestContentPage
 	{

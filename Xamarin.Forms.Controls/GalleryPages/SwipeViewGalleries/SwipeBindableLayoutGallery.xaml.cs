@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.GalleryPages.SwipeViewGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class SwipeBindableLayoutGallery : ContentPage
 	{
 		public SwipeBindableLayoutGallery()
@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.SwipeViewGalleries
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Message
 	{
 		public string Title { get; set; }
@@ -26,7 +26,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.SwipeViewGalleries
 		public string Date { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SwipeViewGalleryViewModel : BindableObject
 	{
 		ObservableCollection<Message> _messages;

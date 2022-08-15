@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4919, "Webview Navigation cancel not working", PlatformAffected.Android)]
 	public class Issue4919 : TestContentPage // or TestFlyoutPage, etc ...
 	{

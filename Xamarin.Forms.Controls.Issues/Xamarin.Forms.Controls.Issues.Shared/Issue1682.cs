@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1682, "Software keyboard does not show up when we set Focus for Entry in Android", PlatformAffected.Android, NavigationBehavior.PushModalAsync)]
 	public class Issue1682 : ContentPage
 	{

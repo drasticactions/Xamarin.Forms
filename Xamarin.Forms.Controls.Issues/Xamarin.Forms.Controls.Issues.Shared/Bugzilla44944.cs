@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 44944, "iOS: Text goes outside the bounds of Entry if it can't fit inside", PlatformAffected.iOS)]
 	public class Bugzilla44944 : TestContentPage
 	{

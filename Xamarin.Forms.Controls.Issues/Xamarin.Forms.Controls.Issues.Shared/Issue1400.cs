@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1400, "Group binding errors", PlatformAffected.Android | PlatformAffected.iOS | PlatformAffected.WinPhone, NavigationBehavior.PushModalAsync)]
 	public class Issue1400 : ContentPage
 	{
@@ -92,7 +92,7 @@ namespace Xamarin.Forms.Controls.Issues
 			List.ItemsSource = newlist;
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MyData : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -119,7 +119,7 @@ namespace Xamarin.Forms.Controls.Issues
 				PropertyChanged(this, e);
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MyGroup : ObservableCollection<MyData>, INotifyPropertyChanged
 	{
 		string _headertitle;
@@ -138,7 +138,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class VCTest : ViewCell
 	{
 		public VCTest()
@@ -148,7 +148,7 @@ namespace Xamarin.Forms.Controls.Issues
 			View = label;
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class VCHeader : ViewCell
 	{
 		public VCHeader()

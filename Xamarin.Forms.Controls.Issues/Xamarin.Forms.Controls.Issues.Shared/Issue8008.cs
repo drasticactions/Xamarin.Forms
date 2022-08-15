@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8008, "Removing Shell Item can cause Shell to try and set a MenuItem as the default visible item")]
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.Shell)]

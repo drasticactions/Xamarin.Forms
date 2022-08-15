@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8203,
 	"CollectionView fires SelectionChanged x (number of items selected +1) times, while incrementing SelectedItems from 0 " +
 	"to number of items each time",

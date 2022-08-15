@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10348, "[Bug] Cannot change shadow appearance on Frame from version 4.5.x", PlatformAffected.iOS)]
 	public partial class Issue10348 : ContentPage
 	{

@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.GalleryPages
 			BindingContext = new PageViewModel();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class PageViewModel
 		{
 			public ObservableCollection<object> ItemsSource { get; set; }

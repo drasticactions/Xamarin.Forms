@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 31602, "not possible to programmatically open master page after iPad landscape -> portrait rotation, also tests 31664")]
 	public class Bugzilla31602 : TestFlyoutPage
 	{
@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MasterViewModel1 : INotifyPropertyChanged
 		{
 			public FlyoutPage MasterPage;

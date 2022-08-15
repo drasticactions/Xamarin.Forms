@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.CollectionViewGalleries.HeaderFoot
 			BindingContext = new HeaderFooterDemoModel();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class HeaderFooterDemoModel : INotifyPropertyChanged
 		{
 			readonly DemoFilteredItemSource _demoFilteredItemSource = new DemoFilteredItemSource(3);

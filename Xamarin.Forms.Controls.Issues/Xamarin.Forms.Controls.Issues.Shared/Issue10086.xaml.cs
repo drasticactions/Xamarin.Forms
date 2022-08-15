@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10086,
 		"[Bug] SwipeView.RightItems Label is Missing/Hidden Due to Bad Alignment",
 		PlatformAffected.Android | PlatformAffected.iOS)]
@@ -29,14 +29,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10086Model
 	{
 		public string Title { get; set; }
 		public string SubTitle { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10086ViewModel : BindableObject
 	{
 		public Issue10086ViewModel()

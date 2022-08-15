@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Layout)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6932, "EmptyView for BindableLayout (template)", PlatformAffected.All, issueTestNumber: 1)]
 	public partial class Issue6932_emptyviewtemplate : TestContentPage
 	{

@@ -12,7 +12,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5951, "App Crashes On Shadow Effect's OnDetached On Button That's Never Visible", PlatformAffected.iOS)]
 	public class Issue5951 : TestContentPage
 	{
@@ -68,7 +68,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class PageWithShadowButton : ContentPage
 	{
 		public PageWithShadowButton()

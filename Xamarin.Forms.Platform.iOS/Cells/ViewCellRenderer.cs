@@ -9,7 +9,7 @@ namespace Xamarin.Forms.Platform.iOS
 {
 	public class ViewCellRenderer : CellRenderer
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public ViewCellRenderer()
 		{
 		}

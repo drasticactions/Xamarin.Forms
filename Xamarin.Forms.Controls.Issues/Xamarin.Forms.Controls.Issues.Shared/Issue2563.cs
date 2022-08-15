@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2563, "NavigationPage should support queuing of navigation events", PlatformAffected.Android | PlatformAffected.WinPhone | PlatformAffected.iOS)]
 	public class Issue2563 : ContentPage
 	{

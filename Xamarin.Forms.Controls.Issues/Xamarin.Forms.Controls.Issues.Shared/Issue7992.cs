@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7992, "Datepicker is not opened when we call Datepicker.Focus() in UWP", PlatformAffected.UWP)]
 
 	public class Issue7992 : TestContentPage

@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 41153, "jobject must not be IntPtr.Zero with TabbedPage and ToolbarItems")]
 	public class Bugzilla41153 : TestTabbedPage
 	{
@@ -28,7 +28,7 @@ namespace Xamarin.Forms.Controls.Issues
 		const string ToolbarItemText = "Toolbar Item";
 		const string Success = "Success";
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyViewModel : INotifyPropertyChanged
 		{
 			string _toolBarItemText;

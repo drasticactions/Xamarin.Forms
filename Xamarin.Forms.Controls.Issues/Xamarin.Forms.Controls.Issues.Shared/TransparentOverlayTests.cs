@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.InputTransparent)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 618, "Transparent Overlays", PlatformAffected.All)]
 	public class TransparentOverlayTests : TestNavigationPage
 	{
@@ -63,7 +63,7 @@ namespace Xamarin.Forms.Controls.Issues
 			return button;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public struct TestPoint
 		{
 			public TestPoint(int i) : this()

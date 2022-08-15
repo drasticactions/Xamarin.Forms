@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CarouselViewCoreGalleryPage : CoreGalleryPage<CarouselView>
 	{
 		private object _currentItem;
@@ -101,7 +101,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CarouselData
 	{
 		public Color Color { get; set; }

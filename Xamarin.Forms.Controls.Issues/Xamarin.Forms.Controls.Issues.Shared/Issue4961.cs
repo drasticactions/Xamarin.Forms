@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4961, "TimePicker does not remeasure its size when picking a new time that is wider than the previously selected value",
 		PlatformAffected.Android | PlatformAffected.iOS)]
 	public class Issue4961 : TestContentPage

@@ -9,7 +9,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 22246, "Entry in Grid nested in ViewCell isn't expanding", PlatformAffected.WinPhone, NavigationBehavior.PushModalAsync)]
 	public class Issue22246Bz : ContentPage
 	{

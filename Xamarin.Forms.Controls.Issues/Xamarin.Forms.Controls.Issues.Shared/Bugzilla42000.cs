@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 42000, "Unable to use comma (\", \") as decimal point", PlatformAffected.Android)]
 	public class Bugzilla42000 : ContentPage
 	{
@@ -55,12 +55,12 @@ In the second, the '-' should not be typeable."
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _42000NumericEntryNoDecimal : Entry
 		{
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _42000NumericEntryNoNegative : Entry
 		{
 		}

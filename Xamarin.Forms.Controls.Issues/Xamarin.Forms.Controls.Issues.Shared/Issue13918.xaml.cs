@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13918, "[Bug] iOS DatePicker only displays the last two digits of the year",
 		PlatformAffected.iOS)]
 	public partial class Issue13918 : TestContentPage

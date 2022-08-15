@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3019, "Grouped ListView Header empty for adding items", PlatformAffected.UWP)]
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
@@ -25,7 +25,7 @@ namespace Xamarin.Forms.Controls.Issues
 		ListView _listViewIsGrouped;
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyHeaderViewCell : ViewCell
 		{
 			public MyHeaderViewCell()
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Item
 		{
 			static int counter = 0;
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class GroupedItem : List<Item>
 		{
 			public GroupedItem()

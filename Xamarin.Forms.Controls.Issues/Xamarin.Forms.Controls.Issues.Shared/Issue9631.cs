@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9631, "[CollectionView] How to scroll in Horizontal CollectionView",
 		PlatformAffected.UWP)]
 	public partial class Issue9631 : TestContentPage
@@ -64,7 +64,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ViewModel9631
 		{
 			public ObservableCollection<Model9631> Items { get; set; }
@@ -88,7 +88,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Model9631
 		{
 			public string Text { get; set; }

@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.InputTransparent)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 5552368, "Transparency Cascading", PlatformAffected.All)]
 	public class CascadeInputTransparent : TestNavigationPage
 	{

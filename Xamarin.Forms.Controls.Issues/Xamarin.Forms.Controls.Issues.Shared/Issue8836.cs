@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8836, "[Bug] ClearButtonVisibility.Never does not take effect on UWP", PlatformAffected.UWP)]
 	public class Issue8836 : TestContentPage
 	{

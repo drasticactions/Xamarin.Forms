@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class PerformanceViewModel : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged = delegate { };

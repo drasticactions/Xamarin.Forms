@@ -94,7 +94,7 @@ namespace Xamarin.Forms.Controls
 			Content = new StackLayout { Children = { label, listView } };
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class UrlImageViewCellListPageModel
 		{
 			public string Text { get; set; }

@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3308, "[WPF] Button does not recalculate width on WPF", PlatformAffected.WPF)]
 	public class Issue3308 : TestContentPage
 	{

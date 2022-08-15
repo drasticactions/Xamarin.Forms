@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 51173, "Custom ImageRenderer error handling demo", PlatformAffected.All)]
 	public class CustomImageRendererErrorHandling : TestContentPage
 	{
@@ -35,6 +35,6 @@ Instead of just logging an error, the custom renderer will display an alert dial
 	}
 
 	// custom image type for demonstrating custom error handling in a custom renderer
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class _51173Image : Image { }
 }

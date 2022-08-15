@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1760, "Content set after an await is not visible", PlatformAffected.Android)]
 	public class Issue1760 : TestFlyoutPage
 	{
@@ -27,7 +27,7 @@ namespace Xamarin.Forms.Controls.Issues
 			IsPresented = true;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _1760Master : ContentPage
 		{
 			readonly bool _scrollEnabled;
@@ -57,7 +57,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _1760TestPage : ContentPage
 		{
 			readonly bool _scrollEnabled;

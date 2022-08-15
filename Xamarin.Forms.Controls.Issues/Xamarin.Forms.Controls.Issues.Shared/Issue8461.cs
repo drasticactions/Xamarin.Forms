@@ -9,7 +9,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8461, "[Bug] [iOS] [Shell] \"Nav Stack consistency error\"",
 		PlatformAffected.iOS)]
 #if UITEST

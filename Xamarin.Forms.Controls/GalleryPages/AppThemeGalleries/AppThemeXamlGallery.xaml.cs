@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.AppThemeGalleries
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class FooConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

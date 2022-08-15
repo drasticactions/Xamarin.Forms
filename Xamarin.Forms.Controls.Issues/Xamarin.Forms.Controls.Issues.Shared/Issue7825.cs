@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7825, "WPF Frame cornerRadius doesn't clip content", PlatformAffected.WPF)]
 	public class Issue7825 : ContentPage
 	{

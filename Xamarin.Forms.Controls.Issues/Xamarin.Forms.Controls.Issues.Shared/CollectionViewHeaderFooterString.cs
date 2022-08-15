@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 8675310, "CollectionView Header/Footer Strings", PlatformAffected.All)]
 	public class CollectionViewHeaderFooterString : TestNavigationPage
 	{

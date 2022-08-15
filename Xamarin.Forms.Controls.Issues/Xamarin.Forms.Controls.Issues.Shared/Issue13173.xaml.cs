@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13173, "[Bug] Line's Stroke and Rectangle's Fill doesn't rendered as expected with SolidColorBrush while changing the system's appearance",
 		PlatformAffected.iOS)]
 	public partial class Issue13173 : TestContentPage

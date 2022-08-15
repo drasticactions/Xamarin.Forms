@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.ListView)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1439, "ItemTapped event for a grouped ListView is not working as expected.", PlatformAffected.UWP)]
 	public class Issue1439 : TestContentPage
 	{
@@ -64,7 +64,7 @@ namespace Xamarin.Forms.Controls.Issues
 			_label3.Text = $"{((Group)e.Group).Title}";
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ViewModel : ObservableObject
 		{
 			ObservableCollection<Group> _items;
@@ -91,7 +91,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Group : ObservableCollection<object>
 		{
 			public string Title { get; set; }
@@ -106,7 +106,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ObservableObject : INotifyPropertyChanged
 		{
 			protected virtual bool SetProperty<T>(

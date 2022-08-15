@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1355, "Setting Main Page in quick succession causes crash on Android",
 		PlatformAffected.Android)]
 	public class Issue1355 : TestContentPage

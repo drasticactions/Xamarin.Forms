@@ -7,6 +7,15 @@
     <LangVersion>latest</LangVersion>
     <EnableDefaultCompileItems>False</EnableDefaultCompileItems>
     <NoWarn>$(NoWarn);CA1416</NoWarn>
+    <SupportedOSPlatformVersion>10.14</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <UseSGen>false</UseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <UseSGen>false</UseSGen>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\Xamarin.Forms.Core\Crc64.cs">
@@ -163,12 +172,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Forms.Platform\Xamarin.Forms.Platform.csproj">
-      <Project>{D31A6537-ED9C-4EBD-B231-A8D4FE44126A}</Project>
-      <Name>Xamarin.Forms.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
-      <Project>{57B8B73D-C3B5-4C42-869E-7B2F17D354AC}</Project>
-      <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\Xamarin.Forms.Platform.MacOS.Shared\Xamarin.Forms.Platform.MacOS.Shared.projitems" Label="Shared" />

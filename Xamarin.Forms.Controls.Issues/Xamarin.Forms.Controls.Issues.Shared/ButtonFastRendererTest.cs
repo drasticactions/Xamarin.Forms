@@ -11,7 +11,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 9999, "Button FastRenderers", PlatformAffected.All)]
 	public class ButtonFastRendererTest : TestContentPage
 	{

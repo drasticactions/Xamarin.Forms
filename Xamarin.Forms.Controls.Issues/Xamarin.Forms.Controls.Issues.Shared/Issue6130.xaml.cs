@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6130, "[Bug] [Forms 4.0] [Android] Mismatch in WebView.EnableZoomControls platform-specific", PlatformAffected.Android)]
 	public partial class Issue6130 : ContentPage
 	{

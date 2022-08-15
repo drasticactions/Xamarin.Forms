@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7701, "[Bug] iOS Large SetPrefersLargeTitles(true) Uses Incorrect BarBackgroundColor", PlatformAffected.iOS)]
 	public class Issue7701 : TestNavigationPage // or TestFlyoutPage, etc ...
 	{

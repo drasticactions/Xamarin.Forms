@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 1701, "Modal Page over Map crashes application", PlatformAffected.Android)]
 	public class MapsModalCrash : TestContentPage
 	{

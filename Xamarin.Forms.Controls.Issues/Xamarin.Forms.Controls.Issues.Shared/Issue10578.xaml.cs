@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10578,
 		"[Bug][iOS] NavigationPage.HideNavigationBarSeparator=true doesn't work from XAML",
 		PlatformAffected.iOS)]
@@ -27,7 +27,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10578Instructions : ContentPage
 	{
 		NavigationPage _navigationPage;

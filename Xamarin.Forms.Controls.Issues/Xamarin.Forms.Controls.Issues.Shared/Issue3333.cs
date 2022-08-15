@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3333, "[UWP] with ListView on page, Navigation.PopAsync() throws exception",
 		PlatformAffected.UWP)]
 #if UITEST
@@ -31,7 +31,7 @@ namespace Xamarin.Forms.Controls.Issues
 			this.Navigation.PushAsync(testPage);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public partial class TestPage : ContentPage
 		{
 			Label content = new Label();
@@ -55,7 +55,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TestPage2 : ContentPage
 		{
 			public List<string> Items

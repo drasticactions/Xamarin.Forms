@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1326, "ListView word wrap in Label causing ViewCells to overlap", PlatformAffected.iOS)]
 	public class Issue1326 : TestContentPage
 	{
@@ -36,18 +36,18 @@ namespace Xamarin.Forms.Controls.Issues
 
 			Content.BindingContext = _model;
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyItem
 		{
 			public String Description { get; set; }
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyItemsViewModel
 		{
 			public List<MyItem> MyItems { get; set; } = new List<MyItem>();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyViewCell : ViewCell
 		{
 			Label label;

@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12126, "[iOS] TabBarIsVisible = True/False breaking for multiple nested pages",
 		PlatformAffected.iOS)]
 #if UITEST

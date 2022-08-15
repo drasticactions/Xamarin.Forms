@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7943, "[Android] Crashes if EmptyView defined and ItemsSource is changed after ItemTemplate is changed", PlatformAffected.Android)]
 	public partial class Issue7943 : TestContentPage
 	{
@@ -97,7 +97,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class Issue7943Model
 	{
 		public string Name { get; set; }

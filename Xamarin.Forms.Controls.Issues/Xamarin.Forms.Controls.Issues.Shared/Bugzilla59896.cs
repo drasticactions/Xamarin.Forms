@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 59896, "v2.4.0: Adding inserting section to ListView causes crash IF first section is empty ", PlatformAffected.iOS)]
 	public class Bugzilla59896 : TestContentPage
 	{
@@ -65,7 +65,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Group : List<string>
 		{
 			public string Title
@@ -82,7 +82,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupHeaderView
 		{
 			public GroupHeaderView()

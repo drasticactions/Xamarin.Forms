@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Shape)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11969,
 		"[Bug] Disabling Swipe view not handling tap gesture events on the content in iOS of Xamarin Forms",
 		PlatformAffected.iOS)]

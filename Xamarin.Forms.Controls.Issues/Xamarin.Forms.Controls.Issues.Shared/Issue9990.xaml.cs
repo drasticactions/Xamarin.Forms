@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9990, "Frame's shadow doesn't translate with the Frame by TranslatTo method (iOS)", PlatformAffected.iOS)]
 	public partial class Issue9990 : ContentPage
 	{

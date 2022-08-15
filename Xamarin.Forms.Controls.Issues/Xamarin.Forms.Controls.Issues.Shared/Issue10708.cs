@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CarouselView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10708, "[Bug] CarouselView - Setting BindingIndex to null - Exception IItemsViewSource is empty", PlatformAffected.iOS)]
 	public class Issue10708 : TestNavigationPage
 	{
@@ -28,7 +28,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10708FirstView : ContentPage
 	{
 		public Issue10708FirstView()
@@ -53,7 +53,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10708SecondView : ContentPage
 	{
 		readonly CarouselView _carouselView;
@@ -83,7 +83,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10708ViewModel : BindableObject
 	{
 		public Issue10708ViewModel()

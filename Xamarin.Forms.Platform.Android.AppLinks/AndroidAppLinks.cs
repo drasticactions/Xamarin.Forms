@@ -11,7 +11,7 @@ using IndexingAction = Firebase.AppIndexing.IAction;
 
 namespace Xamarin.Forms.Platform.Android.AppLinks
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class AndroidAppLinks : IAppLinks, IDisposable
 	{
 		bool _disposed;

@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2976, "Sample 'WorkingWithListviewNative' throw Exception on Xam.Android project.", PlatformAffected.Android)]
 	public class Issue2976 : TestTabbedPage
 	{
@@ -55,7 +55,7 @@ namespace Xamarin.Forms.Controls.Issues
 	/// It uses a built-in row/cell class provided by the native platform
 	/// and is therefore faster than building a custom ViewCell in Xamarin.Forms.
 	/// </summary>
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class NativeListPage : ContentPage
 	{
 		public NativeListPage()
@@ -127,7 +127,7 @@ namespace Xamarin.Forms.Controls.Issues
 	/// It uses the built-in <c>TextCell</c> class which does not require special 'layout'
 	/// and is therefore faster than building a custom ViewCell in Xamarin.Forms.
 	/// </summary>
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class XamarinFormsPage : ContentPage
 	{
 		public XamarinFormsPage()
@@ -173,7 +173,7 @@ namespace Xamarin.Forms.Controls.Issues
 	/// It uses the built-in <c>TextCell</c> class which does not require special 'layout'
 	/// and is therefore faster than building a custom ViewCell in Xamarin.Forms.
 	/// </summary>
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class XamarinFormsNativeCellPage : ContentPage
 	{
 		public XamarinFormsNativeCellPage()
@@ -211,7 +211,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class NativeCell : ViewCell
 	{
 		public NativeCell()
@@ -290,7 +290,7 @@ namespace Xamarin.Forms.Controls.Issues
 	/// It uses a CUSTOM row/cell class that is defined natively which 
 	/// is still faster than a Xamarin.Forms-defined ViewCell subclass.
 	/// </summary>
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class NativeListViewPage2 : ContentPage
 	{
 		public NativeListViewPage2()
@@ -353,7 +353,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class DataSource
 	{
 		public string Name { get; set; }

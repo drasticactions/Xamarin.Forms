@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 60563, "ActivityIndicator in ListView causes SIGSEGV crash in iOS 8", PlatformAffected.iOS)]
 	public class Bugzilla60563 : TestNavigationPage
 	{
@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Navigation.PushAsync(new NavigationPage(new StartPage()));
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListPage : ContentPage
 		{
 			public ListPage()
@@ -40,7 +40,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class SpinnerViewCell : ViewCell
 		{
 			public SpinnerViewCell()
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class StartPage : ContentPage
 		{
 			public StartPage()

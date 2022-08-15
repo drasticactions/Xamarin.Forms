@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8222, "UWP Text in Editor is now vertically centered.", PlatformAffected.UWP)]
 	public class Issue8222 : TestContentPage
 	{

@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class FamilyViewModel
 	{
 		public Guid ProfileId { get; set; }
@@ -29,7 +29,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class FamilyCell : ViewCell
 	{
 		public Label FamilyLabel;
@@ -86,7 +86,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.UwpIgnore)]
 	[Category(UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 26501, "BindingSource / Context action issue", PlatformAffected.iOS)]
 	public class Bugzilla26501 : TestContentPage
 	{
@@ -118,18 +118,18 @@ namespace Xamarin.Forms.Controls.Issues
 
 		readonly FamilyViewModel[] _demoDataSource = new FamilyViewModel[] {
 			new FamilyViewModel {DisplayName = "ZOOMER robothund"},
-			new FamilyViewModel {DisplayName = "FROST sengetøj"},
+			new FamilyViewModel {DisplayName = "FROST sengetï¿½j"},
 			new FamilyViewModel {DisplayName = "BEADOS Quick Dry designstation"},
 			new FamilyViewModel {DisplayName = "Redningsstation i junglen"},
 		};
 
 		readonly FamilyViewModel[] _demoDataSource2 = new FamilyViewModel[] {
 			new FamilyViewModel {DisplayName = "ZOOMER robothund 2"},
-			new FamilyViewModel {DisplayName = "FROST sengetøj"},
+			new FamilyViewModel {DisplayName = "FROST sengetï¿½j"},
 			new FamilyViewModel {DisplayName = "BEADOS Quick Dry designstation"},
 			new FamilyViewModel {DisplayName = "Redningsstation i junglen"},
 			new FamilyViewModel {DisplayName = "CHAMPIONS LEAGUE 2014/15 boosterpakke"},
-			new FamilyViewModel {DisplayName = "NEW BORN BABY luksusæske med dukke"},
+			new FamilyViewModel {DisplayName = "NEW BORN BABY luksusï¿½ske med dukke"},
 			new FamilyViewModel {DisplayName = "FURBY Boom Festive Sweater elektronisk plysdyr"},
 			new FamilyViewModel {DisplayName = "LEGO FRIENDS 41007 Heartlake hundesalon"},
 			new FamilyViewModel {DisplayName = "LEGO CITY 4204 Minen"}

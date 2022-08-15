@@ -8,7 +8,7 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: Dependency(typeof(SampleNativeControl))]
 namespace Xamarin.Forms.ControlGallery.iOS
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SampleNativeControl : ISampleNativeControl
 	{
 		public View View

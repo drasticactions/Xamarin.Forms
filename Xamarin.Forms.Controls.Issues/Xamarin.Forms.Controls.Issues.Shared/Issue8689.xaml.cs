@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8689,
 		"[Bug] Margin of Contentview like Grid, or Stacklayout doesnt work inside RefreshView",
 		PlatformAffected.Android)]
@@ -30,7 +30,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8689ViewModel : BindableObject
 	{
 		public Issue8689ViewModel()

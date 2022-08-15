@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.RadioButton)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "RadioButton: Template From Style", PlatformAffected.All)]
 	public class RadioButtonTemplateFromStyle : TestNavigationPage
 	{

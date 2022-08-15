@@ -5,7 +5,7 @@ using IOPath = System.IO.Path;
 
 namespace Xamarin.Forms.Controls.GalleryPages.PerformanceGallery.Scenarios
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ImageScenario1 : PerformanceScenario
 	{
 		public ImageScenario1()
@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.PerformanceGallery.Scenarios
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ImageScenario2 : PerformanceScenario
 	{
 		public ImageScenario2()
@@ -25,7 +25,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.PerformanceGallery.Scenarios
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ImageScenario3 : PerformanceScenario
 	{
 		const int count = 5;
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.PerformanceGallery.Scenarios
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ImageScenario4 : PerformanceScenario
 	{
 		const int count = 5;

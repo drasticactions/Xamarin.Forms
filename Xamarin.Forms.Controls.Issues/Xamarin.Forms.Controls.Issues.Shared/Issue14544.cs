@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.RadioButton)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14544, "RadioButton does not respond to taps after changing IsEnabled from false to true", PlatformAffected.iOS)]
 	public class Issue14544 : TestContentPage
 	{

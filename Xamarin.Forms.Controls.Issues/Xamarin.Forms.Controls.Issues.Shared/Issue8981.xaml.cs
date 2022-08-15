@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8981, "[Bug] [macOS] Hang App scaling a View to zero",
 		PlatformAffected.macOS)]
 	public partial class Issue8981 : TestContentPage

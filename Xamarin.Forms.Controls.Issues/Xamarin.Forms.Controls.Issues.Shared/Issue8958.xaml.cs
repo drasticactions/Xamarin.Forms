@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.IndicatorView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8958, "[Bug] IndicatorView not updating to current page when CarouselView is bound to custom DataType",
 		PlatformAffected.Android)]
 	public partial class Issue8958 : TestContentPage
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public struct Issue8958Model
 	{
 		public string Title { get; set; }

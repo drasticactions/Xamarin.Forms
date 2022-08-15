@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 58833, "ListView SelectedItem Binding does not fire", PlatformAffected.Android)]
 	public class Bugzilla58833 : TestContentPage
 	{
@@ -27,7 +27,7 @@ namespace Xamarin.Forms.Controls.Issues
 		Label _resultLabel;
 		static Label s_tapGestureFired;
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class TestCell : ViewCell
 		{
 			readonly Label _content;

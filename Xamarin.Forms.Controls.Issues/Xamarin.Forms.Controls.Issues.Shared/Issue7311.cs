@@ -10,7 +10,7 @@ using Xamarin.UITest.iOS;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7311, "[Bug] [Android] Error back hardware button with Picker", PlatformAffected.Android)]
 	public class Issue7311 : TestContentPage
 	{

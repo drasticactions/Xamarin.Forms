@@ -36,14 +36,14 @@ namespace Xamarin.Forms.Platform.iOS
 		static bool _firstLoadFinished = false;
 		string _pendingUrl;
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public WkWebViewRenderer() : this(CreateConfiguration())
 		{
 
 		}
 
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public WkWebViewRenderer(WKWebViewConfiguration config) : base(RectangleF.Empty, config)
 		{
 		

@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ToolbarItem)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6387,
 		"[Bug] [iOS] Crash When the First Toolbar Item Has an Icon and a Second Item Gets Added",
 		PlatformAffected.iOS)]

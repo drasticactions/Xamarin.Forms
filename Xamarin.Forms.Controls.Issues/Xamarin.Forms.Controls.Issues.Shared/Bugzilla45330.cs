@@ -9,13 +9,13 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 45330, "System.ObjectDisposedException: Cannot access a disposed object. Object name: 'Android.Views.GestureDetector'.", PlatformAffected.Android)]
 	public class Bugzilla45330 : TestContentPage
 	{
 		ObservableCollection<_45330Notification> _feed;
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _45330Dto
 		{
 			public _45330Dto()
@@ -26,14 +26,14 @@ namespace Xamarin.Forms.Controls.Issues
 			public ObservableCollection<_45330Notification> Notifications { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _45330Notification
 		{
 			public string UniqueId { get; set; }
 			public DateTime DisplayDate { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _45330ListCell : ViewCell
 		{
 			protected override void OnBindingContextChanged()

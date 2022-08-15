@@ -11,7 +11,7 @@ using static Xamarin.Forms.Controls.XamStore.BasePage;
 
 namespace Xamarin.Forms.Controls.XamStore
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SearchHandlerPage : ContentPage
 	{
 		SearchHandler _searchHandler;

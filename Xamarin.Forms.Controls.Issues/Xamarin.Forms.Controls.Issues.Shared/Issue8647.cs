@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.CollectionView)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8647, "Crash on iOS when using DataTemplateSelector as a GroupingHeaderTemplate in a CollectionView", PlatformAffected.iOS)]
 	public class Issue8647 : TestContentPage
 	{

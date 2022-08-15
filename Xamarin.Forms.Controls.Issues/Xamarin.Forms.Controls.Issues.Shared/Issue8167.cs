@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8167, "[Bug] XF 4.3 UWP Crash - Element not found", PlatformAffected.UWP)]
 	public class Issue8167 : TestContentPage
 	{
@@ -59,7 +59,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BindingContext = model;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _8167ViewModel : INotifyPropertyChanged
 		{
 			string _text;

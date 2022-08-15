@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "[UWP] Modal NavigationPage ignores BarTextColor settings for icons", PlatformAffected.WinRT)]
 	public class AppBarIconColors : TestNavigationPage
 	{
@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class NavigationPageWithAppBarColors : NavigationPage
 	{
 		public NavigationPageWithAppBarColors(Page root) : base(root)

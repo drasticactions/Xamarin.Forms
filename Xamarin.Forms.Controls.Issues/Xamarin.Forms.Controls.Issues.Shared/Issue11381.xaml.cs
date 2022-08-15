@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ListView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11381, "[Bug] [iOS] NRE on grouped ListView when removing cells with gesture recognizers",
 		PlatformAffected.iOS)]
 	public partial class Issue11381 : TestContentPage
@@ -95,7 +95,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue11381Model
 	{
 		public string Name { get; set; }
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string Image { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class GroupedIssue11381Model : ObservableCollection<Issue11381Model>
 	{
 		public string LongName { get; set; }

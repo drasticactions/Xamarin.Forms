@@ -19,11 +19,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 60699, "ListView Bindings fire multiple times on Android SDK 24+", PlatformAffected.Android)]
 	public class Bugzilla60699 : TestContentPage // or TestFlyoutPage, etc ...
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class DebugConverter : IValueConverter
 		{
 			public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -36,7 +36,7 @@ namespace Xamarin.Forms.Controls.Issues
 				=> throw new NotImplementedException("Method not implemented");
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TimestampConverter : IValueConverter
 		{
 			public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls.Issues
 				=> throw new NotImplementedException("Method not implemented");
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyTemplate : Grid
 		{
 			static IValueConverter TimestampConverter = new TimestampConverter();
@@ -88,7 +88,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyViewCell : ViewCell
 		{
 			public MyViewCell()
@@ -97,7 +97,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Item
 		{
 			public string Id { get; set; }
@@ -106,7 +106,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public string Image { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MockDataStore
 		{
 			List<Item> items;
@@ -129,7 +129,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public partial class ItemsViewModel : INotifyPropertyChanged
 		{
 			public MockDataStore DataStore => new MockDataStore();

@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12652, "[Bug] NullReferenceException in the Shell on UWP when navigating back to Shell Section with multiple content items",
 		PlatformAffected.UWP)]
 #if UITEST

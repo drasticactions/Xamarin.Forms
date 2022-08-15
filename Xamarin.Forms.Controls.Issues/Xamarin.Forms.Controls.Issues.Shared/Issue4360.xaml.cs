@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4360, "UWP: TapGestureRecognizer works on Layout only if BackgroundColor is set",
 		PlatformAffected.UWP)]
 	[XamlCompilation(XamlCompilationOptions.Compile)]

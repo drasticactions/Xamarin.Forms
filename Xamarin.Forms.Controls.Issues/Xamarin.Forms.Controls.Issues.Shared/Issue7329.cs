@@ -16,7 +16,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7329, "[Android] ListView scroll not working when inside a ScrollView",
 		PlatformAffected.Android)]
 #if UITEST
@@ -46,7 +46,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Data
 		{
 			public int Text { get; set; }

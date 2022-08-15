@@ -11,7 +11,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 29128, "Slider background lays out wrong Android")]
 	public class Bugzilla29128 : TestContentPage
 	{

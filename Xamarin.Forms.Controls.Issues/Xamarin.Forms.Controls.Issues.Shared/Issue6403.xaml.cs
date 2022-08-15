@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6403, "Xamarin.Forms UWP Picker collapses on opening Dropdown menu [Bug]", PlatformAffected.UWP)]
 	public partial class Issue6403 : TestContentPage
 	{

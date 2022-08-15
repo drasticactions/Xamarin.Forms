@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7385, "[Bug] [UWP] Resetting Translation/Rotation does nothing", PlatformAffected.UWP)]
 	public class Issue7385 : TestContentPage
 	{

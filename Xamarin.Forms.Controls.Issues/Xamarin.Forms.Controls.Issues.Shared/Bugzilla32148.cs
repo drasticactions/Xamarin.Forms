@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ListView)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 32148, " Pull to refresh hides the first item on a list view")]
 	public class Bugzilla32148 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -144,7 +144,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ContactViewModel1
 		{
 			public string FirstName { get; set; }
@@ -167,7 +167,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Contact1
 		{
 			public string FirstName { get; set; }
@@ -183,7 +183,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public string CountryCode { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class HeaderCell : ViewCell
 		{
 			public HeaderCell()
@@ -215,7 +215,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ContactItemTemplate : ImageCell
 		{
 			public ContactItemTemplate()

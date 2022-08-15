@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2987, "When setting the minimum and maximum date for a date picker, only allow valid dates to be seen/selected from the DatePicker dialog", PlatformAffected.Android)]
 	public class Issue2987 : TestContentPage
 	{

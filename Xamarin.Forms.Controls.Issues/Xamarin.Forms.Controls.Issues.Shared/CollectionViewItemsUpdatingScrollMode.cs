@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.CollectionView)]
 	[Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 8888888, "CollectionView ItemsUpdatingScrollMode", PlatformAffected.All)]
 	public class CollectionViewItemsUpdatingScrollMode : TestNavigationPage
 	{

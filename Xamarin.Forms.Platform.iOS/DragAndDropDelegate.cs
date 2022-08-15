@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Platform.iOS
 
 
 		[Export("dragInteraction:session:willEndWithOperation:")]
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public void SessionWillEnd(UIDragInteraction interaction, IUIDragSession session, UIDropOperation operation)
 		{
 			if ((operation == UIDropOperation.Cancel || operation == UIDropOperation.Forbidden) &&
@@ -27,7 +27,7 @@ namespace Xamarin.Forms.Platform.iOS
 			}
 		}
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public UIDragItem[] GetItemsForBeginningSession(UIDragInteraction interaction, IUIDragSession session)
 		{
 			if (interaction.View is IVisualElementRenderer renderer && renderer.Element is View view)
@@ -38,7 +38,7 @@ namespace Xamarin.Forms.Platform.iOS
 		#endregion
 
 		[Export("dropInteraction:canHandleSession:")]
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public bool CanHandleSession(UIDropInteraction interaction, IUIDropSession session)
 		{
 			if (session.LocalDragSession == null)
@@ -54,7 +54,7 @@ namespace Xamarin.Forms.Platform.iOS
 		}
 
 		[Export("dropInteraction:sessionDidExit:")]
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public void SessionDidExit(UIDropInteraction interaction, IUIDropSession session)
 		{
 			if (interaction.View is IVisualElementRenderer renderer)
@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Platform.iOS
 		}
 
 		[Export("dropInteraction:sessionDidUpdate:")]
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public UIDropProposal SessionDidUpdate(UIDropInteraction interaction, IUIDropSession session)
 		{
 			UIDropOperation operation = UIDropOperation.Cancel;
@@ -102,7 +102,7 @@ namespace Xamarin.Forms.Platform.iOS
 		}
 
 		[Export("dropInteraction:performDrop:")]
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public void PerformDrop(UIDropInteraction interaction, IUIDropSession session)
 		{
 			if (session.LocalDragSession == null)

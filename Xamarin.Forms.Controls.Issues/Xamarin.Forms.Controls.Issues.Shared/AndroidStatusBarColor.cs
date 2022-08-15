@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 5553226, "Set status bar color on Android", PlatformAffected.Android)]
 	public class AndroidStatusBarColor : TestContentPage
 	{

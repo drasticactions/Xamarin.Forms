@@ -25,7 +25,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7593, "[Bug][iOS] Pull-to-refresh crash in horizontal grid CollectionView/RefreshView", PlatformAffected.iOS)]
 	public partial class Issue7593 : TestContentPage
 	{
@@ -44,7 +44,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModel7593 : INotifyPropertyChanged
 	{
 		int itemCount = 10;
@@ -485,7 +485,7 @@ namespace Xamarin.Forms.Controls.Issues
 		#endregion
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Model7593
 	{
 		public string Name { get; set; }

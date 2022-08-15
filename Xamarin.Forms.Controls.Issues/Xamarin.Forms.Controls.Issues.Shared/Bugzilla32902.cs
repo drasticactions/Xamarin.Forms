@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 32902, "[iOS | iPad] App Crashes (without debug log) when Flyout Detail isPresented and navigation being popped")]
 	public class Bugzilla32902 : TestContentPage // or TestFlyoutPage, etc ...
 	{

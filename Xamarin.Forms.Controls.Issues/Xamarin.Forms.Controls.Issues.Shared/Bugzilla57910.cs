@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 57910, "ObjectDisposedException in Xamarin.Forms.Platform.Android.Renderers.ProgressBarRenderer", PlatformAffected.Android)]
 	public class Bugzilla57910 : QuickCollectNavigationPage
 	{
@@ -29,7 +29,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Navigation.PushAsync(new HomePage());
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class HomePage : ContentPage
 		{
 			public HomePage()
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListItemView : ViewCell
 		{
 			public ListItemView()
@@ -65,7 +65,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListHeaderView : ContentView
 		{
 			public ListHeaderView()
@@ -76,7 +76,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListFooterView : ContentView
 		{
 			public ListFooterView()
@@ -89,7 +89,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListPageViewModel : INotifyPropertyChanged
 		{
 			ObservableCollection<ListItemViewModel> _items;
@@ -152,7 +152,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListItemViewModel : INotifyPropertyChanged
 		{
 			double _downloadProgressPercentage;
@@ -211,7 +211,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListPage : ContentPage
 		{
 			public ListPage()

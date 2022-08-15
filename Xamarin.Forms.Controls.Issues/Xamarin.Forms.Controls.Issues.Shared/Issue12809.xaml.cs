@@ -9,7 +9,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12809, "[Bug] Entry text is invisible on iOS", PlatformAffected.iOS)]
 	public partial class Issue12809 : TestContentPage
 	{

@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4748, "Setting SelectedItem property of GTK ListView does not reflected in UI", PlatformAffected.Default)]
 	public class Issue4748 : TestContentPage
 	{

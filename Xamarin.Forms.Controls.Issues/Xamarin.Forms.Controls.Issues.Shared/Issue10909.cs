@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.DatePicker)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10909, "[Bug] UWP DatePicker and TimePicker Focus() function does not open the popup to set the date/time",
 		PlatformAffected.UWP)]
 	public class Issue10909 : TestContentPage

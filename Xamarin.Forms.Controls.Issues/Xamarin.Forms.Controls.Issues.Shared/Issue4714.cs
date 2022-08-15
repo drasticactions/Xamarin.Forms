@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[Category(Core.UITests.UITestCategories.Gestures)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4714, "SingleTapGesture called once on DoubleTap", PlatformAffected.UWP)]
 	public class Issue4714 : TestContentPage
 	{

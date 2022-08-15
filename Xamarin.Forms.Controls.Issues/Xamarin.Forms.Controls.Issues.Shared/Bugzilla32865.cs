@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 32865, "On FlyoutPage trying to change Icon of Flyout page doesn\'t work if another view is pushed and Image is renderer in blue", PlatformAffected.iOS)]
 	public class Bugzilla32865 : TestFlyoutPage
 	{
@@ -36,7 +36,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class DetailView32865 : ContentPage
 	{
 		public DetailView32865()
@@ -90,7 +90,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class DetailView232865 : ContentPage
 	{
 		public DetailView232865()

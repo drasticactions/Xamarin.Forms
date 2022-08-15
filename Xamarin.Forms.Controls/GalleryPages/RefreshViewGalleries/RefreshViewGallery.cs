@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.GalleryPages.RefreshViewGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RefreshViewGallery : ContentPage
 	{
 		public RefreshViewGallery()
@@ -29,14 +29,14 @@ namespace Xamarin.Forms.Controls.GalleryPages.RefreshViewGalleries
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RefreshItem
 	{
 		public string Name { get; set; }
 		public Color Color { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RefreshViewModel : BindableObject
 	{
 		const int RefreshDuration = 2;

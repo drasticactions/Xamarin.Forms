@@ -12,7 +12,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 8392, "[Bug] CollectionView does not marshal ObservableCollection.CollectionChanged to MainThread")]
 	public class Issue8392 : TestContentPage
 	{
@@ -57,7 +57,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8392DataTemplate : DataTemplate
 	{
 		public Issue8392DataTemplate() : base(CreateTemplate)
@@ -101,7 +101,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public int Number { get; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8392ViewModel : BindableObject
 	{
 		bool _isRefreshing;

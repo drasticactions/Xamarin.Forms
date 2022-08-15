@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Github5000)]
 	[Category(UITestCategories.Editor)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 15368, "[iOS] Editor's TextChanged event is fired on Unfocus even when no text changed", PlatformAffected.iOS)]
 	public class Issue15368 : TestContentPage
 	{

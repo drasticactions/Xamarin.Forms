@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9767, "[Bug] [iOS] NavigationBar resetting TextColor to black at every change of BarBackgroundColor", PlatformAffected.iOS)]
 	public class Issue9767 : TestNavigationPage
 	{
@@ -114,7 +114,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue9767NavigationPage : NavigationPage
 	{
 		public Issue9767NavigationPage()

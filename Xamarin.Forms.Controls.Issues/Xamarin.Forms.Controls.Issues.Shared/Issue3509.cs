@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3509, "[iOS] NavigationPage.Popped called twice when Navigation.PopAsync is called",
 		PlatformAffected.iOS)]
 #if UITEST
@@ -57,7 +57,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TestPage : ContentPage
 		{
 			bool _popped = false;

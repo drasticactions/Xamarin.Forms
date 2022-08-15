@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 52700, "[iOS] Recycled cell should respect selection style set to none", PlatformAffected.iOS)]
 	public class Bugzilla52700 : TestContentPage // or TestFlyoutPage, etc ...
 	{

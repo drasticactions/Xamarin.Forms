@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7357, "[Android] Setting ItemSpacing creates spacing for the last item in CollectionView", PlatformAffected.Android)]
 	public partial class Issue7357 : TestContentPage
 	{
@@ -82,7 +82,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModel7357
 	{
 		public ObservableCollection<Model7357> ItemsSource { get; set; } = new ObservableCollection<Model7357>();
@@ -101,7 +101,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Model7357
 	{
 		public string Text { get; set; }

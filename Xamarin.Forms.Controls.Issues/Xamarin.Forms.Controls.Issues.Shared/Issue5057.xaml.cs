@@ -7,7 +7,7 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5057, "Android: ContentPage BackgroundColor ignored in Forms ",
 		PlatformAffected.Android)]
 	[XamlCompilation(XamlCompilationOptions.Compile)]

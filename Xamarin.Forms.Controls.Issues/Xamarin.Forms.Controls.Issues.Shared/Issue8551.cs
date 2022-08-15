@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8551, "Modal Page with transparent background", PlatformAffected.Android | PlatformAffected.iOS | PlatformAffected.UWP)]
 	public class Issue8551 : TestContentPage
 	{

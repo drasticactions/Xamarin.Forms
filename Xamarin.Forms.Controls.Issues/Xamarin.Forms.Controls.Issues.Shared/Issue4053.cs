@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4053, "AutomationProperties.Name on Button is visible on Android", PlatformAffected.Android)]
 	public class Issue4053 : TestContentPage
 	{

@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5003, "iOS StrikeThrough applied to null string throws error", PlatformAffected.iOS)]
 	public partial class Issue5003 : ContentPage
 	{
@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BindingContext = new VM();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class VM
 		{
 			public string MyNullString { get; set; }

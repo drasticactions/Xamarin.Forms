@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[Category(UITestCategories.Editor)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2104, "Ensure Multiple Calls to Save Properties Doesn't Cause a Crash")]
 	public class Issue2104 : TestContentPage
 	{

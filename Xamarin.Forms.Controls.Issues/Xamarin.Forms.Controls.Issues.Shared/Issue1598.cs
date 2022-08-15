@@ -25,7 +25,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1598, "MasterDetailContainer does not handle adding of views which are already its children", PlatformAffected.Android)]
 	public class Issue1598 : ContentPage
 	{

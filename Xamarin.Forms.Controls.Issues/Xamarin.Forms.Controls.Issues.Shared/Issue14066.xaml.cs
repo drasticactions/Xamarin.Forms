@@ -12,7 +12,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14066, "[Bug] Deleting items with SwipeView in StackLayout",
 		PlatformAffected.Android)]
 	public partial class Issue14066 : TestContentPage

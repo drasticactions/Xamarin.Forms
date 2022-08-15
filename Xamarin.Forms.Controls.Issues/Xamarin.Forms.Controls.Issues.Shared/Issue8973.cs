@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8973, "SwipeView no animation when revealing CollectionView items", PlatformAffected.Android)]
 	public class Issue8973 : TestContentPage
 	{

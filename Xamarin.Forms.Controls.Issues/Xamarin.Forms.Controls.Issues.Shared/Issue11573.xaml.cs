@@ -11,7 +11,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11573, "[Bug][Brushes] RadialGradient size on iOS",
 		PlatformAffected.iOS)]
 #if UITEST

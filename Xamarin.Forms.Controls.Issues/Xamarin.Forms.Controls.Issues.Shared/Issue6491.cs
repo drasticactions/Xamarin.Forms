@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6491, "[Bug] Some Font Image are cropped on iOS",
 		PlatformAffected.iOS)]
 	public class Issue6491 : TestContentPage

@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10101, "Changing text on a Label on macOS resets font color to Black", PlatformAffected.macOS)]
 	public partial class Issue10101 : TestContentPage
 	{

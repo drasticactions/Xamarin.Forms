@@ -7,7 +7,7 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Xamarin.Forms.Controls.GalleryPages.SwipeViewGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SwipeTransitionModeGallery : ContentPage
 	{
 		public SwipeTransitionModeGallery()

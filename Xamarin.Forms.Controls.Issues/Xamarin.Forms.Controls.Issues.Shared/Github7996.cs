@@ -12,7 +12,7 @@ using NUnit.Framework;
 namespace Xamarin.Forms.Controls.Issues
 {
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7996, "Xamarin.Forms.Entry does not enter decimal when binding a float/double and decimal to it", PlatformAffected.Default)]
 	public class Issue7996 : TestContentPage
 	{
@@ -82,7 +82,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModelIssue7996 : INotifyPropertyChanged
 	{
 

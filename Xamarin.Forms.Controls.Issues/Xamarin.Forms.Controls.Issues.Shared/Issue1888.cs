@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1888, "Fix image resources not being freed after page is navigated away from ", PlatformAffected.iOS)]
 	public class Issue1888 : ContentPage
 	{

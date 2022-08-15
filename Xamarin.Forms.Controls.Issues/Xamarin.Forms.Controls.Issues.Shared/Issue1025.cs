@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1025, "StackLayout broken when image missing", PlatformAffected.iOS, NavigationBehavior.PushModalAsync)]
 	public class Issue1025 : ContentPage
 	{

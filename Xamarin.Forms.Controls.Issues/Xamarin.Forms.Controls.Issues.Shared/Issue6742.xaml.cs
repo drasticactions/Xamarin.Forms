@@ -8,7 +8,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6742, "Memory leak in ListView with uneven rows on IOS", PlatformAffected.Default)]
 	public partial class Issue6742 : TestContentPage
 	{
@@ -93,7 +93,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModelIssue6742 : INotifyPropertyChanged
 	{
 		public ObservableCollection<ModelIssue6742Group> ItemGroups { get; set; } = new ObservableCollection<ModelIssue6742Group>();
@@ -133,7 +133,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ModelIssue6742Group : ObservableCollection<ModelIssue6742>
 	{
 		public ModelIssue6742Group(string name)
@@ -144,7 +144,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ModelIssue6742
 	{
 		ViewModelIssue6742 _model;

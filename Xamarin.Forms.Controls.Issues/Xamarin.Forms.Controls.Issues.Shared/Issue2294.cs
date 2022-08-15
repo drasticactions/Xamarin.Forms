@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2294, "Scrolling view causes timer to stop incrementing", PlatformAffected.iOS)]
 	public class Issue2294 : ContentPage
 	{

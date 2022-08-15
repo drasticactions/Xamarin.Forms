@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1384, "Image is grid issue", PlatformAffected.Android | PlatformAffected.iOS | PlatformAffected.WinPhone)]
 	public class Issue1384 : ContentPage
 	{

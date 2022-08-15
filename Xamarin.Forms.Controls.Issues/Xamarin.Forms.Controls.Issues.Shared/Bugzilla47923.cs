@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 47923, "Vectors don\'t work in Images, and work badly in Buttons", PlatformAffected.Android)]
 	public class Bugzilla47923 : TestNavigationPage // or TestFlyoutPage, etc ...
 	{
@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 			PushAsync(new LandingPage());
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class VectorImagePage : ContentPage
 		{
 			public VectorImagePage(Aspect aspect)
@@ -57,7 +57,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class CellViewPage : ContentPage
 		{
 			public CellViewPage()
@@ -76,7 +76,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class LandingPage : ContentPage
 		{
 			public LandingPage()

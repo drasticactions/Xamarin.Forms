@@ -12,11 +12,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 25979, "https://bugzilla.xamarin.com/show_bug.cgi?id=25979")]
 	public class Bugzilla25979 : TestNavigationPage // or TestFlyoutPage, etc ...
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class MyPage : ContentPage
 		{
 			public MyPage()
@@ -45,7 +45,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class MyPage2 : ContentPage
 		{
 			public MyPage2()
@@ -83,7 +83,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class MyPage3 : ContentPage
 		{
 			public MyPage3()

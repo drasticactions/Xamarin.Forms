@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2271, "ScrollToAsync not working on iOS", PlatformAffected.iOS)]
 	public class Issue2271 : TestNavigationPage
 	{

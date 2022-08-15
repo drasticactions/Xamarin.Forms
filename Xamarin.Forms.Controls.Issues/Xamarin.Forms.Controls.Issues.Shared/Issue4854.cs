@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4854, "[macOS] Visual glitch when exiting the full screen with ScrollViewer", PlatformAffected.macOS)]
 	public class Issue4854 : TestContentPage
 	{

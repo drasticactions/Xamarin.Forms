@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 34720, "Incorrect iOS button IsEnabled when scrolling ListView with command binding ")]
 	public class Bugzilla34720 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -71,7 +71,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		ListView _list;
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class SampleViewCell : ViewCell
 		{
 			public static int RowHeight = 120;
@@ -260,7 +260,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TestListViewModel : INotifyPropertyChanged
 		{
 			Collection<TestViewModel> _items = new ObservableCollection<TestViewModel>();
@@ -319,7 +319,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TestViewModel
 		{
 

@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12473, "iOS Label text alignment in RTL with LineHeight", PlatformAffected.iOS)]
 	public partial class Issue12473 : TestContentPage
 	{

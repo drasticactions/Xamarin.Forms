@@ -4,19 +4,19 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ListViewEntry
 	{
 		public int Number { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ListViewGroup : List<ListViewEntry>
 	{
 		public string Heading { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MainPageViewModel
 	{
 		List<ListViewGroup> _groups = new List<ListViewGroup>();
@@ -45,7 +45,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5184, "Items get mixed up when fast scrolling", PlatformAffected.Android)]
 	public class Issue5184 : TestContentPage
 	{

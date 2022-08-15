@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve]
+	[Xamarin.Forms.Internals.Preserve]
 	[QueryProperty("Text", "welcome")]
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ShellContentTest : ContentPage

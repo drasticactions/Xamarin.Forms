@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8638, "[Bug] CarouselView inconsistent layout positioning", PlatformAffected.Android)]
 	public partial class Issue8638 : TestContentPage
 	{
@@ -47,14 +47,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8638Model
 	{
 		public Color Color { get; set; }
 		public string Name { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8638ViewModel : BindableObject
 	{
 		ObservableCollection<Issue8638Model> _items;

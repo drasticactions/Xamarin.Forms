@@ -16,7 +16,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Adding Multiple Items to a ListView", PlatformAffected.All)]
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.ListView)]
@@ -64,7 +64,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = layout;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class CustomViewCell : ViewCell
 		{
 			public CustomViewCell()

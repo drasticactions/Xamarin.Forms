@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Shell)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6738, "Flyout Navigation fails when coupled with tabs that have a stack", PlatformAffected.Android)]
 	public class Issue6738 : TestShell
 	{

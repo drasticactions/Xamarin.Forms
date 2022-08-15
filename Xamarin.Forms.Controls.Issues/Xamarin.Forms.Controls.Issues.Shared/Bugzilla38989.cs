@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 38989, "[Android] NullReferenceException when using a custom ViewCellRenderer ",
 		PlatformAffected.Android)]
 	public class Bugzilla38989 : TestContentPage
@@ -40,7 +40,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = new StackLayout { Children = { successLabel, lv } };
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _38989CustomViewCell : ViewCell
 		{
 			public _38989CustomViewCell()

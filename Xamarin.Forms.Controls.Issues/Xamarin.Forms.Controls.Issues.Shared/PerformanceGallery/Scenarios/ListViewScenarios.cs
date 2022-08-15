@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.GalleryPages.PerformanceGallery.Scenarios
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ListViewScenario1 : PerformanceScenario
 	{
 		public ListViewScenario1()
@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.PerformanceGallery.Scenarios
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ListViewScenario2 : PerformanceScenario
 	{
 		public ListViewScenario2()
@@ -28,7 +28,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.PerformanceGallery.Scenarios
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class ListViewScenario3 : PerformanceScenario
 	{
 		public ListViewScenario3()

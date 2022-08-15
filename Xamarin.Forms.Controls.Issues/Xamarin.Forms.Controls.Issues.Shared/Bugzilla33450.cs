@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 33450, "[iOS] Cell with ContextAction has a different layout")]
 	public class Bugzilla33450 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -35,7 +35,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyImageCell : ImageCell
 		{
 			static bool s_addContextAction = false;

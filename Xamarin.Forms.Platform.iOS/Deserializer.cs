@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Platform.iOS
 namespace Xamarin.Forms.Platform.MacOS
 #endif
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class Deserializer : IDeserializer
 	{
 		const string PropertyStoreFile = "PropertyStore.forms";

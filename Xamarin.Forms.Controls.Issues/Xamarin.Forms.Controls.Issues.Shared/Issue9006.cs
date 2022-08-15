@@ -9,7 +9,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9006, "[Bug] Unable to open a new Page for the second time in Xamarin.Forms Shell Tabbar",
 		PlatformAffected.iOS)]
 #if UITEST

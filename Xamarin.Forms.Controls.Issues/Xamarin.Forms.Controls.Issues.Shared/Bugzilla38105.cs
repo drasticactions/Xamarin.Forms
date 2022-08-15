@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 38105, "RemovePage does not cause back arrow to go away on Android", PlatformAffected.Android, navigationBehavior: NavigationBehavior.PushModalAsync)]
 	public class Bugzilla38105 : TestFlyoutPage
 	{
@@ -37,7 +37,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ViewA38105 : ContentPage
 		{
 			public ViewA38105()
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ViewB38105 : ContentPage
 		{
 			public ViewB38105()

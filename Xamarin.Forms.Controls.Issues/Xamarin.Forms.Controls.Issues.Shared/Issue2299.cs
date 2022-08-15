@@ -6,7 +6,7 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2299, "[iOS] ListView does not scroll when a control in listview has a PanGestureRecognizer", PlatformAffected.iOS)]
 	public class Issue2299 : TestContentPage
 	{
@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyViewCell : ViewCell
 		{
 			public MyViewCell()
@@ -49,7 +49,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class TextContainer
 		{
 			public string Text1 { get; set; }

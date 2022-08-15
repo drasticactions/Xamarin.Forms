@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4143, "Span inaccuracies", PlatformAffected.Android)]
 	public partial class Issue4143 : TestContentPage
 	{

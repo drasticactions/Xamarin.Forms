@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2448, "Setting FlowDirection of Alerts and ActionSheets", PlatformAffected.iOS | PlatformAffected.Android)]
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]

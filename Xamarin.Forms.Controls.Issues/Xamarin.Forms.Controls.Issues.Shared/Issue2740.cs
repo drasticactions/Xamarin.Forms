@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2740, "System.NotSupportedException: Unable to activate instance of type Xamarin.Forms.Platform.Android.PageContainer from native handle", PlatformAffected.Android)]
 	public class Issue2740 : TestFlyoutPage // or TestFlyoutPage, etc ...
 	{

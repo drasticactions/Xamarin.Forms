@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7773, "[Android] Can not set Entry cursor position by tapping if ClearButtonVisibility=WhenEditing", PlatformAffected.Android)]
 	public class Issue7773 : TestContentPage
 	{

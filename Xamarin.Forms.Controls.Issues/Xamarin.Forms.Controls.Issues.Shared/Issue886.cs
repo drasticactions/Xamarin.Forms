@@ -6,7 +6,7 @@ using Xamarin.Forms.Maps;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 886, "Map scrolling problems", PlatformAffected.Android)]
 	public class Issue886 : ContentPage
 	{

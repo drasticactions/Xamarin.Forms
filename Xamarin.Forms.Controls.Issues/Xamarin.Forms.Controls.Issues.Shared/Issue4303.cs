@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.LifeCycle)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4303, "[Android] TabbedPage's child is appearing before it should be", PlatformAffected.Android)]
 	public class Issue4303 : TestTabbedPage // or TestFlyoutPage, etc ...
 	{

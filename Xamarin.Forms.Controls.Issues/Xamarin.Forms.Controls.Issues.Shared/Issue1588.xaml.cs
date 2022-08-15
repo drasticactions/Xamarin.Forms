@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1588, "[WPF] Stacklayout WidthRequest adds unwanted margin", PlatformAffected.WPF)]
 	public partial class Issue1588 : TestContentPage
 	{

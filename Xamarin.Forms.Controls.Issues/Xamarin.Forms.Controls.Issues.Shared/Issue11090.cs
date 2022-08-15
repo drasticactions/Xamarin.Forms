@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11090,
 		"[Bug] UWP: PopAsync causes a crash when called from a CollectionView.SelectionChanged event",
 		PlatformAffected.UWP)]
@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue111090Page2 : ContentPage
 	{
 		public Issue111090Page2()

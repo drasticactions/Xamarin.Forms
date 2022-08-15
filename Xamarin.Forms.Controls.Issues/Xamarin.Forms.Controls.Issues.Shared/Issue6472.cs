@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6472, "[Bug][iOS] listview / observable collection throwing native error on load", PlatformAffected.iOS)]
 	public class Issue6472 : TestContentPage
 	{

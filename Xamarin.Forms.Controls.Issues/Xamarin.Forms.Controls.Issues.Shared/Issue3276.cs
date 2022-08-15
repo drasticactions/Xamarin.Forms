@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3276, "Crashing Unknown cell parent type on ContextAction Bindings")]
 	public class Issue3276 : TestTabbedPage
 	{
@@ -35,7 +35,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Children.Add(new ContentPage { Title = "Second" });
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class VM : ViewModel
 		{
 			public void Load()
@@ -63,7 +63,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class CaCell : ViewCell
 		{
 			public CaCell()

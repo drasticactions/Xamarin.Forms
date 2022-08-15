@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.CarouselView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7678, "[iOS] CarouselView binded to a ObservableCollection and add Items later, crash", PlatformAffected.iOS)]
 	public class Issue7678Ios : TestContentPage
 	{
@@ -96,14 +96,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7678IosModel
 	{
 		public Color Color { get; set; }
 		public string Name { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7678IosViewModel : BindableObject
 	{
 		ObservableCollection<Issue7678IosModel> _items;
@@ -141,7 +141,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.CarouselView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 7678, "[Android] CarouselView binded to a new ObservableCollection filled with Items does not render content", PlatformAffected.Android)]
 	public class Issue7678Droid : TestContentPage
 	{
@@ -221,14 +221,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7678DroidModel
 	{
 		public Color Color { get; set; }
 		public string Name { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue7678DroidViewModel : BindableObject
 	{
 		ObservableCollection<Issue7678DroidModel> _items;

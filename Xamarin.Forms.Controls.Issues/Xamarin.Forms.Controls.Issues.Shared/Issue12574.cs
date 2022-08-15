@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(UITestCategories.CarouselView)]
 	[NUnit.Framework.Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12574, "CarouselView Loop=True default freezes iOS app", PlatformAffected.Default)]
 	public class Issue12574 : TestContentPage
 	{

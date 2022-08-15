@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5252, "iOS: The Editor and Entry placeholder default color should be the same", PlatformAffected.iOS)]
 
 	class Issue5252 : TestContentPage

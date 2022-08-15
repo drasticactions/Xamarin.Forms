@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6957, "Device.StartTimer() won't fire on WPF if it is executed on Non UI thread", PlatformAffected.WPF)]
 	public class Issue6957 : TestContentPage
 	{

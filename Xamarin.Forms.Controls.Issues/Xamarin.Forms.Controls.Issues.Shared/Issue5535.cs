@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.CollectionView)]
 	[Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5535, "CollectionView: Swapping EmptyViews has no effect",
 		PlatformAffected.iOS | PlatformAffected.Android)]
 	public class Issue5535 : TestNavigationPage

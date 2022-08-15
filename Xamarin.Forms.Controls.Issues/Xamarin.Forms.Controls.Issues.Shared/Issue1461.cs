@@ -27,7 +27,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1461, "1461 - (Popover in Portrait and Landscape)", PlatformAffected.iOS)]
 	public class Issue1461 : TestContentPage
 	{
@@ -59,7 +59,7 @@ namespace Xamarin.Forms.Controls.Issues
 		//#endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1461, "1461 - Default", PlatformAffected.iOS)]
 	public class Issue1461A : TestContentPage
 	{
@@ -107,7 +107,7 @@ namespace Xamarin.Forms.Controls.Issues
 		//#endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1461, "1461 - (Splitview in Landscape)", PlatformAffected.iOS)]
 	public class Issue1461B : TestContentPage
 	{
@@ -139,7 +139,7 @@ namespace Xamarin.Forms.Controls.Issues
 		//#endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1461, "1461 - (Splitview in Portrait)", PlatformAffected.iOS)]
 	public class Issue1461C : TestContentPage
 	{
@@ -172,7 +172,7 @@ namespace Xamarin.Forms.Controls.Issues
 		//#endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1461, "1461 - (Splitview in Portrait and Landscape)", PlatformAffected.iOS)]
 	public class Issue1461D : TestContentPage
 	{

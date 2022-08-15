@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 26233, "Windows phone crashing when going back to page containing listview with Frame inside ViewCell")]
 	public class Bugzilla26233 : TestContentPage
 	{
@@ -36,7 +36,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = new StackLayout { Children = { btnPush, listview } };
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class ItemTemplate : ViewCell
 		{
 			public ItemTemplate()

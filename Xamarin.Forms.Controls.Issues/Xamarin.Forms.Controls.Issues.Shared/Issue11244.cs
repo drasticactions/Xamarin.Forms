@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11244, "[Bug] BackButtonBehavior no longer displays on the first routed page in 4.7",
 		PlatformAffected.iOS)]
 #if UITEST

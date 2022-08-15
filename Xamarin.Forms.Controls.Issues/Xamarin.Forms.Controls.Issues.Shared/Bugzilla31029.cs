@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 31029, "[Windows Phone 8.1]Generating an Image via MemoryStream does not appear")]
 	public class Bugzilla31029 : TestContentPage // or TestFlyoutPage, etc ...
 	{

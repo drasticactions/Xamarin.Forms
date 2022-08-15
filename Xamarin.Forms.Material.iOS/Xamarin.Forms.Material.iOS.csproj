@@ -102,4 +102,7 @@
   <ItemGroup Condition="'$(Use2017)' == 'true'">
     <Reference Include="netstandard" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
 </Project>

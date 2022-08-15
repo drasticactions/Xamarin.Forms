@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 58779, "[MacOS] DisplayActionSheet on MacOS needs scroll bars if list is long", PlatformAffected.All)]
 	public class Bugzilla58779 : TestContentPage
 	{

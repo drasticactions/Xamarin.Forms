@@ -13,7 +13,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 40955, "Memory leak with FormsAppCompatActivity and NavigationPage", PlatformAffected.Android)]
 #if UITEST
 	[Category(UITestCategories.Performance)]
@@ -51,7 +51,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Reference = this;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MasterPageItem
 		{
 			public string IconSource { get; set; }
@@ -61,7 +61,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public string Title { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MasterPage : ContentPage
 		{
 			public MasterPage()
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public ListView ListView { get; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class NavigationPageEx : NavigationPage
 		{
 			public NavigationPageEx(Page root) : base(root)
@@ -118,7 +118,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _409555_Page1 : ContentPage
 		{
 			public _409555_Page1()
@@ -147,7 +147,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Reference.IsPresented = true;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _409555_Page2 : ContentPage
 		{
 			public _409555_Page2()
@@ -166,7 +166,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _409555_Page3 : ContentPage
 		{
 			public _409555_Page3()

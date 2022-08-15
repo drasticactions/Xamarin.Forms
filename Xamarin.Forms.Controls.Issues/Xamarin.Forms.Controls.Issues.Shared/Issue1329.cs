@@ -9,7 +9,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1329, "Losing root page with rapidly pushing and popping", PlatformAffected.Android)]
 	public class Issue1329 : NavigationPage
 	{

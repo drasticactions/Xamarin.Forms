@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7512, "RTL CollectionView looks odd", PlatformAffected.Android)]
 	public partial class Issue7512 : TestContentPage
 	{
@@ -55,7 +55,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModel7512
 	{
 		public ObservableCollection<Model7512> Monkeys { get; private set; }
@@ -192,7 +192,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Model7512
 	{
 		public string Name { get; set; }

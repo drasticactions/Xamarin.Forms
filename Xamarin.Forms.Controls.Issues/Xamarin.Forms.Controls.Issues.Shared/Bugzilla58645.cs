@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 58645, "[iOS] NRE Thrown When ListView Items Are Replaced By Items With a Different Template", PlatformAffected.iOS)]
 	public class Bugzilla58645 : TestContentPage
 	{
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class LayoutA : ViewCell
 		{
 			public LayoutA()
@@ -85,7 +85,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class LayoutB : ViewCell
 		{
 			public LayoutB()
@@ -118,7 +118,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class LayoutTemplateSelector : DataTemplateSelector
 		{
 			public DataTemplate LayoutA { get; set; }

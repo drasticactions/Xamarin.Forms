@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CarouselView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12193, "[Bug] CarouselView content disappears after 2 rotations if TextType=Html is used",
 		PlatformAffected.iOS)]
 	public class Issue12193 : TestContentPage

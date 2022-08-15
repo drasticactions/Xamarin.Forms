@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1590, "ListView.IsGroupingEnabled results ins ArguementOutOfRangeException",
 		PlatformAffected.Android)]
 	public class Issue1590 : TestContentPage
@@ -64,7 +64,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RootPageViewModel
 	{
 		public IEnumerable MediaSections
@@ -85,7 +85,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MediaListSection : ObservableCollection<FooViewModel>
 	{
 		public string SectionName { get; private set; }
@@ -96,14 +96,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class FooViewModel
 	{
 		public string Title { get; set; }
 		public string Description { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ModuleMediaListItemTemplate : ViewCell
 	{
 		public ModuleMediaListItemTemplate()
@@ -127,7 +127,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ModuleMediaListHeaderTemplate : ViewCell
 	{
 		public ModuleMediaListHeaderTemplate()

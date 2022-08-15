@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2829, "[Android] Renderers associated with ListView cells are occasionaly not being disposed of which causes left over events to propagate to disposed views",
 		PlatformAffected.Android)]
 	public class Issue2829 : TestNavigationPage
@@ -128,7 +128,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Data : INotifyPropertyChanged
 		{
 			private string _text;

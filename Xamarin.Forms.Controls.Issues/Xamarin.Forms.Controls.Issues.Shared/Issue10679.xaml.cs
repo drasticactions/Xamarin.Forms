@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10679, "SwipeView crash with NullReferenceException",
 		PlatformAffected.Android)]
 	public partial class Issue10679 : TestShell
@@ -28,7 +28,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class FirstIssue10679Page : ContentPage
 	{
 		public FirstIssue10679Page()
@@ -54,7 +54,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SecondIssue10679Page : ContentPage
 	{
 		public SecondIssue10679Page()
@@ -125,7 +125,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ThirdIssue10679Page : ContentPage
 	{
 		public ThirdIssue10679Page()

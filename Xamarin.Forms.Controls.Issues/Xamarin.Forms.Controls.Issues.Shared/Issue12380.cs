@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12380, "[Bug] Android: Entry Clear button becomes invisible when changing Entry.BackgroundColor to dark color",
 		PlatformAffected.Android | PlatformAffected.iOS)]
 	public class Issue12380 : TestContentPage

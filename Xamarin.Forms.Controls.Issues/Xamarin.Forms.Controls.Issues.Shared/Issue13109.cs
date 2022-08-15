@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Image)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13109, "[Bug] NullReference Exception thrown when load image from ImageSource in Xamarin Forms UWP", PlatformAffected.UWP)]
 	public class Issue13109 : TestContentPage
 	{
@@ -44,7 +44,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue13109Icon
 	{
 		ImageSource _icon = "Xamarin.Forms.ControlGallery.WindowsUniversal/calculator.png";
@@ -67,7 +67,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public interface IIssue13109Helper
 	{
 		void SetImage(ImageSource imageSource);

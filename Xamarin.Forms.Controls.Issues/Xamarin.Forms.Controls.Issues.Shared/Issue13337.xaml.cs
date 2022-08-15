@@ -9,7 +9,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13337,
 		"[Bug] [5.0] [Android] Interacting with a SwipeView on a TabbedPage with IsSwipePagingEnabled=false re-enables page swiping",
 		PlatformAffected.Android)]

@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2399, "Label Renderer Dispose never called")]
 
 #if __WINDOWS__
@@ -86,7 +86,7 @@ namespace Xamarin.Forms.Controls.Issues
 			AllEffectsHaveDetached.Text = "Success";
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListPage : ContentPage
 		{
 			protected override void OnAppearing()
@@ -105,7 +105,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Cell : ViewCell
 		{
 			string guid = Guid.NewGuid().ToString();

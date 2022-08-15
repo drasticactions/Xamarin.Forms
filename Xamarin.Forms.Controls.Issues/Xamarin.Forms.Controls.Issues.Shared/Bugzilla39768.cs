@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 39768, "PanGestureRecognizer sometimes won't fire completed event when dragging very slowly")]
 	public class Bugzilla39768 : TestContentPage
 	{
@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 		Label _Label;
 		const string ImageName = "image";
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class PanContainer : ContentView
 		{
 			double x, y;

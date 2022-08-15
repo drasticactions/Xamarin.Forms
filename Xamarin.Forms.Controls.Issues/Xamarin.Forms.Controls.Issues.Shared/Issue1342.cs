@@ -16,7 +16,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1342, "[iOS] ListView throws Exception on ObservableCollection.Add/Remove for non visible list view",
 		PlatformAffected.iOS)]
 #if UITEST
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls.Issues
 			});
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public partial class MainPageCode : TabbedPage
 		{
 			public MainPageCode()
@@ -84,7 +84,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MainViewModel
 		{
 
@@ -123,7 +123,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public ICommand Add5Command { get; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListViewModel : INotifyPropertyChanged
 		{
 			public ObservableCollection<string> Items { get; set; }
@@ -145,7 +145,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public partial class ListPageCode : ContentPage
 		{
 			public ListPageCode()

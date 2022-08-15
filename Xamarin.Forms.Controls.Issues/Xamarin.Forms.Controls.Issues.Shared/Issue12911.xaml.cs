@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12911, "[Bug] Shapes in SwipeView of a CollectionView/ListView has several issues",
 		PlatformAffected.Android | PlatformAffected.iOS)]
 #if UITEST

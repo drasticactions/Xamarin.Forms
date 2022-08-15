@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 51536, "[iOS] Xamarin.Forms ListView Row Height Does Not Adapt")]
 	public class Bugzilla51536 : TestContentPage
 	{
@@ -36,14 +36,14 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = listView;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public sealed class ItemViewModel
 		{
 			public string Name { get; set; }
 			public string Description { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public sealed class ItemViewCell : ViewCell
 		{
 			public Label Label1 { get; set; }

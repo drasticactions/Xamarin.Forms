@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(UITestCategories.LifeCycle)]
 	[NUnit.Framework.Category(UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 2338, "Test Various Paths for Changing Main Page In Constructor")]
 	public class Issue2338 : TestNavigationPage
 	{
@@ -88,7 +88,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 #endif
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2338_Ctor : TestNavigationPage
 		{
 			public Issue2338_Ctor()
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 				Navigation.PushAsync(new InternalPage());
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			public class InternalPage : ContentPage
 			{
 				public InternalPage()
@@ -114,7 +114,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2338_Ctor_MultipleChanges : TestNavigationPage
 		{
 			public Issue2338_Ctor_MultipleChanges()
@@ -131,7 +131,7 @@ namespace Xamarin.Forms.Controls.Issues
 				Navigation.PushAsync(new InternalPage(0));
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			public class InternalPage : ContentPage
 			{
 				private readonly int _permutations;
@@ -161,7 +161,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2338_SwapMainPageDuringAppearing : TestNavigationPage
 		{
 			protected override void Init()
@@ -188,7 +188,7 @@ namespace Xamarin.Forms.Controls.Issues
 			protected override void OnAppearing() => Debug.WriteLine($"OnAppearing: Issue2338");
 			protected override void OnDisappearing() => Debug.WriteLine($"OnDisappearing: Issue2338");
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			public class InternalTabbedPage : TabbedPage
 			{
 				private readonly NavigationPage _navigationPage;
@@ -210,7 +210,7 @@ namespace Xamarin.Forms.Controls.Issues
 				protected override void OnDisappearing() => Debug.WriteLine($"OnDisappearing: InternalTabbedPage");
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			class InternalPage : ContentPage
 			{
 				private int v;
@@ -226,7 +226,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2338_TabbedPage : TestTabbedPage
 		{
 			public Issue2338_TabbedPage() : base()
@@ -248,7 +248,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			class InternalPage : ContentPage
 			{
 				private readonly TabbedPage _tabbedPage;
@@ -269,7 +269,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2338_MasterDetailsPage : TestContentPage
 		{
 
@@ -282,7 +282,7 @@ namespace Xamarin.Forms.Controls.Issues
 				Application.Current.MainPage = new InternalMasterDetailsPage();
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			class InternalMasterDetailsPage : FlyoutPage
 			{
 				public InternalMasterDetailsPage()
@@ -310,7 +310,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2338_MasterDetailsPage_NavigationPage : TestContentPage
 		{
 
@@ -323,7 +323,7 @@ namespace Xamarin.Forms.Controls.Issues
 				Application.Current.MainPage = new InternalMasterDetailsPage();
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			class InternalMasterDetailsPage : FlyoutPage
 			{
 				public InternalMasterDetailsPage()
@@ -356,7 +356,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Issue2338_MasterDetailsPage_ContentPage : TestContentPage
 		{
 
@@ -369,7 +369,7 @@ namespace Xamarin.Forms.Controls.Issues
 				Application.Current.MainPage = new InternalMasterDetailsPage();
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			class InternalMasterDetailsPage : FlyoutPage
 			{
 				public InternalMasterDetailsPage()

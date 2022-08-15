@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4194, "[iOS] SearchBar changes color if initial state is invisible", PlatformAffected.iOS)]
 
 	public partial class Issue4194 : ContentPage

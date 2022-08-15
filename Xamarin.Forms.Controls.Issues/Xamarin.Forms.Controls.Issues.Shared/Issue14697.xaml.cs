@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14697, "[Bug][Android] Shape no longer redrawing itself when the container changes size (sr4 and sr5)", PlatformAffected.iOS)]
 	public partial class Issue14697 : ContentPage
 	{

@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 465, "Change in Navigation.PushModal", PlatformAffected.All)]
 	public class Issue465 : TestTabbedPage
 	{
@@ -37,7 +37,7 @@ namespace Xamarin.Forms.Controls.Issues
 			await Navigation.PushModalAsync(new ModalPage());
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ModalPage : ContentPage
 		{
 			public ModalPage()

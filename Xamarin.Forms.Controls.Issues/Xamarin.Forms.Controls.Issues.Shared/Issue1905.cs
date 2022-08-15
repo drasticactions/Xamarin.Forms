@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.DisplayAlert)]
 	[NUnit.Framework.Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1905, "AlertView doesn't scroll when text is to large", PlatformAffected.iOS | PlatformAffected.Android)]
 	public class Issue1905 : ContentPage
 	{
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ListView)]
 	[NUnit.Framework.Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1905, "Pull to refresh doesn't work if iOS 11 large titles is enabled", PlatformAffected.iOS, NavigationBehavior.PushModalAsync, issueTestNumber: 1)]
 	public class Issue1905LargeTitles : TestNavigationPage
 	{

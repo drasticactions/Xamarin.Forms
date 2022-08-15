@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 40251, "Cannot style Buttons natively using UIButton.Appearance", PlatformAffected.iOS)]
 	public class Bugzilla40251 : TestNavigationPage // or TestFlyoutPage, etc ...
 	{
@@ -22,7 +22,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class LandingPage40251 : ContentPage
 	{
 		public LandingPage40251()
@@ -90,7 +90,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class TestPage40251 : ContentPage
 	{
 		public static string Arg;

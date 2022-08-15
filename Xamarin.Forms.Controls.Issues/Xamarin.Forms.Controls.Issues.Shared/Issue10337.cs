@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Navigation)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10337, "[Bug]iOS Renderer NavigationBar.ShadowImage = new UIImage() not remove shadow line after xamarin.forms 4.5", PlatformAffected.iOS)]
 	public class Issue10337 : TestNavigationPage
 	{
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10337NavigationPage : NavigationPage
 	{
 		public Issue10337NavigationPage()

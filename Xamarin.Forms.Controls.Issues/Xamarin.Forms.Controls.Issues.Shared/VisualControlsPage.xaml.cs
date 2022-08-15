@@ -26,7 +26,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BindingContext = this;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		[Issue(IssueTracker.Github, 4435, "Visual Gallery Loads",
 			PlatformAffected.iOS | PlatformAffected.Android)]
 #if UITEST

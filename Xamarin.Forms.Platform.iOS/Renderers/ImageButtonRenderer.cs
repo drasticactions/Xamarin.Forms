@@ -22,7 +22,7 @@ namespace Xamarin.Forms.Platform.iOS
 		readonly nfloat _minimumButtonHeight = 44; // Apple docs
 
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public ImageButtonRenderer() : base()
 		{
 			ButtonElementManager.Init(this);

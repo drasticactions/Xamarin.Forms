@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3008, "Setting ListView.ItemSource to null doesn't cause it clear out its contents", PlatformAffected.UWP)]
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
@@ -31,7 +31,7 @@ namespace Xamarin.Forms.Controls.Issues
 		const string successEmpty3 = "List loaded and ItemSource not set: you should see nothing";
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyHeaderViewCell : ViewCell
 		{
 			public MyHeaderViewCell()
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class GroupedItem : List<Item>
 		{
 			public GroupedItem()
@@ -54,7 +54,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Item
 		{
 

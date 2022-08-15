@@ -175,7 +175,7 @@ namespace Xamarin.Forms.Platform.Android.UnitTests
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ToolbarSettings
 		{
 			public ToolbarSettings(List<ToolbarItem> toolbarItems)

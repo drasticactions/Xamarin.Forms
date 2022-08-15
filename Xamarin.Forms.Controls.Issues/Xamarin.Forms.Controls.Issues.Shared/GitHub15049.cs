@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.CollectionView)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 15049, "[Android] CollectionView leaks GREF when items are removed", PlatformAffected.Android, issueTestNumber: 1)]
 	public class GitHub15049 : TestContentPage
 	{

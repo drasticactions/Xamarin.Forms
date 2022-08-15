@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8644, "WPF Entry crashes when IsPassword=true", PlatformAffected.WPF)]
 	public class Issue8644 : TestContentPage
 	{

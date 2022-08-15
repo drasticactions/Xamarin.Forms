@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.InputTransparent)]
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2775, "ViewCell background conflicts with ListView Semi-Transparent and Transparent backgrounds")]
 	public class Issue2775 : TestContentPage
 	{
@@ -78,7 +78,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class ContextActionsCell : ViewCell
 		{
 			public ContextActionsCell()
@@ -90,7 +90,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class NormalCell : ViewCell
 		{
 			public NormalCell()
@@ -111,7 +111,7 @@ namespace Xamarin.Forms.Controls.Issues
 			return itemList;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListItemViewModel
 		{
 			public string Name { get; set; }

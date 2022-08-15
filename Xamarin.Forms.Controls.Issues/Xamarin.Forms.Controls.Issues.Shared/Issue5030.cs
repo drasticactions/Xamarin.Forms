@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5030, "App crash after clicking the done/next button when on landscape", PlatformAffected.Android)]
 	public class Issue5030 : TestContentPage
 	{

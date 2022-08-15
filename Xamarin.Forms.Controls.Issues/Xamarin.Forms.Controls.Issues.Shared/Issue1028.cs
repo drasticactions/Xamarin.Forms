@@ -8,7 +8,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1028, "ViewCell in TableView raises exception - root page is ContentPage, Content is TableView", PlatformAffected.WinPhone, NavigationBehavior.PushModalAsync)]
 	public class Issue1028 : TestContentPage
 	{

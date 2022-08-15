@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2858, "Transparency Cascading", PlatformAffected.Android)]
 	public partial class Issue2858 : TestContentPage
 	{

@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 43783, "[WP8.1] Most Device Styles do not render correctly in Windows Phone 8.1 (RT) applications", PlatformAffected.WinPhone)]
 	public class Bugzilla43783 : TestContentPage
 	{

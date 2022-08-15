@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 	// This test covers the issue reported in https://github.com/xamarin/Xamarin.Forms/issues/2247
 	// for NavigationBehavior.PushAsync. Coverage for NavigationBehavior.PushModalAsync is provided by Bugzilla33561.
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2247,
 		"[iOS] ListView.IsRefreshing not showing activity indicator on iOS", NavigationBehavior.PushAsync)]
 	public class Issue2247 : TestContentPage

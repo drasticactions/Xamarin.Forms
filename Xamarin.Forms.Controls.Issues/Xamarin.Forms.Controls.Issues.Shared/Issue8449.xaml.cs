@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8449, "[Android] CollectionView.EmptyView not displaying when IsGrouped", PlatformAffected.iOS)]
 	public partial class Issue8449 : TestContentPage
 	{
@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8449CategoryModel : List<Issue8449Model>
 	{
 		public string Title { get; set; }
@@ -34,7 +34,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8449Model
 	{
 		public string Title { get; set; }
@@ -46,7 +46,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public int UniqueId { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8449ViewModel
 	{
 		public List<Issue8449CategoryModel> Items { get; private set; } = new List<Issue8449CategoryModel>();

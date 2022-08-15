@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 30353, "FlyoutPage.IsPresentedChanged is not raised")]
 #if UITEST
 	[Category(UITestCategories.UwpIgnore)]

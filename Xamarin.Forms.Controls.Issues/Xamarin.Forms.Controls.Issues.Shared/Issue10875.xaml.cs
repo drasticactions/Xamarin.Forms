@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10875, "[Bug] SwipeView.LeftItems in CollectionView stop Scrolling", PlatformAffected.Android)]
 	public partial class Issue10875 : TestContentPage
 	{
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10875Model
 	{
 		public string Name { get; set; }
@@ -51,7 +51,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string Category { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10875ViewModel : BindableObject
 	{
 		ObservableCollection<Issue10875Model> _fighters;

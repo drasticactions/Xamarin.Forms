@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8557, "[Bug] Grouped header with incorrect size when use GridItemsLayout with two columns on the CollectionView", PlatformAffected.iOS)]
 	public partial class Issue8557 : TestContentPage
 	{
@@ -38,13 +38,13 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8557Model
 	{
 		public string Description { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8557GroupModel : List<Issue8557Model>
 	{
 		public string Name { get; set; }
@@ -55,7 +55,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8557ViewModel
 	{
 		public List<Issue8557GroupModel> GroupContent { get; private set; }

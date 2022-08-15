@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 #endif
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8743, "[Bug][UWP] SearchBar does not respect FontSize on 4.3.0",
 		PlatformAffected.UWP)]
 #if UITEST

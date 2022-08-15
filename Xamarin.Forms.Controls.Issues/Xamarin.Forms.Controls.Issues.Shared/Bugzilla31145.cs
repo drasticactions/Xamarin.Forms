@@ -8,7 +8,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 31145, "Picker cause memory leak holding entire Page in memory after it popped (WP8 SL only)", PlatformAffected.WinPhone)]
 	public class Bugzilla31145 : TestContentPage
 	{

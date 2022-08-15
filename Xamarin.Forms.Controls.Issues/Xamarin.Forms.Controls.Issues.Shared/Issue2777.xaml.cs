@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2777, "When add GroupHeaderTemplate in XAML the group header does not show up")]
 	public partial class Issue2777 : TestContentPage
 	{
@@ -67,7 +67,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 
 		// Represents a group of items in our list.
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListItemCollection : ObservableCollection<ListItemValue>
 		{
 			public string Title { get; private set; }
@@ -103,7 +103,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 
 		// Represents one item in our list.
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListItemValue : IComparable<ListItemValue>
 		{
 			public string Name { get; private set; }

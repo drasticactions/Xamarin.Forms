@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 28498, "App crashes when switching between NavigationPages on a FlyoutPage when In-Call Status Bar is visible")]
 	public class Bugzilla28498 : TestFlyoutPage
 	{

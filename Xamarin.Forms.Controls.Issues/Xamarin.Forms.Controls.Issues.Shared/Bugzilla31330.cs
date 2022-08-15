@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 31330, "Disabled context actions appear enabled")]
 	public class Bugzilla31330 : TestContentPage
 	{
@@ -38,7 +38,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = listview;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class CustomTextCell : TextCell
 		{
 			public CustomTextCell()
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListViewModel : ViewModel
 		{
 			public void Init()
@@ -97,7 +97,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ListItemViewModel : ViewModel
 		{
 			public bool CanExecute = false;

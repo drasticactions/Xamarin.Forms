@@ -7,7 +7,7 @@ using AView = Android.Views.View;
 [assembly: ExportEffect(typeof(Xamarin.Forms.ControlGallery.Android.RippleEffect), nameof(Xamarin.Forms.ControlGallery.Android.RippleEffect))]
 namespace Xamarin.Forms.ControlGallery.Android
 {
-    [Preserve(AllMembers = true)]
+    [Xamarin.Forms.Internals.Preserve(AllMembers = true)]
     public class RippleEffect : PlatformEffect
     {
         protected override void OnAttached()

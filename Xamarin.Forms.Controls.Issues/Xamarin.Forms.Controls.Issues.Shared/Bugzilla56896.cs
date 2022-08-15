@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.ListView)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 56896, "ListViews for lists with many elements regressed in performance on iOS", PlatformAffected.iOS)]
 	public class Bugzilla56896 : TestContentPage
 	{
@@ -28,7 +28,7 @@ namespace Xamarin.Forms.Controls.Issues
 		const string ConstructorCountId = "constructorCount";
 		const string TimeId = "time";
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyViewModel : INotifyPropertyChanged
 		{
 			int _constructorCallCount;
@@ -51,7 +51,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Fizz : ViewCell
 		{
 			readonly MyViewModel _vm;
@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Buzz : ViewCell
 		{
 			readonly MyViewModel _vm;
@@ -97,7 +97,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Fizzbuzz : ViewCell
 		{
 			readonly MyViewModel _vm;
@@ -120,7 +120,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Number : ViewCell
 		{
 			readonly MyViewModel _vm;

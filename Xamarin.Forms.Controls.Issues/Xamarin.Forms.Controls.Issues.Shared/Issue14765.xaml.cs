@@ -5,7 +5,7 @@ using Xamarin.Forms.Shapes;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14765, "[Bug] [Android] Changing/Replacing Path Data value does not resize the shape to fit the container", PlatformAffected.Android)]
 	public partial class Issue14765 : ContentPage
 	{

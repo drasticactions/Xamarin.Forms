@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4744, "forms in UWP show empty button for DisplayActionSheet", PlatformAffected.UWP)]
 	public partial class Issue4744 : TestContentPage
 	{

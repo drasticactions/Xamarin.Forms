@@ -9,7 +9,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 21501, "ListView: Button in ItemTemplate breaks SelectedItem", PlatformAffected.Android)]
 	public class Bugzilla21501 : ContentPage
 	{

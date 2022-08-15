@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.TableView)]
 	[Category(UITestCategories.Cells)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2842, "ViewCell in TableView not adapting to changed size on iOS", PlatformAffected.iOS)]
 	public class Issue2842 : TestContentPage
 	{

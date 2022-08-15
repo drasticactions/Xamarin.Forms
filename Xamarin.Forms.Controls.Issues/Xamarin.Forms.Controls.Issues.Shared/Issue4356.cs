@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4356, "[iOS] NSInternalInconsistencyException thrown when adding item to ListView after clearing bound ObservableCollection")]
 	public partial class Issue4356 : TestContentPage
 	{
@@ -93,7 +93,7 @@ namespace Xamarin.Forms.Controls.Issues
 			});
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class FavoritesViewModel : BaseViewModelF
 		{
 			public ObservableCollection<ArticleListing> FavoriteArticles { get; set; }

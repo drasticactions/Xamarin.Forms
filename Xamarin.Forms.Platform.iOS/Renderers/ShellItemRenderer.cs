@@ -83,7 +83,7 @@ namespace Xamarin.Forms.Platform.iOS
 		}
 
 		[Export("navigationController:didShowViewController:animated:")]
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public virtual void DidShowViewController(UINavigationController navigationController, [Transient] UIViewController viewController, bool animated)
 		{
 			var renderer = RendererForViewController(this.SelectedViewController);

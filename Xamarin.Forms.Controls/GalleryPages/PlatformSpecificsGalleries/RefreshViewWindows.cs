@@ -7,7 +7,7 @@ using WindowsOS = Xamarin.Forms.PlatformConfiguration.Windows;
 
 namespace Xamarin.Forms.Controls.GalleryPages.PlatformSpecificsGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RefreshViewWindows : ContentPage
 	{
 		public RefreshViewWindows()

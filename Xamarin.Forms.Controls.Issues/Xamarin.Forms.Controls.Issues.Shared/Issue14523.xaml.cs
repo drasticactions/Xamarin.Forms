@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CarouselView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14523,
 		"[Bug] NullReferenceException in EntryRenderer on iOS versions <14.X with ClearButtonVisibility.WhileEditing and non-default TextColor",
 		PlatformAffected.iOS)]

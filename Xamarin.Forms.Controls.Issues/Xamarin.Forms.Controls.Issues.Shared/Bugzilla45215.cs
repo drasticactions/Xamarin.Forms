@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ManualReview)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 45215, "AdjustResize Causes Content to Be Sized Incorrectly After Toggling Keyboard",
 		PlatformAffected.Android)]
 	public class Bugzilla45215 : TestNavigationPage

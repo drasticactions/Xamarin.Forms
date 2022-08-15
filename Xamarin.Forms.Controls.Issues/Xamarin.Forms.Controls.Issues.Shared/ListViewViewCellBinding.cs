@@ -11,7 +11,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Expense
 	{
 		public string Name { get; private set; }
@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ExpenseListViewCell : ViewCell
 	{
 		public ExpenseListViewCell()
@@ -54,7 +54,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "ListView ViewCell binding", PlatformAffected.All)]
 	public class ListViewViewCellBinding : TestContentPage
 	{

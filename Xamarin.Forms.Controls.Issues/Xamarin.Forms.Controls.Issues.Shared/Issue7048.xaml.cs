@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7048, "[Bug][UWP] CheckBox Has Incosistent Paddings",
 		PlatformAffected.UWP)]
 	[XamlCompilation(XamlCompilationOptions.Compile)]

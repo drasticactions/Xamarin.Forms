@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ToolbarItem)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9419, "Crash when toolbar item removed then page changed", PlatformAffected.Android)]
 	public class Issue9419 : TestFlyoutPage
 	{

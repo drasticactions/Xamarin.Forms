@@ -15,7 +15,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6484, "[iOS] Shell - Go back two pages crashes the app with a NullReferenceException",
 		PlatformAffected.iOS)]
 #if UITEST

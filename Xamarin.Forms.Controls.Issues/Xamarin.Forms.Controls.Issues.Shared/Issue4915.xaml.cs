@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4915, "Unify the image handling")]
 	public class Issue4915 : TestTabbedPage
 	{
@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class Issue4915ContentPage : ContentPage
 	{
 		public Issue4915ContentPage()
@@ -108,7 +108,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Parent.Parent.BindingContext = vm;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ViewModel
 		{
 			public string Image { get; set; } = "coffee.png";

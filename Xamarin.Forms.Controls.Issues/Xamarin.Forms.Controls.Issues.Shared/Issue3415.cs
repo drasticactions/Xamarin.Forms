@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3415, "[Android] Swipe Command fires twice on Android for each swipe action", PlatformAffected.Android)]
 	public class Issue3415 : TestContentPage
 	{

@@ -206,10 +206,10 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ExampleViewModel : ViewModelBase
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Job : ViewModelBase
 		{
 

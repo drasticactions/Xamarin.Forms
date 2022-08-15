@@ -11,7 +11,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 1023, "Automate GC checks of picker disposals", PlatformAffected.iOS)]
 	public class Bugzilla1023 : TestNavigationPage
 	{
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class LandingPage1023 : ContentPage
 	{
 		public static int Counter;
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ContentPage1023 : ContentPage
 	{
 		public ContentPage1023()
@@ -128,7 +128,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class DataTemplateSelector1023 : DataTemplateSelector
 	{
 		public DataTemplate DatePickerTemplate { get; set; }

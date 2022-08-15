@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 51173, "ImageRenderer, async void SetImage - Cannot catch exceptions", PlatformAffected.All)]
 	public class Bugzilla51173 : TestContentPage
 	{

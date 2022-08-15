@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9962, "NSException thrown when calling NSColor.ControlBackground.ToColor()", PlatformAffected.macOS)]
 	public class Issue9962 : TestContentPage
 	{

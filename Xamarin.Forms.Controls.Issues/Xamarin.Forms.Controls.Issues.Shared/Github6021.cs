@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6021, "[macOS] ListView does not handle transparent backgrounds correctly", PlatformAffected.macOS)]
 	public class Github6201 : TestContentPage // or TestFlyoutPage, etc ...
 	{

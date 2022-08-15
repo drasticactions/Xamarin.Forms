@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ListView)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 26032, " ListView ItemTapped doesn't get called for the selected item ", PlatformAffected.iOS)]
 	public partial class Bugzilla26032 : TestContentPage
 	{

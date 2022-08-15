@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 59248, "[UWP] ItemTapped event is not fired when keyboard Enter Pressed on ListView", PlatformAffected.UWP)]
 	public class Bugzilla59248 : TestContentPage
 	{

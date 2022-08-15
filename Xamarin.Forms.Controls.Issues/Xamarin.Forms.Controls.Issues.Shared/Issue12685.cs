@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12685, "[iOs][Bug] TapGestureRecognizer in Path does not work on iOS", PlatformAffected.iOS)]
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github10000)]

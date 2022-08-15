@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2333, "TimePicker not shown when .Focus() is called", PlatformAffected.WinPhone)]
 	public class Issue2333 : ContentPage
 	{

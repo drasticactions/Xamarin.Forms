@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.UwpIgnore)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 4539135, "CollectionView: Grouping", PlatformAffected.All)]
 	public class CollectionViewGrouping : TestNavigationPage
 	{

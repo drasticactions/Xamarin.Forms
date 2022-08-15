@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14528, "[Bug] [iOS] SwipeView shifted in direction of swipe permanently", PlatformAffected.iOS)]
 	public class Issue14528 : TestContentPage
 	{

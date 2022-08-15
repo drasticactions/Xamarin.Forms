@@ -51,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
-      <Project>{57b8b73d-c3b5-4c42-869e-7b2f17d354ac}</Project>
+      <Project>{A6097788-D282-4021-9174-A1EEB8F55A19}</Project>
       <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj">
-      <Project>{9db2f292-8034-4e06-89ad-98bbda4306b9}</Project>
+      <Project>{12D211A1-C4BA-4F48-9EB5-0C678061DE78}</Project>
       <Name>Xamarin.Forms.Xaml</Name>
       <GenerateDesignMetadata>true</GenerateDesignMetadata>
       <Private>False</Private>

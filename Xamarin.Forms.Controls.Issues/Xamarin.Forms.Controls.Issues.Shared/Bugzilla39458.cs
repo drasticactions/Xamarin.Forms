@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 39458, "[UWP/WinRT] Cannot Set CarouselPage.CurrentPage Inside Constructor", PlatformAffected.WinRT)]
 	public class Bugzilla39458 : TestCarouselPage
 	{

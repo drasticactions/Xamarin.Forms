@@ -11,7 +11,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 41271, "[UWP] Memory Leak from ListView in TabbedPage", PlatformAffected.UWP)]
 
 #if UITEST
@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 	{
 		const string ListMain = "mainList";
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Person
 		{
 			public Person(string firstName, string lastName, string city, string state)
@@ -38,7 +38,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public string City { get; set; }
 			public string State { get; set; }
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListViewCell : ViewCell
 		{
 			Label firstNameLabel = new Label();
@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Controls.Issues
 				}
 			}
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class ListViewPage : ContentPage
 		{
 			ListView _ListView;

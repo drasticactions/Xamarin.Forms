@@ -6,7 +6,7 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7878, "Page not popped on iOS 13 FormSheet swipe down", PlatformAffected.iOS)]
 	public class Issue7878 : TestContentPage
 	{

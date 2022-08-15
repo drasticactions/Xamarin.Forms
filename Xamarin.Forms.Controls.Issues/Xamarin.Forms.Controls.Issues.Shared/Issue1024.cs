@@ -11,7 +11,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 1024, "Entry and Editor are leaking when used in ViewCell", PlatformAffected.iOS)]
 	public class Bugzilla1024 : TestNavigationPage
 	{
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class LandingPage1024 : ContentPage
 	{
 		public static int Counter;
@@ -104,7 +104,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ContentPage1024 : ContentPage
 	{
 		public ContentPage1024()
@@ -128,7 +128,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class InputViewDataTemplateSelector : DataTemplateSelector
 	{
 		public DataTemplate EntryTemplate { get; set; }

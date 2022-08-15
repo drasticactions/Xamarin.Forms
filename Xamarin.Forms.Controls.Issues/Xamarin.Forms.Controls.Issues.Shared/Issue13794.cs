@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13794, "[Bug] CollectionView iOS draws both EmptyView and Items/ItemTemplate", PlatformAffected.iOS)]
 	public class Issue13794 : TestContentPage
 	{

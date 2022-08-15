@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 28953, "Device.StartTimer (still) behaves differently on different platforms", PlatformAffected.All)]
 	public class Bugzilla28953 : TestContentPage // or TestFlyoutPage, etc ...
 	{

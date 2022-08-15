@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if !NET6_0_OR_GREATER
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(Xamarin.Forms.Core.UITests.UITestCategories.Performance)] 
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Performance Testing")]
 	public class PerformanceGallery : TestContentPage
 	{
@@ -256,3 +257,4 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 }
+#endif

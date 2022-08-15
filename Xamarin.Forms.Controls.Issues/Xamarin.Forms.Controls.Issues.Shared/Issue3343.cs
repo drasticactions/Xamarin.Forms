@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3343, "[Android] Cursor position in entry and selection length not working on 3.2.0-pre1", PlatformAffected.Android | PlatformAffected.iOS)]
 	public class Issue3343 : TestContentPage
 	{

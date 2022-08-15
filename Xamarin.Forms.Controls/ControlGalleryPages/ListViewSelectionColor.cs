@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Controls
 {
 	internal sealed class ListViewSelectionColor : ContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class GroupHeaderTemplate : ViewCell
 		{
 			public GroupHeaderTemplate()
@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class GroupItemTemplate : ViewCell
 		{
 			public GroupItemTemplate()
@@ -32,7 +32,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class ItemTemplate : ViewCell
 		{
 			public ItemTemplate()
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class ItemTemplate2 : ViewCell
 		{
 			public ItemTemplate2()
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class Artist
 		{
 			public string Name { get; private set; }
@@ -67,7 +67,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal sealed class Grouping<K, T> : ObservableCollection<T>
 		{
 			public K Key { get; private set; }
@@ -87,7 +87,7 @@ namespace Xamarin.Forms.Controls
 		Button _changeItemTemplateButton;
 		Button _clearButton;
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public ListViewSelectionColor()
 		{
 			Title = "ListView ScrollTo";

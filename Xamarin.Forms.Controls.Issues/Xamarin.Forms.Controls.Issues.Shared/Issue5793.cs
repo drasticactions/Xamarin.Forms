@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5793, "[CollectionView/ListView] Not listening for Reset command",
 		PlatformAffected.iOS | PlatformAffected.Android)]
 	class Issue5793 : TestNavigationPage

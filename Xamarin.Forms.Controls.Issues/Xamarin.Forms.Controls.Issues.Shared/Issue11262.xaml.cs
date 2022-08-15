@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11262, "[Bug] SwipeView with StackLayout Bindable delete item exception Xamarin.Forms.Platform.Android.SwipeViewRenderer", PlatformAffected.Android)]
 	public partial class Issue11262 : TestContentPage
 	{
@@ -32,13 +32,13 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue11262Model : BindableObject
 	{
 		public string Title { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue11262ViewModel : BindableObject
 	{
 		ObservableCollection<Issue11262Model> _items;

@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 45722, "Memory leak in Xamarin Forms ListView",
 		PlatformAffected.UWP, issueTestNumber: 1)]
 	public partial class Bugzilla45722Xaml0 : TestContentPage

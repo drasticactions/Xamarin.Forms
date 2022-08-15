@@ -8,7 +8,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2187, "[WPF] FontFamily Assignment in platform specific project don't work", PlatformAffected.WPF)]
 	public class Issue2187 : TestContentPage
 	{

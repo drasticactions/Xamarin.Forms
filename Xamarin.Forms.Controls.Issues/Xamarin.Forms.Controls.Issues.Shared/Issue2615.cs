@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2615, "iOS Cell Reuse screws up when cells are both ViewCell with different children", PlatformAffected.iOS)]
 	public class Issue2615 : ContentPage
 	{

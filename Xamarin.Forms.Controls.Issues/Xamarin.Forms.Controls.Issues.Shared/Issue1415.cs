@@ -8,13 +8,13 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1415,
 		"HorizontalTextAlignment=\"Center\" loses alignment when scrolled",
 		PlatformAffected.Android)]
 	public class Issue1415 : TestContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _1415ViewModel
 		{
 			public ICommand AddMoreCommand { get; set; }
@@ -30,7 +30,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _1415Item
 		{
 			public string PropA { get; set; }

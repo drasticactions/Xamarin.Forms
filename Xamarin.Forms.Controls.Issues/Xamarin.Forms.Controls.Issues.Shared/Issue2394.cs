@@ -8,7 +8,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2394, "[WPF] StackLayout VerticalOptions = LayoutOptions.End is not working", PlatformAffected.WPF)]
 	public class Issue2394 : TestContentPage
 	{

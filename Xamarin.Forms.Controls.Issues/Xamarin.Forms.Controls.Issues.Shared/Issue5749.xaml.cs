@@ -15,7 +15,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5749, "Disable horizontal scroll in the custom listview in android")]
 	public partial class Issue5749 : TestContentPage
 	{
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CustomHorizontalListview : ScrollView
 	{
 		public static readonly BindableProperty ItemsSourceProperty =

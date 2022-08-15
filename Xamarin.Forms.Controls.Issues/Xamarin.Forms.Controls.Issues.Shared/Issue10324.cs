@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10324, "Unable to intercept or disable mouse back button navigation on UWP", PlatformAffected.UWP)]
 	public class Issue10324 : TestNavigationPage
 	{

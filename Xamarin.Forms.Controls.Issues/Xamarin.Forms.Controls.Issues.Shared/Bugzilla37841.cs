@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 37841, "TableView EntryCells and TextCells cease to update after focus change", PlatformAffected.Android)]
 	public class Bugzilla37841 : TestContentPage
 	{
@@ -58,7 +58,7 @@ The EntryCell should display '112358' and the TextCell should display '48151623'
 			BindingContext = _viewModel;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _37841ViewModel : INotifyPropertyChanged
 		{
 			public int Value1

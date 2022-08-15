@@ -81,7 +81,7 @@ namespace Xamarin.Forms
 				_eventinfo.RemoveEventHandler(bindable, _handlerdelegate);
 		}
 
-		[Preserve]
+		[Xamarin.Forms.Internals.Preserve]
 		void OnEventTriggered(object sender, EventArgs e)
 		{
 			var bindable = (BindableObject)sender;

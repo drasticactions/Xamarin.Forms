@@ -7,7 +7,7 @@ using NUnit.Framework;
 #endif
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7534, "Span with tail truncation and paragraph breaks with Java.Lang.IndexOutOfBoundsException", PlatformAffected.Android)]
 	public partial class Issue7534 : TestContentPage
 	{

@@ -24,7 +24,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9827, "CarouselView doesn't update the CurrentItem on Swipe under strange condition", PlatformAffected.Android)]
 	public partial class Issue9827 : TestContentPage
 	{
@@ -61,7 +61,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModelIssue9827 : System.ComponentModel.INotifyPropertyChanged
 	{
 		public ViewModelIssue9827()
@@ -163,7 +163,7 @@ namespace Xamarin.Forms.Controls.Issues
 		#endregion
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ModelIssue9827 : System.ComponentModel.INotifyPropertyChanged
 	{
 		string _title;

@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 27731, "[Android] Action Bar can not be controlled reliably on FlyoutPage", PlatformAffected.Android)]
 	public class Bugzilla27731 : TestFlyoutPage
 	{

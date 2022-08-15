@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.IndicatorView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8693, "[Bug] IndicatorView template resets when data updates", PlatformAffected.All)]
 	public class Issue8693 : TestContentPage
 	{
@@ -126,14 +126,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8693Model
 	{
 		public Color Color { get; set; }
 		public string Name { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8693ViewModel : BindableObject
 	{
 		ObservableCollection<Issue8693Model> _items;

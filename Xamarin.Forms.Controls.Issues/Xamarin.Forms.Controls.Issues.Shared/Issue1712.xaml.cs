@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1712, "Wrong error thrown when setting LayoutOptions property to string", PlatformAffected.Android | PlatformAffected.iOS | PlatformAffected.WinPhone)]
 	public partial class Issue1712 : ContentPage
 	{

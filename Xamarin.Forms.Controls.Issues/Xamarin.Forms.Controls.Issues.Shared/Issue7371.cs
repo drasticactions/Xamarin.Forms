@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ListView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7371, "iOS race condition(or not checking for null) of refreshing(offset animation) causes NullReferenceException", PlatformAffected.iOS)]
 	public class Issue7371 : TestContentPage
 	{

@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 36171, "WinRT Entry UI not updating on TextChanged",
 		PlatformAffected.WinPhone | PlatformAffected.WinRT)]
 	public class Bugzilla36171 : TestContentPage

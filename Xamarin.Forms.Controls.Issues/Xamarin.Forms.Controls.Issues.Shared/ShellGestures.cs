@@ -19,7 +19,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Shell Gestures Test",
 		PlatformAffected.All)]
 #if UITEST
@@ -122,7 +122,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TouchTestView : ContentView
 		{
 			public Label Results = new Label() { AutomationId = TouchListenerSuccessId };

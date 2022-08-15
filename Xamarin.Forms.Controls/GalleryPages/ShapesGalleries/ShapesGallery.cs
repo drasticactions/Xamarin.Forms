@@ -2,7 +2,7 @@
 
 namespace Xamarin.Forms.Controls.GalleryPages.ShapesGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ShapesGallery : ContentPage
 	{
 		public ShapesGallery()

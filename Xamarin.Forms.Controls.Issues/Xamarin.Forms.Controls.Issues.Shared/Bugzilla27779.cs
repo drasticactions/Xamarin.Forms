@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 27779, "Xamarin.Forms.ReadOnlyListAdapter.IndexOf throws NotImplementedExcpetion ")]
 	public class Bugzilla27779 : TestContentPage // or TestFlyoutPage, etc ...
 	{

@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Shape)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13164, "[Bug] Shapes broken in Xamarin if used within NavigationPage once and navigated back",
 		PlatformAffected.Android | PlatformAffected.iOS)]
 	public class Issue13164 : TestContentPage
@@ -61,7 +61,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue13164SecondPage : ContentPage
 	{
 		public Issue13164SecondPage()

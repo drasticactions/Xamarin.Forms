@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12374, "[Bug] [iOS] CollectionView EmptyView causes the application to crash",
 		PlatformAffected.iOS)]
 	public partial class Issue12374 : TestContentPage
@@ -125,7 +125,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue12374Model : IEquatable<Issue12374Model>
 	{
 		public Guid Guid { get; set; }

@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.DatePicker)]
 	[Category(UITestCategories.TimePicker)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5159, "[Android] Calling Focus on all Pickers running an API 28 devices no longer opens Picker", PlatformAffected.Android)]
 	public class Issue5159 : TestContentPage
 	{

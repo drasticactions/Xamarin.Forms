@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8672, "CollectionView crashes on iOS 12.4 for repeated adds", PlatformAffected.iOS)]
 	public class Issue8672 : TestContentPage
 	{

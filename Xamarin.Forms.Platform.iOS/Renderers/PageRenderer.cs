@@ -31,7 +31,7 @@ namespace Xamarin.Forms.Platform.iOS
 		Thickness _userPadding = default(Thickness);
 		bool _userOverriddenSafeArea = false;
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public PageRenderer()
 		{
 		}

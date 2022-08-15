@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12518,
 		"[Bug] SwipeView is too sensitive - opens when scrolling",
 		PlatformAffected.iOS)]
@@ -34,7 +34,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue12518Model
 	{
 		public string Title { get; set; }
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string Date { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue12518ViewModel : BindableObject
 	{
 		ObservableCollection<Issue12518Model> _items;

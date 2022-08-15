@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8833, "[Bug][iOS][Android] SwipeItems selection on CarouselView incorrect",
 		PlatformAffected.All)]
 	public partial class Issue8833 : TestContentPage
@@ -38,7 +38,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8833Model
 	{
 		public string Name { get; set; }
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public bool IsFavorite { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8833ViewModel : INotifyPropertyChanged
 	{
 		readonly IList<Issue8833Model> _source;

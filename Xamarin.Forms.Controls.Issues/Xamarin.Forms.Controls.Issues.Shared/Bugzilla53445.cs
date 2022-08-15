@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 53445, "Setting Grid.IsEnabled to false does not disable child controls", PlatformAffected.All)]
 	public class Bugzilla53445 : TestContentPage
 	{

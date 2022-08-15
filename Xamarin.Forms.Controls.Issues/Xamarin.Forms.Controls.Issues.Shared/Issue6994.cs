@@ -19,7 +19,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6994, "Regression in Xamarin.Forms 4.2.0-pre1 (Java.Lang.NullPointerException when using FastRenderers)", PlatformAffected.Android)]
 	public class Issue6994 : TestContentPage
 	{
@@ -94,7 +94,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 #endif
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ItemViewModel : INotifyPropertyChanged
 		{
 			string _id;

@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10908, "[Bug] [iOS]SwipeView not working on Grouped ListView", PlatformAffected.iOS)]
 	public partial class Issue10908 : ContentPage
 	{
@@ -59,7 +59,7 @@ namespace Xamarin.Forms.Controls.Issues
 		ObservableCollection<GroupedIssue10908Model> Grouped { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue10908Model
 	{
 		public string Name { get; set; }
@@ -68,7 +68,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string Image { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class GroupedIssue10908Model : ObservableCollection<Issue10908Model>
 	{
 		public string LongName { get; set; }

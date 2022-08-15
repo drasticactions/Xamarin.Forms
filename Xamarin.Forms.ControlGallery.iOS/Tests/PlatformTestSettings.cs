@@ -9,7 +9,7 @@ using Xamarin.Forms.Internals;
 [assembly: Dependency(typeof(PlatformTestSettings))]
 namespace Xamarin.Forms.ControlGallery.iOS.Tests
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class PlatformTestSettings : IPlatformTestSettings
 	{
 		public PlatformTestSettings()

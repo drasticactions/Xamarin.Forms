@@ -7,10 +7,10 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CellForceUpdateSizeGalleryPage : NavigationPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyViewCell : ViewCell
 		{
 			Label _Label = new Label();
@@ -33,7 +33,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyImageCell : ImageCell
 		{
 			VariableHeightItem _DataItem => BindingContext as VariableHeightItem;
@@ -54,7 +54,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyTextCell : TextCell
 		{
 			VariableHeightItem _DataItem => BindingContext as VariableHeightItem;
@@ -75,7 +75,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyEntryCell : EntryCell
 		{
 			VariableHeightItem _DataItem => BindingContext as VariableHeightItem;
@@ -96,7 +96,7 @@ namespace Xamarin.Forms.Controls
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MySwitchCell : SwitchCell
 		{
 			VariableHeightItem _DataItem => BindingContext as VariableHeightItem;

@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 36681, "[A] NRE when Picker Replaces Page Content (pre-AppCompat only)", PlatformAffected.Android)]
 	public class Bugzilla36681 : TestTabbedPage // or TestFlyoutPage, etc ...
 	{

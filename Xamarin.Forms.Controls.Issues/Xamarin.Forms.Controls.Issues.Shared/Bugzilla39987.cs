@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 39987, "Bug 39987 - MapView not working correctly on iOS 9.3")]
 	public class Bugzilla39987 : TestTabbedPage // or TestFlyoutPage, etc ...
 	{
@@ -30,7 +30,7 @@ namespace Xamarin.Forms.Controls.Issues
 			base.OnAppearing();
 			await DisplayAlert("Instructions", "Navigating for all tabs, if don't crash the test passed", Ok);
 		}
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class CustomMapView : View
 		{
 			public CustomMapView()
@@ -40,7 +40,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class CustomMapPage : ContentPage
 		{
 			private CustomMapView _customMapView;

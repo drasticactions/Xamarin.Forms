@@ -14,11 +14,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3622, "Android TalkBack reads elements behind modal pages", PlatformAffected.Android, NavigationBehavior.PushModalAsync)]
 	public class Issue3622 : TestContentPage // or TestFlyoutPage, etc ...
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Contact
 		{
 			public string Name { get; set; }
@@ -35,7 +35,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class DetailPageCS : ContentPage
 		{
 			public DetailPageCS()

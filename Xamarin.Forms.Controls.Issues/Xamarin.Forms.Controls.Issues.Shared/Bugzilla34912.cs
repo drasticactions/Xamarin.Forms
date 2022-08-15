@@ -18,7 +18,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 
 	// Note: Fails on UWP due to https://bugzilla.xamarin.com/show_bug.cgi?id=60521
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 34912, "ListView.IsEnabled has no effect on iOS")]
 	public class Bugzilla34912 : TestContentPage // or TestFlyoutPage, etc ...
 	{

@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[Category(UITestCategories.ContextActions)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4314, "When ListView items is removed and it is empty, Xamarin Forms crash", PlatformAffected.iOS)]
 	public class Issue4314 : TestNavigationPage // or TestFlyoutPage, etc ...
 	{

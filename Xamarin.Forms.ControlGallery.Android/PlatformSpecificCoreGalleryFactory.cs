@@ -9,7 +9,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.ControlGallery.Android
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class PlatformSpecificCoreGalleryFactory : IPlatformSpecificCoreGalleryFactory
 	{
 		public string Title => "Android Core Gallery";

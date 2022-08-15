@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class BehaviorsAndTriggers : ContentPage
 	{
 		public BehaviorsAndTriggers()
@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Throb : TriggerAction<VisualElement>
 	{
 		bool _horizontal;
@@ -34,17 +34,17 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class HThrob : Throb
 	{
-		[Preserve]
+		[Xamarin.Forms.Internals.Preserve]
 		public HThrob()
 			: base(true)
 		{
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class VThrob : Throb
 	{
 		public VThrob() : base(false)
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class StopItBehavior : Behavior<Button>
 	{
 		protected override void OnAttachedTo(Button bindable)

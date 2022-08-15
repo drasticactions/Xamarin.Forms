@@ -12,7 +12,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7181, "[Bug] Cannot update ToolbarItem text and icon", PlatformAffected.Android)]
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.Shell)]

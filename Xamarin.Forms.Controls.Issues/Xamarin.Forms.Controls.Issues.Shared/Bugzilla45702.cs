@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 45702, "Disabling back press on modal page causes app to crash", PlatformAffected.Android)]
 	public class Bugzilla45702 : TestNavigationPage
 	{
@@ -30,7 +30,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Application.Current.MainPage = new NavigationPage(new ContentPage { Content = new Label { Text = "Success" } });
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class DetailPage45702 : ContentPage
 		{
 			public DetailPage45702()

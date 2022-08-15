@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	// This may crash for you on Android if you click too many buttons
 	// https://github.com/xamarin/Xamarin.Forms/issues/3603
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3408, "System.ObjectDisposedException: from SwitchCellRenderer when changing ItemSource", PlatformAffected.iOS)]
 	public class Issue3408 : TestContentPage
 	{
@@ -93,14 +93,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 #endif
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class RecommendationsBaseViewModel : ViewModelBase
 		{
 			public virtual string AccountName => $"";
 			public List<Recommendation> Recommendations { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class RecommendationsViewModel : RecommendationsBaseViewModel
 		{
 			public override string AccountName => $"Recommendations";
@@ -116,7 +116,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class RecommendationsViewModel2 : RecommendationsBaseViewModel
 		{
 			public override string AccountName => $"Recommendations 2";
@@ -131,7 +131,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Recommendation : ViewModelBase
 		{
 			string _name;
@@ -150,7 +150,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RecommendationsView : ContentView
 	{
 		public RecommendationsView()
@@ -186,7 +186,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class AccountDetailsDataTemplateSelector : DataTemplateSelector
 	{
 		public Lazy<DataTemplate> RecommendationsViewDataTemplate { get; }

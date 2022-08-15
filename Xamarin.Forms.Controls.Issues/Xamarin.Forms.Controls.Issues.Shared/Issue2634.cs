@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2634, "Keyboard causes view to scroll incorrectly", PlatformAffected.iOS)]
 	public class Issue2634 : ContentPage
 	{

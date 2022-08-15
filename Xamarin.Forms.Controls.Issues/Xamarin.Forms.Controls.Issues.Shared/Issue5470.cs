@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.AppLinks)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5470, "ApplinkEntry Thumbnail required after upgrading to 3.5/3.6", PlatformAffected.iOS)]
 	public class Issue5470 : TestContentPage
 	{

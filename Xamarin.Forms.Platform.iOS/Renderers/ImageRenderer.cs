@@ -32,7 +32,7 @@ namespace Xamarin.Forms.Platform.iOS
 	{
 		bool _isDisposed;
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public ImageRenderer() : base()
 		{
 			ImageElementManager.Init(this);
@@ -141,7 +141,7 @@ namespace Xamarin.Forms.Platform.iOS
 
 	public sealed class FileImageSourceHandler : IImageSourceHandler, IAnimationSourceHandler
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public FileImageSourceHandler()
 		{
 		}
@@ -176,7 +176,7 @@ namespace Xamarin.Forms.Platform.iOS
 
 	public sealed class StreamImagesourceHandler : IImageSourceHandler, IAnimationSourceHandler
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public StreamImagesourceHandler()
 		{
 		}
@@ -216,7 +216,7 @@ namespace Xamarin.Forms.Platform.iOS
 
 	public sealed class ImageLoaderSourceHandler : IImageSourceHandler, IAnimationSourceHandler
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public ImageLoaderSourceHandler()
 		{
 		}
@@ -258,7 +258,7 @@ namespace Xamarin.Forms.Platform.iOS
 	{
 		readonly Color _defaultColor = ColorExtensions.LabelColor.ToColor();
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public FontImageSourceHandler()
 		{
 		}

@@ -8,7 +8,7 @@ using Xamarin.Forms.Internals;
 namespace Xamarin.Forms.Controls.Effects
 {
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class AttachedStateEffect : RoutingEffect
 	{
 		public const string EffectName = "AttachedStateEffect";

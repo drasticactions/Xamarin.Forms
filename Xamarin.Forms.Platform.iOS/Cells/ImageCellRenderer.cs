@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Platform.iOS
 {
 	public class ImageCellRenderer : TextCellRenderer
 	{
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public ImageCellRenderer()
 		{
 		}

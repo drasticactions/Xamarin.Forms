@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 47971, "UWP doesn't display list items when binding a CommandParameter to BindingContext in a DataTemplate and including a CanExecute method", PlatformAffected.WinRT)]
 	public class Bugzilla47971 : TestContentPage
 	{
@@ -44,7 +44,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = layout;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class _47971ViewModel : INotifyPropertyChanged
 		{
 			_47971ItemModel _selectedModel;
@@ -103,7 +103,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class _47971ItemModel
 		{
 			public string Name { get; set; }

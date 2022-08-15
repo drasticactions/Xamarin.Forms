@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13819, "[Bug] Android: ClearButtonVisibility doesn't work correctly when enabled while the field is already focused", PlatformAffected.Android)]
 	public class Issue13819 : TestContentPage
 	{

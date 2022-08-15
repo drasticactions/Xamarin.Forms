@@ -10,7 +10,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8767, "SwipeView SwipeBehaviorOnInvoked RemainOpen issue on iOS",
 		PlatformAffected.iOS)]
 #if UITEST

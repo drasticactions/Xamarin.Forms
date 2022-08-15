@@ -7,7 +7,7 @@ using Xamarin.Forms.Internals;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1497, "Grid sizing issue", PlatformAffected.Android | PlatformAffected.iOS | PlatformAffected.WinPhone)]
 	public partial class Issue1497 : ContentPage
 	{

@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12084, "[Bug] Slider not responding to taps in iOS 14",
 		PlatformAffected.iOS)]
 	public partial class Issue12084 : TestContentPage

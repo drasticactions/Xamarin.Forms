@@ -18,7 +18,7 @@ using Xamarin.UITest;
 namespace Xamarin.Forms.Controls.Issues
 {
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1675, "Bottom Tabbed Page Basic Test", PlatformAffected.All)]
 	public class BottomTabbedPageTests : TestTabbedPage
 	{

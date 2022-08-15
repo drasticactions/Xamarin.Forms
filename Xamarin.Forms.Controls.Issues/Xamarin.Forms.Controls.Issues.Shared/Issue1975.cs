@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1975, "[iOS] ListView throws NRE when grouping enabled and data changed",
 		PlatformAffected.iOS)]
 #if UITEST
@@ -68,7 +68,7 @@ namespace Xamarin.Forms.Controls.Issues
 			return contentPage;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class DataSample
 		{
 			static readonly object _lockObject = new object();
@@ -116,7 +116,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public ObservableCollection<Item> Items { get; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class Item : ObservableCollection<SubItem>
 		{
 			public string ShortName { get; set; }
@@ -129,7 +129,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class SubItem
 		{
 			public string Text { get; set; }

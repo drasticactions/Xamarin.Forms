@@ -6,7 +6,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 35490, "Label Text Misaligned in Windows Phone 8.1 and WinRT",
 		PlatformAffected.WinPhone | PlatformAffected.WinRT)]
 	public class Bugzilla35490 : TestContentPage

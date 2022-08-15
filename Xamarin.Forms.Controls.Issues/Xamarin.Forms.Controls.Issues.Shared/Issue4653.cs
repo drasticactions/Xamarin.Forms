@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4653, "IsTabStop property not working when Grid contains ScrollView", PlatformAffected.UWP)]
 	public class Issue4653 : TestContentPage
 	{

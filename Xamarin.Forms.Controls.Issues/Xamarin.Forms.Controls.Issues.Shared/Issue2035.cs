@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2035, "App crashes when setting CurrentPage on TabbedPage in ctor in 2.5.1pre1", PlatformAffected.Android)]
 	public class Issue2035 : TestTabbedPage
 	{

@@ -11,7 +11,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4001, "[MacOS] NullRef in WebViewRenderer", PlatformAffected.macOS, NavigationBehavior.PushAsync)]
 	public class Issue4001 : TestContentPage
 	{

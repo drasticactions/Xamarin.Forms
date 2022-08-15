@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Shape)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11050, "[Bug][iOS][Android] Shapes: clock drawing erro", PlatformAffected.Android | PlatformAffected.iOS)]
 	public partial class Issue11050 : ContentPage
 	{

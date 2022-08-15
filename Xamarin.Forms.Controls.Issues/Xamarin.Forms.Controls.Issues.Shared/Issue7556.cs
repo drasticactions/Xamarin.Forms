@@ -13,7 +13,7 @@ using Xamarin.UITest.iOS;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7556, "[iOS] Masterbehavior.popover not being observed on iOS 13",
 		PlatformAffected.iOS)]
 #if UITEST
@@ -40,7 +40,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Detail = new NavigationPage(new DetailsPage(this) { Title = "Details" });
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class DetailsPage : ContentPage
 		{
 			FlyoutPage MDP { get; }

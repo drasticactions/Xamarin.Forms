@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2172, "Height of Entry with data binding incorrect on UWP when Entry in ScrollView in Grid", PlatformAffected.UWP)]
 	public partial class Issue2172 : ContentPage
 	{

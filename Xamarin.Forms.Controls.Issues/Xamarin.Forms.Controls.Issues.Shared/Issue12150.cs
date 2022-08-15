@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Switch)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12150, "[Bug] Switch control not respecting Material Design on Android",
 		PlatformAffected.Android)]
 	public class Issue12150 : TestContentPage

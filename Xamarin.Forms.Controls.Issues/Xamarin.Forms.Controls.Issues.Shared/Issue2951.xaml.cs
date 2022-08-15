@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2951, "On Android, button background is not updated when color changes ")]
 	public partial class Issue2951 : TestContentPage
 	{
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 			BindingContext = new MyViewModel();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyViewModel
 		{
 			public ObservableCollection<MyItemViewModel> Items { get; private set; }
@@ -79,7 +79,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyItemViewModel : INotifyPropertyChanged
 		{
 			public event PropertyChangedEventHandler PropertyChanged;
@@ -171,7 +171,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ButtonExtensions
 	{
 #pragma warning disable 618

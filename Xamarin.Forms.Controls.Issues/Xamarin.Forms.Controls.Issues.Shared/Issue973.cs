@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 973, "ActionBar doesn't immediately update when nested TabbedPage is changed", PlatformAffected.Android)]
 	public class Issue973 : TestFlyoutPage
 	{

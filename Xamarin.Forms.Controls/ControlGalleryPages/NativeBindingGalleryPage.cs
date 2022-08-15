@@ -70,7 +70,7 @@ namespace Xamarin.Forms.Controls
 	}
 
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class NestedNativeViewModel : ViewModelBase
 	{
 		string _formsLabel;

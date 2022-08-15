@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 892, "NavigationPages as details in FlyoutPage don't work as expected", PlatformAffected.Android)]
 	public class Issue892 : TestFlyoutPage
 	{

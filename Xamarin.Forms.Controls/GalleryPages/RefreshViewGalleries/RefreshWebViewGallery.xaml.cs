@@ -5,7 +5,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.GalleryPages.RefreshViewGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class RefreshWebViewGallery : ContentPage
 	{
 		public RefreshWebViewGallery()
@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.GalleryPages.RefreshViewGalleries
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class RefreshWebViewGalleryViewModel : BindableObject
 	{
 		const int RefreshDuration = 2;

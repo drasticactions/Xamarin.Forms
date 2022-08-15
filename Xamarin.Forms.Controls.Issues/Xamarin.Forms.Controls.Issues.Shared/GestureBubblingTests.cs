@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Gestures)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 00100100, "Verify that the tap gesture bubbling behavior is consistent across the platforms", PlatformAffected.All)]
 	public class GestureBubblingTests : TestNavigationPage
 	{

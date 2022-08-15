@@ -9,7 +9,7 @@ using Xamarin.UITest;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "TabbedPage BarBackgroundColor not working on iOS 15", PlatformAffected.iOS)]
 	public class Issue14505_II : TestTabbedPage
 	{

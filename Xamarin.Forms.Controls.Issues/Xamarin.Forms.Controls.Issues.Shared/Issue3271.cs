@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3271, "The order of transformations is not correct", PlatformAffected.WPF)]
 	public class Issue3271 : TestContentPage//TestTabbedPage
 	{

@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3306, "[WPF] TimePicker with short time pattern shows verbose time", PlatformAffected.WPF)]
 	public class Issue3306 : TestContentPage
 	{

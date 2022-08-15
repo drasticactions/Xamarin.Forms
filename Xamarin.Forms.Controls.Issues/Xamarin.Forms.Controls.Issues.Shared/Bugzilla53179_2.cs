@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 53179, "Removing page during OnAppearing throws exception", PlatformAffected.Android,
 		issueTestNumber: 2)]
 	public class Bugzilla53179_2 : TestContentPage
@@ -43,7 +43,7 @@ namespace Xamarin.Forms.Controls.Issues
 			return new ContentPage { Content = new Label { Text = "Intermediate page" } };
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class PageWhichRemovesAnEarlierPageOnAppearing : ContentPage
 		{
 			public PageWhichRemovesAnEarlierPageOnAppearing()

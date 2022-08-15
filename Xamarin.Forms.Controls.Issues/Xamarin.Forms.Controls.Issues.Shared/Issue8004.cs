@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.Animation)]
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8004, "Add a ScaleXTo and ScaleYTo animation extension method", PlatformAffected.All)]
 	public class Issue8004 : TestContentPage
 	{

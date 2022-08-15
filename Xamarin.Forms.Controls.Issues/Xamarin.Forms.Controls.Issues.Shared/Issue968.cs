@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 968, "StackLayout does not relayout on device rotation", PlatformAffected.iOS, NavigationBehavior.PushModalAsync)]
 	public class Issue968 : TestContentPage
 	{

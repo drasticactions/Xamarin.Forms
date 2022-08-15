@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1939, "ArgumentOutOfRangeException on clearing a group on a grouped ListView on Android", PlatformAffected.Android)]
 	public class Issue1939 : TestContentPage
 	{
@@ -74,7 +74,7 @@ namespace Xamarin.Forms.Controls.Issues
 			results.Clear();
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MyDataTemplateSelector : DataTemplateSelector
 		{
 			readonly DataTemplate firstGroupTemplate;
@@ -100,20 +100,20 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupItem
 		{
 			public string DisplayText { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupedData : ObservableCollection<GroupItem>
 		{
 			public string GroupName { get; set; }
 			public bool HasHeader { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupItemTemplate : ViewCell
 		{
 			public GroupItemTemplate()
@@ -130,7 +130,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupHeaderTemplate : ViewCell
 		{
 			public GroupHeaderTemplate()
@@ -149,7 +149,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class GroupNoHeaderTemplate : ViewCell
 		{
 			public GroupNoHeaderTemplate()

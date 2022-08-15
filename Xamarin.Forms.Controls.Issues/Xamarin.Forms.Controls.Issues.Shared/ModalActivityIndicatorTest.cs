@@ -7,7 +7,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Activity Indicator Does Not Show when set to default color")]
 	public class ModalActivityIndicatorTest : TestContentPage
 	{
@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Controls.Issues
 			};
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ModalActivityIndicatorModel : INotifyPropertyChanged
 		{
 			bool _isBusy;
@@ -91,7 +91,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ModalActivityIndicator : RelativeLayout
 		{
 			public ModalActivityIndicator()

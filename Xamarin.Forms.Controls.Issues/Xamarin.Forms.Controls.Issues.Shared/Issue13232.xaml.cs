@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13232,
 		"[Bug] Command is not working in SwipeItem",
 		PlatformAffected.Android | PlatformAffected.iOS)]
@@ -34,7 +34,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue13232Model
 	{
 		public int Id { get; set; }
@@ -42,7 +42,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string SubTitle { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue13232ViewModel : BindableObject
 	{
 		public Issue13232ViewModel()

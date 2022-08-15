@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7505, "Icons from Toolbaritem are not displayed on UWP if starts on second monitor", PlatformAffected.UWP)]
 	public class Issue7505 : FlyoutPage
 	{

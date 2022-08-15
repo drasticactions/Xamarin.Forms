@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 53179,
 		"PopAsync crashing after RemovePage when support packages are updated to 25.1.1", PlatformAffected.Android)]
 	public class Bugzilla53179 : TestNavigationPage

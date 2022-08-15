@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9306, "[iOS] Cannot un-reveal swipe view items on iOS / Inconsistent swipe view behaviour", PlatformAffected.iOS)]
 	public class Issue9306 : TestContentPage
 	{

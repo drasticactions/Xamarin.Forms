@@ -10,7 +10,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 14880, "[Bug] CollectionView item renderers never get disposed on Android (Memory Leak)", PlatformAffected.Android)]
 	public partial class Issue14880 : TestContentPage
 	{
@@ -27,7 +27,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue14880ViewModel
 	{
 		public ObservableCollection<Issue14880Model> Items { get; set; }
@@ -49,7 +49,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue14880Model
 	{
 		public string Text { get; set; }

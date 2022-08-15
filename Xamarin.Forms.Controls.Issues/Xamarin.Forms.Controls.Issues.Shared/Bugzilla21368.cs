@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 21368, "Button text alignment breaks if the buttons are in a stack layout inside another layout and the button is clicked", PlatformAffected.Android)]
 	public class Bugzilla21368 : ContentPage
 	{

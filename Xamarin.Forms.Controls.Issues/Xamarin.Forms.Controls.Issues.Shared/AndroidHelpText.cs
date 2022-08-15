@@ -17,11 +17,11 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST && __ANDROID__
 	[Ignore("Ignoring this test until FastRenderers.LabelRenderer is no longer sealed")]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Android shows . in empty labels because of a11y Name/HelpText", PlatformAffected.Android)]
 	public class AndroidHelpText : TestContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class HintLabel : Label
 		{
 			public const string Success = "SUCCESS";

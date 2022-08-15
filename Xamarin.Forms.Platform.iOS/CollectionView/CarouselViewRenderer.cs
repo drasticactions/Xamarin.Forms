@@ -9,7 +9,7 @@ namespace Xamarin.Forms.Platform.iOS
 		CarouselView Carousel => Element;
 		ItemsViewLayout _layout;
 
-		[Preserve(Conditional = true)]
+		[Xamarin.Forms.Internals.Preserve(Conditional = true)]
 		public CarouselViewRenderer()
 		{
 		}

@@ -13,7 +13,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1704, "[Enhancement] Basic GIF animation features", PlatformAffected.UWP)]
 	public class Issue1704 : TestTabbedPage
 	{
@@ -59,7 +59,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class OnLoadAnimationPage : ContentPage
 	{
 		Label _referenceImageLabel;
@@ -116,7 +116,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class OnStartAnimationPage : ContentPage
 	{
 		Label _referenceImageLabel;
@@ -216,7 +216,7 @@ namespace Xamarin.Forms.Controls.Issues
 	// Large animated GIF that could trigger OOM scenarios and slow load times (12 MB compressed, 240 frames).
 	// http://media.giphy.com/media/mf8UbIDew7e8g/giphy.gif
 	//
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class LoadImageSourceAnimationPage : ContentPage
 	{
 		Label _animatedImageLabel;
@@ -367,7 +367,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class MiscPage : ContentPage
 	{
 		Label _noAnimationFallbackLabel;

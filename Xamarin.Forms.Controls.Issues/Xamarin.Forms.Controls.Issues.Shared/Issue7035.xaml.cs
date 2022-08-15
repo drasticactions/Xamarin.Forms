@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin.Forms.Controls.Issues
 {
 #if APP
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7035, "[Bug][iOS] CarouselView last element is clipped",
 		PlatformAffected.iOS)]
 	[XamlCompilation(XamlCompilationOptions.Compile)]

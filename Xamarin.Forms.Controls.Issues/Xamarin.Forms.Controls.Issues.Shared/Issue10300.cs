@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.CarouselView)]
 	[Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10300, "ObservableCollection.RemoveAt(index) with a valid index raises ArgementOutOfRangeException", PlatformAffected.iOS)]
 	public class Issue10300 : TestContentPage // or TestFlyoutPage, etc ...
 	{
@@ -158,7 +158,7 @@ namespace Xamarin.Forms.Controls.Issues
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ModelIssue10300
 	{
 		public string Text { get; set; }

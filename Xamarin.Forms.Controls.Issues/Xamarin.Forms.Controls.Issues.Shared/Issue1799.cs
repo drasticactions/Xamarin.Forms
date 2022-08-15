@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.ListView)]
 	[NUnit.Framework.Category(UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 1799, "[iOS] listView without data crash on ipad.", PlatformAffected.iOS)]
 	public class Issue1799 : TestContentPage
 	{

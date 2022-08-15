@@ -21,7 +21,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 13588, "[Bug] Button inside collectionview not appearing until UWP window is resized #13552", PlatformAffected.UWP)]
 	public partial class Issue13588 : TestContentPage
 	{

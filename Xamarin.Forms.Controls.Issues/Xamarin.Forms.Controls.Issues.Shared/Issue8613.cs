@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8613, "[Bug] Accessibility, screenreader ignores or skips items in nested stacklayout",
 		PlatformAffected.iOS)]
 #if UITEST

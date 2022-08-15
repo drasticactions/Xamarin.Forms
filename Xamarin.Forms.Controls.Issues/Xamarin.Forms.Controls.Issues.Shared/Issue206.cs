@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.UwpIgnore)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 206, "ViewCell with Label's text does not resize when value is changed", PlatformAffected.iOS)]
 	public class Issue206 : TestContentPage
 	{
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue206ListScreen
 	{
 		public ListView View { get; private set; }
@@ -85,7 +85,7 @@ namespace Xamarin.Forms.Controls.Issues
 			#endregion
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class ViewCellTest : ViewCell
 		{
 			static int s_inc = 0;

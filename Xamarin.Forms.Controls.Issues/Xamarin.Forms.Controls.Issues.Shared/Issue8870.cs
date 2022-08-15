@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8870, "[Bug] CollectionView with HTML Labels Freeze the Screen on Rotation",
 		PlatformAffected.iOS)]
 	public class Issue8870 : TestContentPage

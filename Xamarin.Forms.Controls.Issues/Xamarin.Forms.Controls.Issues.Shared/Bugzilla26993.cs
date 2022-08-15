@@ -14,11 +14,11 @@ namespace Xamarin.Forms.Controls.Issues
 	[Category(UITestCategories.UwpIgnore)]
 	[Category(UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 26993, "https://bugzilla.xamarin.com/show_bug.cgi?id=26993")]
 	public class Bugzilla26993 : TestContentPage // or TestFlyoutPage, etc ...
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Bz26993ViewCell : ViewCell
 		{
 			public static int s_id = 0;

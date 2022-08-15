@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 27350, "Binding throws Null Pointer Exception when Updating Tab")]
 	public class Bugzilla27350 : TestContentPage // or TestFlyoutPage, etc ...
 	{

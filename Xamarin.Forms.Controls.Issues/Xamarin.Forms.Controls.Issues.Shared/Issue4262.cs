@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4262, "Label HorizontalTextAlignment=\"Center\" not working in conjunction with LineHeight on iOS", PlatformAffected.iOS)]
 	public class Issue4262 : ContentPage
 	{

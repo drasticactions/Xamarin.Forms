@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12512, "[Bug] Application.RequestedThemeChanged raised twice on iOS when switching to home screen and back", PlatformAffected.Default)]
 	public class Issue12512 : TestContentPage
 	{

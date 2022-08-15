@@ -17,7 +17,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12910,
 		"[Bug] 'Cannot access a disposed object. Object name: 'DefaultRenderer' - on ios with CollectionView and EmptyView",
 		PlatformAffected.iOS)]

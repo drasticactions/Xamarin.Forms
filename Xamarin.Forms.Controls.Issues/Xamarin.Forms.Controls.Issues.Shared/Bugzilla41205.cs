@@ -11,7 +11,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 41205, "UWP CreateDefault passes string instead of object")]
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.ListView)]
@@ -21,13 +21,13 @@ namespace Xamarin.Forms.Controls.Issues
 	{
 		const string _success = "Pass";
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ViewModel
 		{
 			public string Text { get { return _success; } }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class CustomListView : ListView
 		{
 			protected override Cell CreateDefault(object item)

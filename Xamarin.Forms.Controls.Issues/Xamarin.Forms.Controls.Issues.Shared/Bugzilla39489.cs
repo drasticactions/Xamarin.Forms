@@ -14,7 +14,7 @@ using NUnit.Framework;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 #if UITEST
 	[Category(UITestCategories.Maps)]
 	[NUnit.Framework.Category(UITestCategories.UwpIgnore)]
@@ -69,7 +69,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Bz39489Content : ContentPage
 	{
 		static int s_count;

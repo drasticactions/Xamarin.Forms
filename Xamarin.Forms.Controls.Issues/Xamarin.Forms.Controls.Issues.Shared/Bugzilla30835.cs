@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 30835, "Navigating to and from the Carousel page with MasterDetail page creates an Out of memory exception")]
 	public class Bugzilla30835 : TestFlyoutPage // or TestFlyoutPage, etc ...
 	{
@@ -34,7 +34,7 @@ namespace Xamarin.Forms.Controls.Issues
 			IsPresented = false;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class HolderCarouselPages : CarouselPage
 		{
 			public HolderCarouselPages()
@@ -52,7 +52,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class HolderImage
 		{
 			public HolderImage(string name, string images)
@@ -71,7 +71,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class DisplayContentPage : ContentPage
 		{
 			public DisplayContentPage()
@@ -97,7 +97,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuPage : ContentPage
 		{
 			public ListView Menu { get; set; }
@@ -132,7 +132,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuListView : ListView
 		{
 			public MenuListView()
@@ -153,7 +153,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuListData : List<MenuItem>
 		{
 			public MenuListData()
@@ -192,7 +192,7 @@ namespace Xamarin.Forms.Controls.Issues
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class MenuItem
 		{
 			public string Title { get; set; }
@@ -204,7 +204,7 @@ namespace Xamarin.Forms.Controls.Issues
 			public Color TextColor { get; set; }
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class Pic1 : ContentPage
 		{
 			public Pic1()

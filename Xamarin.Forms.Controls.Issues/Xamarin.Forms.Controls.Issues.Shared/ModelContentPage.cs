@@ -8,7 +8,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.None, 0, "Modal ContentPage", PlatformAffected.All, NavigationBehavior.PushModalAsync)]
 	public class ModalContentPage : ContentPage
 	{

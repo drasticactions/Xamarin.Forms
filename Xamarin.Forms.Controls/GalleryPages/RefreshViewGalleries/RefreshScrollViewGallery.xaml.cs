@@ -2,7 +2,7 @@
 
 namespace Xamarin.Forms.Controls.GalleryPages.RefreshViewGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class RefreshScrollViewGallery : ContentPage
 	{
 		public RefreshScrollViewGallery()

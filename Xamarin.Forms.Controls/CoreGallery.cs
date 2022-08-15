@@ -24,13 +24,13 @@ using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public static class Messages
 	{
 		public const string ChangeRoot = "com.xamarin.ChangeRoot";
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CoreCarouselPage : CarouselPage
 	{
 		public CoreCarouselPage()
@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CoreContentPage : ContentPage
 	{
 		public CoreRootView CoreRootView { get; }
@@ -54,7 +54,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CoreFlyoutPage : FlyoutPage
 	{
 		public CoreFlyoutPage()
@@ -82,7 +82,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CoreFlyoutView : ContentPage
 	{
 		public CoreFlyoutView()
@@ -96,7 +96,7 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CoreNavigationPage : NavigationPage
 	{
 		public CoreNavigationPage()
@@ -119,7 +119,7 @@ namespace Xamarin.Forms.Controls
 			Navigation.PushAsync(new CoreRootPage(this));
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CoreTabbedPageAsBottomNavigation : CoreTabbedPageBase
 	{
 		protected override void Init()
@@ -129,13 +129,13 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 2456, "StackOverflow after reordering tabs in a TabbedPageView", PlatformAffected.All)]
 	public class CoreTabbedPage : CoreTabbedPageBase
 	{
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CoreTabbedPageBase : TestTabbedPage
 	{
 		protected override void Init()
@@ -225,7 +225,7 @@ namespace Xamarin.Forms.Controls
 #endif
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CoreViewContainer
 	{
 		public string Name { get; private set; }
@@ -237,7 +237,7 @@ namespace Xamarin.Forms.Controls
 			PageType = pageType;
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class CoreRootView : ListView
 	{
 		public CoreRootView()
@@ -277,10 +277,10 @@ namespace Xamarin.Forms.Controls
 	}
 
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CorePageView : ListView
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		internal class GalleryPageFactory
 		{
 			public GalleryPageFactory(Func<Page> create, string title)
@@ -562,7 +562,7 @@ namespace Xamarin.Forms.Controls
 				ItemsSource = _pages.Where(p => p.Title.IndexOf(filter, StringComparison.OrdinalIgnoreCase) != -1);
 		}
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class CoreRootPage : ContentPage
 	{
 		CoreRootView CoreRootView { get; }
@@ -669,14 +669,14 @@ namespace Xamarin.Forms.Controls
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public interface IPlatformSpecificCoreGalleryFactory
 	{
 		string Title { get; }
 
 		IEnumerable<(Func<Page> Create, string Title)> GetPages();
 	}
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public static class CoreGallery
 	{
 		public static Page GetMainPage()

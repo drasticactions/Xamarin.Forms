@@ -19,7 +19,7 @@ using Xamarin.Forms.Core.UITests;
 namespace Xamarin.Forms.Controls.Issues
 {
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6878,
 		"ShellItem.Items.Clear() crashes when the ShellItem has bottom tabs", PlatformAffected.All)]
 

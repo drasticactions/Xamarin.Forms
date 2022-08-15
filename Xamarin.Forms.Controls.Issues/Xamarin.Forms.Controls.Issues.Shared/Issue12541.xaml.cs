@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.SwipeView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12541, "[Bug] Android Swipeview finicky swipe to close", PlatformAffected.Android | PlatformAffected.iOS)]
 	public partial class Issue12541 : ContentPage
 	{

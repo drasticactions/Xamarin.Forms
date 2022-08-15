@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 4933, "Grid size incorrect when using with Image", PlatformAffected.All)]
 	public class Issue4493 : TestContentPage // or TestFlyoutPage, etc ...
 	{

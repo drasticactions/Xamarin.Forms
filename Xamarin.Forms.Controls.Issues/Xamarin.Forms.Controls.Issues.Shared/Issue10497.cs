@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10497, "[Bug] Controls inside CollectionView might flash scrollbar while they're not scrollable", PlatformAffected.Android)]
 	public class Issue10497 : TestContentPage
 	{

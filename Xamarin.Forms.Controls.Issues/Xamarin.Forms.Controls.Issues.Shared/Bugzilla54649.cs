@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 54649, "[UWP] Navigation page title bar disappears upon navigating through tabs", PlatformAffected.UWP)]
 	public class Bugzilla54649 : TestTabbedPage
 	{

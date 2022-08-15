@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.GalleryPages.SwipeViewGalleries
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public partial class SwipeViewBindingContextGallery : ContentPage
 	{
 		public SwipeViewBindingContextGallery()
@@ -13,14 +13,14 @@ namespace Xamarin.Forms.Controls.GalleryPages.SwipeViewGalleries
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SwipeViewBindingContextGalleryModel : BindableObject
 	{
 		public string Title { get; set; }
 		public string SubTitle { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SwipeViewBindingContextGalleryViewModel : BindableObject
 	{
 		ObservableCollection<SwipeViewBindingContextGalleryModel> _items;

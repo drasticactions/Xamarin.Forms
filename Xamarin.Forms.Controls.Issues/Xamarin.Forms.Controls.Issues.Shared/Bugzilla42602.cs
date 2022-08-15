@@ -14,7 +14,7 @@ namespace Xamarin.Forms.Controls.Issues
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 42602, "[Win] Custom BoxView Renderer Does Not Render All Its Children Elements", PlatformAffected.WinRT)]
 	public class Bugzilla42602 : TestContentPage
 	{

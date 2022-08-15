@@ -12,7 +12,7 @@ using Xamarin.UITest.iOS;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 8417, "(Android) CarouselView Java.Lang.IllegalStateException", PlatformAffected.Android)]
 	public partial class Issue8417 : TestContentPage
 	{
@@ -40,7 +40,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8417Model
 	{
 		public string Name { get; set; }
@@ -49,7 +49,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public string ImageUrl { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Issue8417ViewModel : BindableObject
 	{
 		readonly IList<Issue8417Model> _items;

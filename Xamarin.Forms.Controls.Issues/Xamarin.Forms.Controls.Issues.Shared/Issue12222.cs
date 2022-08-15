@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 12222, "[Bug] [MacOS] Buttons don't render correctly when given a HeightRequest", PlatformAffected.macOS)]
 	public class Issue12222 : TestContentPage
 	{

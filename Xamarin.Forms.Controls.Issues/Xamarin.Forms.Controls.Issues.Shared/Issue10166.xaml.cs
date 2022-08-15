@@ -4,7 +4,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 10166, "[iOS] IsClippedToBounds Property is ignored by Frames", PlatformAffected.iOS)]
 	public partial class Issue10166 : TestContentPage
 	{

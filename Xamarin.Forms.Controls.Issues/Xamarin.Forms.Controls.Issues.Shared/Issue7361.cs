@@ -6,7 +6,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7361, "[UWP] Stepper display error when using Slider", PlatformAffected.UWP)]
 	public class Issue7361 : TestContentPage
 	{

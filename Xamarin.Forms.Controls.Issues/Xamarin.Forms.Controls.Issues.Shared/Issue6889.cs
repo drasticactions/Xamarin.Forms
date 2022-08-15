@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(UITestCategories.CollectionView)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 6889, "Labels disappearing in CollectionView", PlatformAffected.Android)]
 	public class Issue6889 : TestNavigationPage
 	{
@@ -86,14 +86,14 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class _6889TextModel
 	{
 		public string Text1 { get; set; }
 		public string Text2 { get; set; }
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class _6889MainViewModel
 	{
 		public _6889MainViewModel()

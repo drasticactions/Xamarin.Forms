@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla,
 			59172, "[iOS] Popped page does not appear on top of current navigation stack, please file a bug.",
 			PlatformAffected.iOS)]
@@ -25,7 +25,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Navigation.PushAsync(firstPage);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class TestPage : ContentPage
 		{
 			TestPage parent;

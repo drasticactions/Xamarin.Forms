@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Frame)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11120, "[Bug] IsClippedToBounds iOS not work", PlatformAffected.iOS)]
 	public partial class Issue11120 : ContentPage
 	{

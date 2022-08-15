@@ -16,7 +16,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.ManualReview)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3988, "Windows Platform Specific - IsDynamicOverflowEnabled", PlatformAffected.UWP)]
 	public class Issue3988 : TestContentPage
 	{

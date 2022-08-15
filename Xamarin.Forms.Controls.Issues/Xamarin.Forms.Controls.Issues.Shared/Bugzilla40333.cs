@@ -10,7 +10,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 40333, "[Android] IllegalStateException: Recursive entry to executePendingTransactions", PlatformAffected.Android)]
 	public class Bugzilla40333 : TestNavigationPage
 	{
@@ -39,7 +39,7 @@ namespace Xamarin.Forms.Controls.Issues
 			PushAsync(content);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _40333MDP : TestFlyoutPage
 		{
 			readonly bool _showTabVersion;
@@ -63,7 +63,7 @@ namespace Xamarin.Forms.Controls.Issues
 				}
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			public class _40333DetailPage : ContentPage
 			{
 				public _40333DetailPage(string title)
@@ -85,7 +85,7 @@ namespace Xamarin.Forms.Controls.Issues
 				}
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			public class _40333NavPusher : ContentPage
 			{
 				readonly ListView _listView = new ListView();
@@ -145,7 +145,7 @@ namespace Xamarin.Forms.Controls.Issues
 				}
 			}
 
-			[Preserve(AllMembers = true)]
+			[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 			public class _40333TabPusher : ContentPage
 			{
 				readonly ListView _listView = new ListView();

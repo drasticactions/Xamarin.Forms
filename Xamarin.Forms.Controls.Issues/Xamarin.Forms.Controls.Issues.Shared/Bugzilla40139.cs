@@ -7,7 +7,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 40139, "Changing the Windows 10 System Theme Color causes ListView text to disappear.",
 		PlatformAffected.WinRT)]
 	public class Bugzilla40139 : TestContentPage
@@ -48,7 +48,7 @@ namespace Xamarin.Forms.Controls.Issues
 			Content = layout;
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class _40139ViewCell : ViewCell
 		{
 			public _40139ViewCell()

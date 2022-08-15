@@ -23,7 +23,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7621, "[iOS] MeasureFirstItem is broken for CollectionView", PlatformAffected.iOS)]
 	public partial class Issue7621 : TestContentPage
 	{
@@ -56,7 +56,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ViewModel7621
 	{
 		public ObservableCollection<Model7621> Items { get; set; }
@@ -92,7 +92,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class Model7621
 	{
 		public Color BackgroundColor { get; set; }

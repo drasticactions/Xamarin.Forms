@@ -14,7 +14,7 @@ using Xamarin.Forms.Core.UITests;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7290, "[Android] DisplayActionSheet or DisplayAlert in OnAppearing does not work on Shell",
 		PlatformAffected.Android)]
 #if UITEST

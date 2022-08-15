@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 34632, "Can't change IsPresented when setting SplitOnLandscape ")]
 	public class Bugzilla34632 : TestFlyoutPage
 	{
@@ -46,7 +46,7 @@ namespace Xamarin.Forms.Controls.Issues
 			NavigationPage.SetHasBackButton(Detail, false);
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		public class ModalRotationIssue : ContentPage
 		{
 			public ModalRotationIssue()

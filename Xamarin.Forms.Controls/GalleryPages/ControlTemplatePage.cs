@@ -9,7 +9,7 @@ namespace Xamarin.Forms.Controls.GalleryPages
 {
 	internal class ControlTemplatePage : ContentPage
 	{
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyLayout : StackLayout
 		{
 			public MyLayout()
@@ -20,7 +20,7 @@ namespace Xamarin.Forms.Controls.GalleryPages
 			}
 		}
 
-		[Preserve(AllMembers = true)]
+		[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 		class MyOtherLayout : StackLayout
 		{
 			public MyOtherLayout()

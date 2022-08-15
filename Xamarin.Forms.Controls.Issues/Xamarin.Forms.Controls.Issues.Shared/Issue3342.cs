@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Github5000)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3342, "[Android] BoxView BackgroundColor not working on 3.2.0-pre1", PlatformAffected.Android)]
 	public class Issue3342 : TestContentPage
 	{

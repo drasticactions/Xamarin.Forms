@@ -12,7 +12,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Layout)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 5886, "Value does not fall with in the expected range Exception while creating NativeView Xamarin Forms UWP", PlatformAffected.UWP)]
 	public class Issue5886 : TestContentPage
 	{

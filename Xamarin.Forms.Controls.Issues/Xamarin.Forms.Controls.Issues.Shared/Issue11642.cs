@@ -9,7 +9,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11642, "Android - Grouped CollectionView - Removing all items from a large list and adding them back to the group renders oddly", PlatformAffected.Android)]
 	public class Issue11642 : TestContentPage
 	{

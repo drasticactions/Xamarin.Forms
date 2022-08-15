@@ -11,7 +11,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[NUnit.Framework.Category(Core.UITests.UITestCategories.Bugzilla)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Bugzilla, 49069, "Java.Lang.ArrayIndexOutOfBoundsException when rendering long Label on Android", PlatformAffected.Default)]
 	public class Bugzilla49069 : TestContentPage // or TestFlyoutPage, etc ...
 	{

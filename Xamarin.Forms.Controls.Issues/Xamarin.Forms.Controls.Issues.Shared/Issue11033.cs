@@ -13,7 +13,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if UITEST
 	[Category(UITestCategories.Frame)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11033,
 		"[Bug] iOS Native crash when RadiusX/RadiusY > Width/Height of Shapes.Rectangle",
 		PlatformAffected.Android)]

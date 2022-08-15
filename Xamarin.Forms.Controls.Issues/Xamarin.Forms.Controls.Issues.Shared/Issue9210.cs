@@ -3,7 +3,7 @@ using Xamarin.Forms.Internals;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 9210, "[Bug] iOS keyboard case flickers when switching entries", PlatformAffected.iOS)]
 	public class Issue9210 : TestContentPage
 	{

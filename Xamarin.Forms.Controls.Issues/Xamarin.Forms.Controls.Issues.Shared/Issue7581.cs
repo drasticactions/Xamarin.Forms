@@ -4,7 +4,7 @@ using Xamarin.Forms.Maps;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 7581, "UWP Map not moving to location when map hidden then shown", PlatformAffected.UWP)]
 	public class Issue7581 : TestContentPage
 	{

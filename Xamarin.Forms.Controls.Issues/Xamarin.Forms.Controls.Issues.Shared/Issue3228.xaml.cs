@@ -5,7 +5,7 @@ using WindowsOS = Xamarin.Forms.PlatformConfiguration.Windows;
 
 namespace Xamarin.Forms.Controls.Issues
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 3228, "[UWP] Default Search Directory for UWP Icons (Platform Specific)")]
 	public partial class Issue3228 : TestContentPage
 	{

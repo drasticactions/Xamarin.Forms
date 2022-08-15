@@ -2,7 +2,7 @@
 
 namespace Xamarin.Forms.Controls
 {
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	internal class PerformanceTrackerTemplate : StackLayout
 	{
 		public const string ScenarioId = "ScenarioId";

@@ -22,7 +22,7 @@ namespace Xamarin.Forms.Controls.Issues
 #if APP
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 #endif
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[Issue(IssueTracker.Github, 11737, "[Bug] SwipeView Closes After Command Executes Despite SwipeBehaviorOnInvoked=RemainOpen (iOS)", PlatformAffected.iOS)]
 	public partial class Issue11737 : TestContentPage
 	{
@@ -41,7 +41,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class Issue11737Model : BindableObject
 	{
 		int _count = 1;
@@ -59,7 +59,7 @@ namespace Xamarin.Forms.Controls.Issues
 		}
 	}
 
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	class Issue11737ViewModel : BindableObject
 	{
 		public ObservableCollection<Issue11737Model> Items { get; private set; } = new ObservableCollection<Issue11737Model>();
