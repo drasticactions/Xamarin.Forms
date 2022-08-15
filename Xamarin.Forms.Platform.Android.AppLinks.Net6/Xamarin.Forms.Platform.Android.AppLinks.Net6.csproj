@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AndroidResource Remove="Resources\values\Strings.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TransformFile Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Firebase.AppIndexing" Version="120.0.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+      <Name>Xamarin.Forms.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Platform.Android.AppLinks.Shared\Xamarin.Forms.Platform.Android.AppLinks.Shared.projitems" Label="Shared" />
+
+</Project>

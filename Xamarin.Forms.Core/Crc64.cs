@@ -5,10 +5,12 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 
+#pragma warning disable CS1587 // XML comment is not placed on a valid language element
 /// <summary>
 /// https://github.com/xamarin/java.interop/blob/master/src/Java.Interop.Tools.JavaCallableWrappers/Java.Interop.Tools.JavaCallableWrappers/Crc64.cs
 /// </summary>
 namespace Xamarin.Forms.Internals
+#pragma warning restore CS1587 // XML comment is not placed on a valid language element
 {
 	/// <summary>
 	///  CRC64 variant: crc-64-jones 64-bit

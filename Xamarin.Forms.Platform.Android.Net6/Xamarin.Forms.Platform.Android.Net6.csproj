@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Android Backend for Xamarin.Forms</Description>
+    <AssemblyName>Xamarin.Forms.Platform.Android</AssemblyName>
+    <TargetFrameworks>net6.0-android</TargetFrameworks>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <RootNamespace>Xamarin.Forms.Platform.Android</RootNamespace>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>
+      $(NoWarn);CA1416;CS0618;
+    </NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\**\*" />
+    <AndroidResource Include="Resources\values\**\*" />
+    <Compile Remove="Anticipator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\values\attrs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Xamarin.Forms.Core\Crc64.cs" Link="Crc64.cs" />
+    <Compile Include="..\Xamarin.Forms.Core\StreamWrapper.cs" Link="StreamWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.3.1.1" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.4.0.2" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0.8" />
+    <PackageReference Include="Xamarin.AndroidX.Navigation.UI" Version="2.3.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6.csproj">
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Platform.Android.Shared\Xamarin.Forms.Platform.Android.Shared.projitems" Label="Shared" />
+</Project>
