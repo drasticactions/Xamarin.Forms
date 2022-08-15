@@ -41,11 +41,7 @@
     </NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MapPool.cs" />
-    <Compile Include="MapRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FormsMaps.cs" />
-    <Compile Include="GeocoderBackend.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.iOS" />
@@ -72,5 +68,6 @@
   <ItemGroup>
     <None Include="Info.plist" />
   </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Maps.iOS.Shared\Xamarin.Forms.Maps.iOS.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
