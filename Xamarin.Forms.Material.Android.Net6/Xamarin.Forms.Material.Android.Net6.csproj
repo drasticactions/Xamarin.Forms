@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>
+      $(NoWarn);CA1416;CS0618;
+    </NoWarn>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>Xamarin.Forms.Material.Android</RootNamespace>
+    <AssemblyName>Xamarin.Forms.Material</AssemblyName>
+    <PackageId>Xamarin.Forms.Material.Android</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\**\*" />
+  </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Material.Android.Shared\Xamarin.Forms.Material.Android.Shared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.5.1" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj" />
+    <ProjectReference Include="..\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6.csproj" />
+    <ProjectReference Include="..\Xamarin.Forms.Platform.Android.Net6\Xamarin.Forms.Platform.Android.Net6.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -67,6 +67,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Maps.Android.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Platform.Android.FormsViewGroup.Net6", "Xamarin.Forms.Platform.Android.FormsViewGroup.Net6\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6.csproj", "{8471099B-DF00-4F65-8981-94DD1A5E3451}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Material.Android.Net6", "Xamarin.Forms.Material.Android.Net6\Xamarin.Forms.Material.Android.Net6.csproj", "{556B7E4D-4F3E-464E-AC64-4D2CB5BC38CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +135,10 @@ Global
 		{8471099B-DF00-4F65-8981-94DD1A5E3451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8471099B-DF00-4F65-8981-94DD1A5E3451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8471099B-DF00-4F65-8981-94DD1A5E3451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{556B7E4D-4F3E-464E-AC64-4D2CB5BC38CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556B7E4D-4F3E-464E-AC64-4D2CB5BC38CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556B7E4D-4F3E-464E-AC64-4D2CB5BC38CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556B7E4D-4F3E-464E-AC64-4D2CB5BC38CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -161,6 +167,7 @@ Global
 		{D3902C03-0B11-42F7-8CE0-4A665EA27FB1} = {A70C6772-AEF2-4C85-B730-142364CC9290}
 		{50E7BA87-EBE1-4329-B850-56E1DD84FF5D} = {4C777C3B-A7C9-4617-B2CA-B83E7E512376}
 		{8471099B-DF00-4F65-8981-94DD1A5E3451} = {A70C6772-AEF2-4C85-B730-142364CC9290}
+		{556B7E4D-4F3E-464E-AC64-4D2CB5BC38CB} = {2016CD5F-A218-4E34-B589-700B8C023A3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {24A31999-DDAB-455E-8A4D-F9906D611B14}
@@ -173,6 +180,7 @@ Global
 		Xamarin.Forms.Maps.Android.Shared\Xamarin.Forms.Maps.Android.Shared.projitems*{19d8076d-5db5-48b6-9382-9b4336fac18f}*SharedItemsImports = 13
 		Xamarin.Forms.Platform.Android.Shared\Xamarin.Forms.Platform.Android.Shared.projitems*{39e9a5ae-a580-4ef2-9107-ee36ffd4fe53}*SharedItemsImports = 13
 		Xamarin.Forms.Controls.Issues\Xamarin.Forms.Controls.Issues.Shared\Xamarin.Forms.Controls.Issues.Shared.projitems*{43f8ff92-67dd-468e-b247-130d384ce3b6}*SharedItemsImports = 5
+		Xamarin.Forms.Material.Android.Shared\Xamarin.Forms.Material.Android.Shared.projitems*{556b7e4d-4f3e-464e-ac64-4d2cb5bc38cb}*SharedItemsImports = 5
 		Xamarin.Forms.Platform.MacOS.Shared\Xamarin.Forms.Platform.MacOS.Shared.projitems*{86b83991-dc89-441c-8c66-b134fa84c249}*SharedItemsImports = 13
 		Xamarin.Forms.Platform.MacOS.Shared\Xamarin.Forms.Platform.MacOS.Shared.projitems*{b35b927c-0ac4-412f-8b4c-81f3156aead2}*SharedItemsImports = 5
 		Xamarin.Forms.Maps.iOS.Shared\Xamarin.Forms.Maps.iOS.Shared.projitems*{cafc959a-c6e4-4deb-8c47-1ff1c40d966d}*SharedItemsImports = 5
