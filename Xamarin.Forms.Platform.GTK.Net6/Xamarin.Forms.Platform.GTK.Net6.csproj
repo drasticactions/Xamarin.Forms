@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net6.0-windows</TargetFrameworks>
+    <UseWindowsForms Condition=" '$(TargetFramework)' == 'net6.0-windows' ">true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>
+      $(NoWarn);CA1416;CS0618;CS0612;
+    </NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GtkSharp" Version="3.24.24.38" />
+    <PackageReference Include="OpenTK" Version="4.7.4" />
+    <PackageReference Include="OpenTK.Graphics" Version="4.7.4" />
+    <PackageReference Include="OpenTK.NetStandard" Version="1.0.5.32" />
+    <PackageReference Include="WebkitGtkSharp" Version="3.24.24.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj" />
+  </ItemGroup>
+
+   <ItemGroup>
+    <Compile Include="..\Xamarin.Forms.Core\Crc64.cs">
+      <Link>Crc64.cs</Link>
+    </Compile>
+    <Compile Include="..\Xamarin.Forms.Core\StreamWrapper.cs">
+      <Link>StreamWrapper.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <Import Project="..\Xamarin.Forms.Platform.GTK.Shared\Xamarin.Forms.Platform.GTK.Shared.projitems" Label="Shared" />
+
+</Project>

@@ -183,6 +183,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Platform.Andr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Platform.Android.Net6", "Xamarin.Forms.Platform.Android.Net6\Xamarin.Forms.Platform.Android.Net6.csproj", "{A3610B85-1F8D-493E-B5A6-5A47B3764F3E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Platform.GTK.Net6", "Xamarin.Forms.Platform.GTK.Net6\Xamarin.Forms.Platform.GTK.Net6.csproj", "{E7681213-F6F6-434D-AAB4-902E237F7816}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1740,6 +1742,34 @@ Global
 		{A3610B85-1F8D-493E-B5A6-5A47B3764F3E}.Release|x64.Build.0 = Release|Any CPU
 		{A3610B85-1F8D-493E-B5A6-5A47B3764F3E}.Release|x86.ActiveCfg = Release|Any CPU
 		{A3610B85-1F8D-493E-B5A6-5A47B3764F3E}.Release|x86.Build.0 = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|x64.Build.0 = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Debug|x86.Build.0 = Debug|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|ARM.Build.0 = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|ARM64.Build.0 = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|iPhone.Build.0 = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|x64.ActiveCfg = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|x64.Build.0 = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|x86.ActiveCfg = Release|Any CPU
+		{E7681213-F6F6-434D-AAB4-902E237F7816}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1813,6 +1843,7 @@ Global
 		{BD4E3EAF-060D-446F-9CAF-BFC6B5AF1D74} = {29AC50BF-B4FB-450B-9386-0C5AD4B84226}
 		{D92B2D47-C107-4EA7-81C5-AAF4D05D1E5D} = {29AC50BF-B4FB-450B-9386-0C5AD4B84226}
 		{A3610B85-1F8D-493E-B5A6-5A47B3764F3E} = {29AC50BF-B4FB-450B-9386-0C5AD4B84226}
+		{E7681213-F6F6-434D-AAB4-902E237F7816} = {29AC50BF-B4FB-450B-9386-0C5AD4B84226}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {650AE971-2F29-46A8-822C-FB4FCDC6A9A0}
@@ -1839,6 +1870,7 @@ Global
 		Xamarin.Forms.Platform.MacOS.Shared\Xamarin.Forms.Platform.MacOS.Shared.projitems*{c0059c45-ea1e-42f3-8a0e-794bb547ec3c}*SharedItemsImports = 4
 		Xamarin.Forms.Maps.GTK.Shared\Xamarin.Forms.Maps.GTK.Shared.projitems*{caf803f8-039d-44d4-8497-c235daa2bc38}*SharedItemsImports = 13
 		Xamarin.Forms.Controls.Issues\Xamarin.Forms.Controls.Issues.Shared\Xamarin.Forms.Controls.Issues.Shared.projitems*{cb9c96ce-125c-4a68-b6a1-c3ff1fbf93e1}*SharedItemsImports = 5
+		Xamarin.Forms.Platform.GTK.Shared\Xamarin.Forms.Platform.GTK.Shared.projitems*{e7681213-f6f6-434d-aab4-902e237f7816}*SharedItemsImports = 5
 		Xamarin.Forms.Platform.MacOS.Shared\Xamarin.Forms.Platform.MacOS.Shared.projitems*{f824bbfe-302e-45d6-8700-5b565b96879e}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
