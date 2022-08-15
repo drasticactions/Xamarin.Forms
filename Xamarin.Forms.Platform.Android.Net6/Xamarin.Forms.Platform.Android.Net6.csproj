@@ -25,6 +25,7 @@
   <ItemGroup>
     <Compile Include="..\Xamarin.Forms.Core\Crc64.cs" Link="Crc64.cs" />
     <Compile Include="..\Xamarin.Forms.Core\StreamWrapper.cs" Link="StreamWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
@@ -41,8 +42,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6.csproj">
-    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6.csproj" />
   </ItemGroup>
   <Import Project="..\Xamarin.Forms.Platform.Android.Shared\Xamarin.Forms.Platform.Android.Shared.projitems" Label="Shared" />
 </Project>

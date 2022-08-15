@@ -237,10 +237,6 @@
       <Project>{A6097788-D282-4021-9174-A1EEB8F55A19}</Project>
       <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xamarin.Forms.Platform.MacOS.Net6\Xamarin.Forms.Platform.MacOS.Net6.csproj">
-      <Project>{B35B927C-0AC4-412F-8B4C-81F3156AEAD2}</Project>
-      <Name>Xamarin.Forms.Platform.MacOS.Net6</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Target Name="_VerifyBuildSignature" />

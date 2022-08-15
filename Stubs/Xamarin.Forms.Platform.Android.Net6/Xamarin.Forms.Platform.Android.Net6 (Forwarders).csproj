@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Xamarin.Forms.Platform</RootNamespace>
+    <AssemblyName>Xamarin.Forms.Platform</AssemblyName>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <PackageId>Xamarin.Forms.Platform.AndroidForwarders</PackageId>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Xamarin.Forms.Platform.cs" Link="Xamarin.Forms.Platform.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+    </ProjectReference>
+  </ItemGroup>
+</Project>

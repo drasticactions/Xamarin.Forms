@@ -14,7 +14,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\**\*" />
   </ItemGroup>
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) " >
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
     <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.3.1.1" />
     <PackageReference Include="Xamarin.Google.Android.Material" Version="1.4.0.2" />
   </ItemGroup>
@@ -26,4 +26,5 @@
     <ProjectReference Include="..\Xamarin.Forms.Platform.Android\Xamarin.Forms.Platform.Android.csproj">
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Material.Android.Shared\Xamarin.Forms.Material.Android.Shared.projitems" Label="Shared" />
 </Project>

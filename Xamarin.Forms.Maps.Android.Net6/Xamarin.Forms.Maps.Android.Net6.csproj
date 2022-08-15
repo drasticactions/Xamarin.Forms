@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>
+      $(NoWarn);CA1416;CS0618;
+    </NoWarn>
+  </PropertyGroup>
+ <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Forms.Maps\Xamarin.Forms.Maps.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6\Xamarin.Forms.Platform.Android.FormsViewGroup.Net6.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Forms.Platform.Android.Net6\Xamarin.Forms.Platform.Android.Net6.csproj">
+    </ProjectReference>
+  </ItemGroup>
+</Project>

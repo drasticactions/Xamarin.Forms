@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>da2e0fc5-5c32-4af4-a3a8-4683e8c4eb02</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Xamarin.Forms.Material.iOS.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)FormsMaterial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IMaterialEntryRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IMaterialTextField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialActivityIndicatorRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialButtonRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialCheckboxRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialDatePickerRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialEditorRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialEntryRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialFormsCheckBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialFrameRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialMultiLineTextField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialPickerRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialProgressBarRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialSliderRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialStepperRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialTextField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialTextManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MaterialTimePickerRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NoCaretMaterialTextField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReadOnlyMaterialTextField.cs" />
+  </ItemGroup>
+</Project>

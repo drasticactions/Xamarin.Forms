@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>50c50cc3-c2bf-4765-a7f0-21ba9f1cdfc1</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Xamarin.Forms.Platform.Android.UnitTests.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssertionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BackgroundColorTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BackgroundTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ButtonTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CollectionViewTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CornerRadiusTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EmbeddingTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IsEnabledTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Issues.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IsVisibleTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObservrableItemsSourceTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OpacityTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PlatformTestFixture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RendererTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResourceManagerTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RotationTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ScaleTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShellTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestActivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestClasses\ClearTextTransform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestClasses\_5560Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ToolbarExtensionsTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TransformationTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TranslationTests.cs" />
+  </ItemGroup>
+</Project>

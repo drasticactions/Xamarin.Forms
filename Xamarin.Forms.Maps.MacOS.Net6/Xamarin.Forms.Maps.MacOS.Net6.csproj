@@ -19,16 +19,16 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<Compile Include="Properties\AssemblyInfo.cs" />
-		<Compile Include="..\Xamarin.Forms.Maps.iOS\FormsMaps.cs">
+		<Compile Include="..\Xamarin.Forms.Maps.iOS.Shared\FormsMaps.cs">
 			<Link>FormsMaps.cs</Link>
 		</Compile>
-		<Compile Include="..\Xamarin.Forms.Maps.iOS\GeocoderBackend.cs">
+		<Compile Include="..\Xamarin.Forms.Maps.iOS.Shared\GeocoderBackend.cs">
 			<Link>GeocoderBackend.cs</Link>
 		</Compile>
-		<Compile Include="..\Xamarin.Forms.Maps.iOS\MapRenderer.cs">
+		<Compile Include="..\Xamarin.Forms.Maps.iOS.Shared\MapRenderer.cs">
 			<Link>MapRenderer.cs</Link>
 		</Compile>
-		<Compile Include="..\Xamarin.Forms.Maps.iOS\MapPool.cs">
+		<Compile Include="..\Xamarin.Forms.Maps.iOS.Shared\MapPool.cs">
 			<Link>MapPool.cs</Link>
 		</Compile>
 	</ItemGroup>
