@@ -12,9 +12,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="AppCompat\Resource.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\anim\**\*" />
     <AndroidResource Include="Resources\values\**\*" />
     <Compile Remove="Anticipator.cs" />
@@ -54,15 +51,5 @@
     <ProjectReference Include="..\Xamarin.Forms.Platform.Android.FormsViewGroup\Xamarin.Forms.Platform.Android.FormsViewGroup.csproj">
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Shapes\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Renderers\PickerAppCompatRenderer.cs">
-      <SubType></SubType>
-    </Compile>
-    <Compile Update="Renderers\PickerAppCompatEditText.cs">
-      <SubType></SubType>
-    </Compile>
-  </ItemGroup>
+  <Import Project="..\Xamarin.Forms.Platform.Android.Shared\Xamarin.Forms.Platform.Android.Shared.projitems" Label="Shared" />
 </Project>
