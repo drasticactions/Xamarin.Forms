@@ -204,7 +204,13 @@ namespace Xamarin.Forms
 			Device.SetFlowDirection(UIApplication.SharedApplication.UserInterfaceLayoutDirection.ToFlowDirection());
 #else
 			// Subscribe to notifications in OS Theme changes
-			NSDistributedNotificationCenter.GetDefaultCenter().AddObserver((NSString)"AppleInterfaceThemeChangedNotification", (n) =>
+#if NET6_0_OR_GREATER
+			NSDistributedNotificationCenter center = NSDistributedNotificationCenter.DefaultCenter;
+#else
+			NSDistributedNotificationCenter center = NSDistributedNotificationCenter.GetDefaultCenter();
+#endif
+
+			center.AddObserver((NSString)"AppleInterfaceThemeChangedNotification", (n) =>
 			{
 				var interfaceStyle = NSUserDefaults.StandardUserDefaults.StringForKey("AppleInterfaceStyle");
 

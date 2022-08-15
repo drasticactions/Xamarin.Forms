@@ -154,7 +154,7 @@ namespace Xamarin.Forms.Platform.MacOS
 			get
 			{
 				if (Forms.IsMojaveOrNewer)
-					return NSColor.LabelColor;
+					return NSColor.Label;
 
 				return NSColor.Black.UsingColorSpace("NSCalibratedRGBColorSpace");
 			}
@@ -198,7 +198,7 @@ namespace Xamarin.Forms.Platform.MacOS
 			get
 			{
 				if (Forms.IsMojaveOrNewer)
-					return NSColor.PlaceholderTextColor;
+					return NSColor.PlaceholderText;
 
 				return SeventyPercentGrey;
 			}
@@ -209,7 +209,7 @@ namespace Xamarin.Forms.Platform.MacOS
 			get
 			{
 				if (Forms.IsMojaveOrNewer)
-					return NSColor.SecondaryLabelColor;
+					return NSColor.SecondaryLabel;
 
 				return new Color(.32, .4, .57).ToNSColor();
 			}
@@ -220,7 +220,7 @@ namespace Xamarin.Forms.Platform.MacOS
 			get
 			{
 				if (Forms.IsMojaveOrNewer)
-					return NSColor.SystemGrayColor;
+					return NSColor.SystemGray;
 
 				return Color.LightGray.ToNSColor();
 			}

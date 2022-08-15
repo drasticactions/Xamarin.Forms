@@ -4,6 +4,11 @@ using CoreAnimation;
 using CoreGraphics;
 using Xamarin.Forms.Shapes;
 using Shape = Xamarin.Forms.Shapes.Shape;
+#if NET6_0_OR_GREATER
+using NMath = ObjCRuntime.NMath;
+#else
+using nfloat = System.nfloat;
+#endif
 
 #if __MOBILE__
 using UIKit;

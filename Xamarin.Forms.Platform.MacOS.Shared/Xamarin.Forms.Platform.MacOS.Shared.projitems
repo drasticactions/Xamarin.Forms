@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>86b83991-dc89-441c-8c66-b134fa84c249</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Xamarin.Forms.Platform.MacOS.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CADisplayLinkTicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\CellNSView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\CellRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\EntryCellRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\ImageCellRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\NSTableViewCellStyle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\SwitchCellRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\TextCellRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\ViewCellNSView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cells\ViewCellRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\FormsBoxView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\FormsImageView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\FormsNSDatePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\FormsNSSlider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\FormsPageControllerDelegate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MacOSOpenGLView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\NavigationChildPageWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ScrollViewScrollChangedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\VerticallyCenteredTextFieldCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EmbeddedFontLoader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AlignmentExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\BrushExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ButtonExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\FlowDirectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\FontExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ImageExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSAttributedStringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSButtonExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSImageExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSMenuExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSScrollViewExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSTableViewExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSTextFieldExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\NSViewControllerExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\PageExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FormsApplicationDelegate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageSourceHandlers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MacDeviceInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModalPageTracker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NativeToolbarTracker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Platform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PlatformNavigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PlatformRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\ActivityIndicatorRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\BoxViewRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\ButtonRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\CarouselPageRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\CheckBoxRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\CustomNSTableHeaderView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\DatePickerRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\DefaultRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\EditorRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\EntryRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\FlippedClipView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\FlyoutPageRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\FrameRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\ImageRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\LayoutRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\ListViewDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\ListViewRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\NavigationPageRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\NSPageContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\OpenGLViewRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\PageControllerDelegate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\PageRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\PickerRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\ProgressBarRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\RadioButtonRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\ScrollViewRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\SearchBarRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\SliderRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\StepperRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\SwitchRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\TabbedPageRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\TableViewDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\TableViewRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\TimePickerRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Renderers\WebViewRenderer.cs" />
+  </ItemGroup>
+</Project>

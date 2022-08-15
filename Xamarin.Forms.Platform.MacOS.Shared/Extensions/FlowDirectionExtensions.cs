@@ -5,6 +5,20 @@ namespace Xamarin.Forms.Platform.MacOS
 {
 	internal static class FlowDirectionExtensions
 	{
+#if NET6_0_OR_GREATER
+		internal static FlowDirection ToFlowDirection(this NSUserInterfaceLayoutDirection direction)
+		{
+			switch (direction)
+			{
+				case NSUserInterfaceLayoutDirection.LeftToRight:
+					return FlowDirection.LeftToRight;
+				case NSUserInterfaceLayoutDirection.RightToLeft:
+					return FlowDirection.RightToLeft;
+				default:
+					return FlowDirection.MatchParent;
+			}
+		}
+#else
 		internal static FlowDirection ToFlowDirection(this NSApplicationLayoutDirection direction)
 		{
 			switch (direction)
@@ -17,6 +31,7 @@ namespace Xamarin.Forms.Platform.MacOS
 					return FlowDirection.MatchParent;
 			}
 		}
+#endif
 
 		internal static void UpdateFlowDirection(this NSView view, IVisualElementController controller)
 		{

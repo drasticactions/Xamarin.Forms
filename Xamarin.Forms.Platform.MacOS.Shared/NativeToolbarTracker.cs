@@ -336,8 +336,13 @@ namespace Xamarin.Forms.Platform.MacOS
 			_titleGroup.Group.Subitems = new NSToolbarItem[] { item };
 			view.AddSubview(titleField);
 
+#if NET6_0_OR_GREATER
+			titleField.CenterXAnchor.ConstraintEqualTo(view.CenterXAnchor).Active = true;
+			titleField.CenterYAnchor.ConstraintEqualTo(view.CenterYAnchor).Active = true;
+#else
 			titleField.CenterXAnchor.ConstraintEqualToAnchor(view.CenterXAnchor).Active = true;
 			titleField.CenterYAnchor.ConstraintEqualToAnchor(view.CenterYAnchor).Active = true;
+#endif
 			titleField.TranslatesAutoresizingMaskIntoConstraints = false;
 			view.TranslatesAutoresizingMaskIntoConstraints = false;
 

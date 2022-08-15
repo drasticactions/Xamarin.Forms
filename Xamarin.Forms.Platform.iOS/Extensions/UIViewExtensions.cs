@@ -135,9 +135,9 @@ namespace Xamarin.Forms.Platform.MacOS
 					throw ex;
 				}
 #else
-				catch (Exception ex)
+				catch (Exception)
 				{
-					throw ex;
+					throw;
 				}
 #endif
 			}

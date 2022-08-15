@@ -63,8 +63,10 @@ namespace Xamarin.Forms.Platform.MacOS
 
 				font = NSFont.FromDescription(fontDescriptorWithTraits, size);
 			}
-			
+
+#pragma warning disable BI1234 // Type or member is obsolete
 			return font.ScreenFontWithRenderingMode(NSFontRenderingMode.AntialiasedIntegerAdvancements);
+#pragma warning restore BI1234 // Type or member is obsolete
 		}
 
 		internal static string CleanseFontName(string fontName)

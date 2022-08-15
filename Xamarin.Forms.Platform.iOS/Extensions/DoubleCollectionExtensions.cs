@@ -15,7 +15,7 @@ namespace Xamarin.Forms.Platform.MacOS
             else
             {
 
-                nfloat[] array = new nfloat[doubleCollection.Count];
+				nfloat[] array = new nfloat[doubleCollection.Count];
 
                 for (int i = 0; i < doubleCollection.Count; i++)
                     array[i] = (nfloat)doubleCollection[i];
