@@ -805,7 +805,7 @@ Task("Android100")
         MSBuild("Xamarin.Forms.sln",
                 GetMSBuildSettings()
                     .WithRestore()
-                    .WithProperty("AndroidTargetFrameworks", "MonoAndroid10.0"));
+                    .WithProperty("AndroidTargetFrameworks", "net7.0-android"));
     });
 
 Task("VSMAC")

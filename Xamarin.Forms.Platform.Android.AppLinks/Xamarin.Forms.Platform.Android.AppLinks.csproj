@@ -1,4 +1,4 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras">
+﻿<Project Sdk="Xamarin.Legacy.Sdk">
   <PropertyGroup>
     <Description>Android AppLinks support for Xamarin.Forms</Description>
     <AssemblyName>Xamarin.Forms.Platform.Android.AppLinks</AssemblyName>
@@ -19,7 +19,7 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Firebase.AppIndexing" Version="119.1.0" />
+    <PackageReference Include="Xamarin.Firebase.AppIndexing" Version="120.0.0.11" />
     <ProjectReference Include="..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
       <Name>Xamarin.Forms.Core</Name>
     </ProjectReference>
