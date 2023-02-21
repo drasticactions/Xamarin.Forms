@@ -50,8 +50,9 @@ namespace Xamarin.Forms.Platform.MacOS
 			var layoutManager = new NSLayoutManager();
 			textStorage.AddLayoutManager(layoutManager);
 
-			var textContainer = new NSTextContainer(size: finalSize.Size)
+			var textContainer = new NSTextContainer()
 			{
+				Size = finalSize.Size,
 				LineFragmentPadding = 0
 			};
 
@@ -111,17 +112,8 @@ namespace Xamarin.Forms.Platform.MacOS
 		static CGRect GetCharacterBounds(NSRange characterRange, NSLayoutManager layoutManager, NSTextContainer textContainer)
 		{
 			var glyphRange = new NSRange();
-
-#if __MOBILE__
-#pragma warning disable CS0618 // Type or member is obsolete
-			layoutManager.CharacterRangeForGlyphRange(characterRange, ref glyphRange);
-#pragma warning restore CS0618 // Type or member is obsolete
-#else
-#pragma warning disable CS0618 // Type or member is obsolete
-			layoutManager.CharacterRangeForGlyphRange(characterRange, out glyphRange);
-#pragma warning restore CS0618 // Type or member is obsolete
-#endif
-			return layoutManager.BoundingRectForGlyphRange(glyphRange, textContainer);
+			layoutManager.GetCharacterRange(characterRange, out glyphRange);
+			return layoutManager.GetBoundingRect(glyphRange, textContainer);
 		}
 
 		static double FindDefaultLineHeight(this NativeLabel control, int start, int length)
@@ -138,10 +130,14 @@ namespace Xamarin.Forms.Platform.MacOS
 			var layoutManager = new NSLayoutManager();
 			textStorage.AddLayoutManager(layoutManager);
 
+#if __MOBILE__
 			var textContainer = new NSTextContainer(size: new SizeF(float.MaxValue, float.MaxValue))
 			{
 				LineFragmentPadding = 0
 			};
+#else
+			var textContainer = new NSTextContainer() { Size = new SizeF(float.MaxValue, float.MaxValue), LineFragmentPadding = 0 };
+#endif
 			layoutManager.AddTextContainer(textContainer);
 
 			var rect = GetCharacterBounds(new NSRange(0, 1), layoutManager, textContainer);
