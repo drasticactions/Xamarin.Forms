@@ -1,6 +1,6 @@
 <Project Sdk="Xamarin.Legacy.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net7.0-ios</TargetFrameworks>
+    <TargetFrameworks>net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
      <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>

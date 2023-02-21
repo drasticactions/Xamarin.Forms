@@ -8,7 +8,7 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <TargetFrameworks>net7.0-ios</TargetFrameworks>
+    <TargetFrameworks>net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{271193C1-6E7C-429C-A36D-3F1BE5267231}</ProjectGuid>
     <OutputType>Library</OutputType>

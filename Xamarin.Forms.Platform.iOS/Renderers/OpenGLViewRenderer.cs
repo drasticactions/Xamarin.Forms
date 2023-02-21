@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if IOS
+using System;
 using System.ComponentModel;
 using GLKit;
 using OpenGLES;
@@ -109,3 +110,4 @@ namespace Xamarin.Forms.Platform.iOS
 		}
 	}
 }
+#endif

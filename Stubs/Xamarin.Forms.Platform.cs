@@ -132,7 +132,7 @@ namespace Xamarin.Forms.Platform
 	internal class _CheckBoxRenderer { }
 #endif
 
-#if !WINDOWS_PHONE && !WINDOWS_PHONE_APP && !TIZEN4_0
+#if !WINDOWS_PHONE && !WINDOWS_PHONE_APP && !TIZEN4_0 && !MACCATALYST
 	[RenderWith(typeof(OpenGLViewRenderer))]
 #else
 	[RenderWith (null)]
